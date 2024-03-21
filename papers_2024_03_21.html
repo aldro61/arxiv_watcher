@@ -1,216 +1,347 @@
 
-        <html>
-        <head>
-            <title>Report Generated on March 21, 2024</title>
-            <style>
-                body { font-family: Arial, sans-serif; margin: 20px; }
-                .paper-box {
-                    background-color: #f0f0f0;
-                    margin-bottom: 20px;
-                    padding: 15px;
-                    border-radius: 5px;
-                    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            <html>
+            <head>
+                <title>Report Generated on March 21, 2024</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    .paper-box {
+                        background-color: #f0f0f0;
+                        margin-bottom: 20px;
+                        padding: 15px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                    h1 { text-align: center; }
+                    h2 {
+                        cursor: pointer;
+                        color: #333;
+                        border-bottom: 2px solid #666;
+                    }
+                    a { color: #337ab7; text-decoration: none; }
+                    a:hover { text-decoration: underline; }
+                    h3 { color: #337ab7; }
+                    .timestamp { text-align: center; font-size: small; margin-top: 40px; }
+                    .paper-figure {
+                        max-width: 200px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin-top: 10px;
+                    }
+                    .papers-container { display: block; padding: 0 18px; }
+                </style>
+            </head>
+            <body>
+            <h1>Report for March 21, 2024</h1>
+            <script>
+                function toggleSection(id) {
+                    var x = document.getElementById(id);
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
                 }
-                h1 { text-align: center; }
-                h2 {
-                    color: #333;
-                    border-bottom: 2px solid #666;
-                }
-                a { color: #337ab7; text-decoration: none; }
-                a:hover { text-decoration: underline; }
-                h3 { color: #337ab7; }
-                .timestamp { text-align: center; font-size: small; margin-top: 40px; }
-            </style>
-        </head>
-        <body>
-        <h1>Report for March 21, 2024</h1>
-        <h2>Time-series</h2><div class='papers-container'>
+            </script>
+            <h2 onclick="toggleSection('section_llm-agents')">Llm-agents</h2><div id='section_llm-agents' class='papers-container'>
         <div class="paper-box">
-            <h3>Divide-Conquer Transformer Learning for Predicting Electric Vehicle Charging Events Using Smart Meter Data</h3>
-            <p><strong>Authors:</strong> Fucai Ke, Hao Wang</p>
-            <p><strong>Summary:</strong> arXiv:2403.13246v1 Announce Type: new 
-Abstract: Predicting electric vehicle (EV) charging events is crucial for load scheduling and energy management, promoting seamless transportation electrification and decarbonization. While prior studies have focused on EV charging demand prediction, primarily for public charging stations using historical charging data, home charging prediction is equally essential. However, existing prediction methods may not be suitable due to the unavailability of or limited access to home charging data. To address this research gap, inspired by the concept of non-intrusive load monitoring (NILM), we develop a home charging prediction method using historical smart meter data. Different from NILM detecting EV charging that has already occurred, our method provides predictive information of future EV charging occurrences, thus enhancing its utility for charging management. Specifically, our method, leverages a self-attention mechanism-based transformer model, employing a ``divide-conquer'' strategy, to process historical meter data to effectively and learn EV charging representation for charging occurrence prediction. Our method enables prediction at one-minute interval hour-ahead. Experimental results demonstrate the effectiveness of our method, achieving consistently high accuracy of over 96.81\% across different prediction time spans. Notably, our method achieves high prediction performance solely using smart meter data, making it a practical and suitable solution for grid operators.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13246" target="_blank">https://arxiv.org/abs/2403.13246</a></p>
-            <p><strong>Category:</strong> cs.LG</p>
-            <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> time-series (topic: New transformer-like models for time series)</p>
+            <h3><a href="https://arxiv.org/abs/2402.15506" target="_blank">AgentOhana: Design Unified Data and Training Pipeline for Effective Agent Learning</a></h3>
+            <a href="https://arxiv.org/html/2402.15506v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2402.15506v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Jianguo Zhang, Tian Lan, Rithesh Murthy, Zhiwei Liu, Weiran Yao, Juntao Tan, Thai Hoang, Liangwei Yang, Yihao Feng, Zuxin Liu, Tulika Awalgaonkar, Juan Carlos Niebles, Silvio Savarese, Shelby Heinecke, Huan Wang, Caiming Xiong</p>
+            <p><strong>Summary:</strong> arXiv:2402.15506v3 Announce Type: replace-cross 
+Abstract: Autonomous agents powered by large language models (LLMs) have garnered significant research attention. However, fully harnessing the potential of LLMs for agent-based tasks presents inherent challenges due to the heterogeneous nature of diverse data sources featuring multi-turn trajectories. In this paper, we introduce \textbf{AgentOhana} as a comprehensive solution to address these challenges. \textit{AgentOhana} aggregates agent trajectories from distinct environments, spanning a wide array of scenarios. It meticulously standardizes and unifies these trajectories into a consistent format, streamlining the creation of a generic data loader optimized for agent training. Leveraging the data unification, our training pipeline maintains equilibrium across different data sources and preserves independent randomness across devices during dataset partitioning and model training. Additionally, we present \textbf{xLAM-v0.1}, a large action model tailored for AI agents, which demonstrates exceptional performance across various benchmarks. Begin the exploration at \url{https://github.com/SalesforceAIResearch/xLAM}.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.15506">https://arxiv.org/abs/2402.15506</a></p>
+            <p><strong>Category:</strong> cs.AI</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is highly relevant to your interest in agents based on large-language models and computer automation using large language models. It introduces a comprehensive solution named AgentOhana for training autonomous agents powered by large language models (LLMs). It also presents the xLAM-v0.1 model, tailored for AI agents and demonstrates good performance across various benchmarks. The model and methodology have potential applications in controlling software and web browsers, which align with your specific areas of interest.</p>
         </div>
         
         <div class="paper-box">
-            <h3>Probabilistic Forecasting with Stochastic Interpolants and F\"ollmer Processes</h3>
-            <p><strong>Authors:</strong> Yifan Chen, Mark Goldstein, Mengjian Hua, Michael S. Albergo, Nicholas M. Boffi, Eric Vanden-Eijnden</p>
-            <p><strong>Summary:</strong> arXiv:2403.13724v1 Announce Type: new 
-Abstract: We propose a framework for probabilistic forecasting of dynamical systems based on generative modeling. Given observations of the system state over time, we formulate the forecasting problem as sampling from the conditional distribution of the future system state given its current state. To this end, we leverage the framework of stochastic interpolants, which facilitates the construction of a generative model between an arbitrary base distribution and the target. We design a fictitious, non-physical stochastic dynamics that takes as initial condition the current system state and produces as output a sample from the target conditional distribution in finite time and without bias. This process therefore maps a point mass centered at the current state onto a probabilistic ensemble of forecasts. We prove that the drift coefficient entering the stochastic differential equation (SDE) achieving this task is non-singular, and that it can be learned efficiently by square loss regression over the time-series data. We show that the drift and the diffusion coefficients of this SDE can be adjusted after training, and that a specific choice that minimizes the impact of the estimation error gives a F\"ollmer process. We highlight the utility of our approach on several complex, high-dimensional forecasting problems, including stochastically forced Navier-Stokes and video prediction on the KTH and CLEVRER datasets.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13724" target="_blank">https://arxiv.org/abs/2403.13724</a></p>
+            <h3><a href="https://arxiv.org/abs/2403.13164" target="_blank">VL-ICL Bench: The Devil in the Details of Benchmarking Multimodal In-Context Learning</a></h3>
+            <a href="https://arxiv.org/html/2403.13164v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.13164v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Yongshuo Zong, Ondrej Bohdal, Timothy Hospedales</p>
+            <p><strong>Summary:</strong> arXiv:2403.13164v1 Announce Type: new 
+Abstract: Large language models (LLMs) famously exhibit emergent in-context learning (ICL) -- the ability to rapidly adapt to new tasks using few-shot examples provided as a prompt, without updating the model's weights. Built on top of LLMs, vision large language models (VLLMs) have advanced significantly in areas such as recognition, reasoning, and grounding. However, investigations into \emph{multimodal ICL} have predominantly focused on few-shot visual question answering (VQA), and image captioning, which we will show neither exploit the strengths of ICL, nor test its limitations. The broader capabilities and limitations of multimodal ICL remain under-explored. In this study, we introduce a comprehensive benchmark VL-ICL Bench for multimodal in-context learning, encompassing a broad spectrum of tasks that involve both images and text as inputs and outputs, and different types of challenges, from {perception to reasoning and long context length}. We evaluate the abilities of state-of-the-art VLLMs against this benchmark suite, revealing their diverse strengths and weaknesses, and showing that even the most advanced models, such as GPT-4, find the tasks challenging. By highlighting a range of new ICL tasks, and the associated strengths and limitations of existing models, we hope that our dataset will inspire future work on enhancing the in-context learning capabilities of VLLMs, as well as inspire new applications that leverage VLLM ICL. The code and dataset are available at https://github.com/ys-zong/VL-ICL.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13164">https://arxiv.org/abs/2403.13164</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper focuses on the abilities of large language models, especially vision large language models (VLLMs), in the context of in-task learning. It also provides a benchmark for multimodal in-context learning, hence showing potential methods to control software with large language models. However, the reference to controlling web browsers and computer automation seems to be missing.</p>
         </div>
         
         <div class="paper-box">
-            <h3>Generalizability Under Sensor Failure: Tokenization + Transformers Enable More Robust Latent Spaces</h3>
-            <p><strong>Authors:</strong> Geeling Chau, Yujin An, Ahamed Raffey Iqbal, Soon-Jo Chung, Yisong Yue, Sabera Talukder</p>
-            <p><strong>Summary:</strong> arXiv:2402.18546v3 Announce Type: replace 
-Abstract: A major goal in neuroscience is to discover neural data representations that generalize. This goal is challenged by variability along recording sessions (e.g. environment), subjects (e.g. varying neural structures), and sensors (e.g. sensor noise), among others. Recent work has begun to address generalization across sessions and subjects, but few study robustness to sensor failure which is highly prevalent in neuroscience experiments. In order to address these generalizability dimensions we first collect our own electroencephalography dataset with numerous sessions, subjects, and sensors, then study two time series models: EEGNet (Lawhern et al., 2018) and TOTEM (Talukder et al., 2024). EEGNet is a widely used convolutional neural network, while TOTEM is a discrete time series tokenizer and transformer model. We find that TOTEM outperforms or matches EEGNet across all generalizability cases. Finally through analysis of TOTEM's latent codebook we observe that tokenization enables generalization.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.18546" target="_blank">https://arxiv.org/abs/2402.18546</a></p>
+            <h3><a href="https://arxiv.org/abs/2403.13213" target="_blank">From Representational Harms to Quality-of-Service Harms: A Case Study on Llama 2 Safety Safeguards</a></h3>
+            <a href="https://arxiv.org/html/2403.13213v1/extracted/5482636/illustration_method.png" target="_blank"><img src="https://arxiv.org/html/2403.13213v1/extracted/5482636/illustration_method.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Khaoula Chehbouni (McGill University, Mila - Quebec AI Institute), Megha Roshan (University of Montreal, Mila - Quebec AI Institute), Emmanuel Ma (McGill University), Futian Andrew Wei (McGill University), Afaf Ta\"ik (University of Montreal, Mila - Quebec AI Institute), Jackie CK Cheung (McGill University, Mila - Quebec AI Institute), Golnoosh Farnadi (McGill University, Mila - Quebec AI Institute)</p>
+            <p><strong>Summary:</strong> arXiv:2403.13213v1 Announce Type: new 
+Abstract: Recent progress in large language models (LLMs) has led to their widespread adoption in various domains. However, these advancements have also introduced additional safety risks and raised concerns regarding their detrimental impact on already marginalized populations. Despite growing mitigation efforts to develop safety safeguards, such as supervised safety-oriented fine-tuning and leveraging safe reinforcement learning from human feedback, multiple concerns regarding the safety and ingrained biases in these models remain. Furthermore, previous work has demonstrated that models optimized for safety often display exaggerated safety behaviors, such as a tendency to refrain from responding to certain requests as a precautionary measure. As such, a clear trade-off between the helpfulness and safety of these models has been documented in the literature. In this paper, we further investigate the effectiveness of safety measures by evaluating models on already mitigated biases. Using the case of Llama 2 as an example, we illustrate how LLMs' safety responses can still encode harmful assumptions. To do so, we create a set of non-toxic prompts, which we then use to evaluate Llama models. Through our new taxonomy of LLMs responses to users, we observe that the safety/helpfulness trade-offs are more pronounced for certain demographic groups which can lead to quality-of-service harms for marginalized populations.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13213">https://arxiv.org/abs/2403.13213</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> time-series (topic: New transformer-like models for time series)</p>
-        </div>
-        </div><h2>Llm-agents</h2><div class='papers-container'>
-        <div class="paper-box">
-            <h3>LLM4SGG: Large Language Model for Weakly Supervised Scene Graph Generation</h3>
-            <p><strong>Authors:</strong> Kibum Kim, Kanghoon Yoon, Jaehyeong Jeon, Yeonjun In, Jinyoung Moon, Donghyun Kim, Chanyoung Park</p>
-            <p><strong>Summary:</strong> arXiv:2310.10404v5 Announce Type: cross 
-Abstract: Weakly-Supervised Scene Graph Generation (WSSGG) research has recently emerged as an alternative to the fully-supervised approach that heavily relies on costly annotations. In this regard, studies on WSSGG have utilized image captions to obtain unlocalized triplets while primarily focusing on grounding the unlocalized triplets over image regions. However, they have overlooked the two issues involved in the triplet formation process from the captions: 1) Semantic over-simplification issue arises when extracting triplets from captions, where fine-grained predicates in captions are undesirably converted into coarse-grained predicates, resulting in a long-tailed predicate distribution, and 2) Low-density scene graph issue arises when aligning the triplets in the caption with entity/predicate classes of interest, where many triplets are discarded and not used in training, leading to insufficient supervision. To tackle the two issues, we propose a new approach, i.e., Large Language Model for weakly-supervised SGG (LLM4SGG), where we mitigate the two issues by leveraging the LLM's in-depth understanding of language and reasoning ability during the extraction of triplets from captions and alignment of entity/predicate classes with target data. To further engage the LLM in these processes, we adopt the idea of Chain-of-Thought and the in-context few-shot learning strategy. To validate the effectiveness of LLM4SGG, we conduct extensive experiments on Visual Genome and GQA datasets, showing significant improvements in both Recall@K and mean Recall@K compared to the state-of-the-art WSSGG methods. A further appeal is that LLM4SGG is data-efficient, enabling effective model training with a small amount of training images.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2310.10404" target="_blank">https://arxiv.org/abs/2310.10404</a></p>
-            <p><strong>Category:</strong> cs.CV</p>
-            <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper discusses large language models (LLMs) and their safety implications, which is relevant to your interest in agents based on large-language models. However, it is not specifically focused on controlling software or web browsers.</p>
         </div>
         
         <div class="paper-box">
-            <h3>Prompt Selection and Augmentation for Few Examples Code Generation in Large Language Model and its Application in Robotics Control</h3>
+            <h3><a href="https://arxiv.org/abs/2403.13547" target="_blank">Integrating Large Language Models for Severity Classification in Traffic Incident Management: A Machine Learning Approach</a></h3>
+            <a href="https://arxiv.org/html/2403.13547v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.13547v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Artur Grigorev, Khaled Saleh, Yuming Ou, Adriana-Simona Mihaita</p>
+            <p><strong>Summary:</strong> arXiv:2403.13547v1 Announce Type: new 
+Abstract: This study evaluates the impact of large language models on enhancing machine learning processes for managing traffic incidents. It examines the extent to which features generated by modern language models improve or match the accuracy of predictions when classifying the severity of incidents using accident reports. Multiple comparisons performed between combinations of language models and machine learning algorithms, including Gradient Boosted Decision Trees, Random Forests, and Extreme Gradient Boosting. Our research uses both conventional and language model-derived features from texts and incident reports, and their combinations to perform severity classification. Incorporating features from language models with those directly obtained from incident reports has shown to improve, or at least match, the performance of machine learning techniques in assigning severity levels to incidents, particularly when employing Random Forests and Extreme Gradient Boosting methods. This comparison was quantified using the F1-score over uniformly sampled data sets to obtain balanced severity classes. The primary contribution of this research is in the demonstration of how Large Language Models can be integrated into machine learning workflows for incident management, thereby simplifying feature extraction from unstructured text and enhancing or matching the precision of severity predictions using conventional machine learning pipeline. The engineering application of this research is illustrated through the effective use of these language processing models to refine the modelling process for incident severity classification. This work provides significant insights into the application of language processing capabilities in combination with traditional data for improving machine learning pipelines in the context of classifying incident severity.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13547">https://arxiv.org/abs/2403.13547</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper is relevant from the perspective of language models utilized in a machine learning context for accomplishing real-world tasks. However, it is more about application than introducing a new model or method.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2403.13787" target="_blank">RewardBench: Evaluating Reward Models for Language Modeling</a></h3>
+            <a href="https://arxiv.org/html/2403.13787v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.13787v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Nathan Lambert, Valentina Pyatkin, Jacob Morrison, LJ Miranda, Bill Yuchen Lin, Khyathi Chandu, Nouha Dziri, Sachin Kumar, Tom Zick, Yejin Choi, Noah A. Smith, Hannaneh Hajishirzi</p>
+            <p><strong>Summary:</strong> arXiv:2403.13787v1 Announce Type: new 
+Abstract: Reward models (RMs) are at the crux of successful RLHF to align pretrained models to human preferences, yet there has been relatively little study that focuses on evaluation of those reward models. Evaluating reward models presents an opportunity to understand the opaque technologies used for alignment of language models and which values are embedded in them. To date, very few descriptors of capabilities, training methods, or open-source reward models exist. In this paper, we present RewardBench, a benchmark dataset and code-base for evaluation, to enhance scientific understanding of reward models. The RewardBench dataset is a collection of prompt-win-lose trios spanning chat, reasoning, and safety, to benchmark how reward models perform on challenging, structured and out-of-distribution queries. We created specific comparison datasets for RMs that have subtle, but verifiable reasons (e.g. bugs, incorrect facts) why one answer should be preferred to another. On the RewardBench leaderboard, we evaluate reward models trained with a variety of methods, such as the direct MLE training of classifiers and the implicit reward modeling of Direct Preference Optimization (DPO), and on a spectrum of datasets. We present many findings on propensity for refusals, reasoning limitations, and instruction following shortcomings of various reward models towards a better understanding of the RLHF process.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13787">https://arxiv.org/abs/2403.13787</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant because it explores the evaluation of reward models, which are critical for aligning pretrained large language models (LLMs) to human preferences. This is particularly pertinent to the automation of software or web browsers using LLMs, as discussed in your interests. The paper presents a benchmark dataset and code-base for evaluation, potentially providing valuable insights for those involved with developing or employing LLMs.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2403.13793" target="_blank">Evaluating Frontier Models for Dangerous Capabilities</a></h3>
+            
+            <p><strong>Authors:</strong> Mary Phuong, Matthew Aitchison, Elliot Catt, Sarah Cogan, Alexandre Kaskasoli, Victoria Krakovna, David Lindner, Matthew Rahtz, Yannis Assael, Sarah Hodkinson, Heidi Howard, Tom Lieberum, Ramana Kumar, Maria Abi Raad, Albert Webson, Lewis Ho, Sharon Lin, Sebastian Farquhar, Marcus Hutter, Gregoire Deletang, Anian Ruoss, Seliem El-Sayed, Sasha Brown, Anca Dragan, Rohin Shah, Allan Dafoe, Toby Shevlane</p>
+            <p><strong>Summary:</strong> arXiv:2403.13793v1 Announce Type: new 
+Abstract: To understand the risks posed by a new AI system, we must understand what it can and cannot do. Building on prior work, we introduce a programme of new "dangerous capability" evaluations and pilot them on Gemini 1.0 models. Our evaluations cover four areas: (1) persuasion and deception; (2) cyber-security; (3) self-proliferation; and (4) self-reasoning. We do not find evidence of strong dangerous capabilities in the models we evaluated, but we flag early warning signs. Our goal is to help advance a rigorous science of dangerous capability evaluation, in preparation for future models.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13793">https://arxiv.org/abs/2403.13793</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper discusses evaluating the capabilities of AI systems, specifically mentioning a model named 'Gemini 1.0'. Though it's not explicit if it uses large language models for specific tasks stated in your interests like controlling software or web browsers, the discussion of AI systems' self-reasoning and cyber-security capabilities might be relevant to your research on 'computer automation using large language models'.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2403.12999" target="_blank">Prompt Selection and Augmentation for Few Examples Code Generation in Large Language Model and its Application in Robotics Control</a></h3>
+            
             <p><strong>Authors:</strong> On Tai Wu, Frodo Kin Sun Chan, Zunhao Zhang, Yan Nei Law, Benny Drescher, Edmond Shiao Bun Lai</p>
             <p><strong>Summary:</strong> arXiv:2403.12999v1 Announce Type: cross 
 Abstract: Few-shot prompting and step-by-step reasoning have enhanced the capabilities of Large Language Models (LLMs) in tackling complex tasks including code generation. In this paper, we introduce a prompt selection and augmentation algorithm aimed at improving mathematical reasoning and robot arm operations. Our approach incorporates a multi-stage example augmentation scheme combined with an example selection scheme. This algorithm improves LLM performance by selecting a set of examples that increase diversity, minimize redundancy, and increase relevance to the question. When combined with the Program-of-Thought prompting, our algorithm demonstrates an improvement in performance on the GSM8K and SVAMP benchmarks, with increases of 0.3% and 1.1% respectively. Furthermore, in simulated tabletop environments, our algorithm surpasses the Code-as-Policies approach by achieving a 3.4% increase in successful task completions and a decrease of over 70% in the number of examples used. Its ability to discard examples that contribute little to solving the problem reduces the inferencing time of an LLM-powered robotics system. This algorithm also offers important benefits for industrial process automation by streamlining the development and deployment process, reducing manual programming effort, and enhancing code reusability.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12999" target="_blank">https://arxiv.org/abs/2403.12999</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12999">https://arxiv.org/abs/2403.12999</a></p>
             <p><strong>Category:</strong> cs.RO</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant because it discusses using Large Language Models (LLMs) in complex tasks like code generation and robotics control - which aligns with your interest in using large language models for controlling software and automation.</p>
         </div>
         
         <div class="paper-box">
-            <h3>RigorLLM: Resilient Guardrails for Large Language Models against Undesired Content</h3>
+            <h3><a href="https://arxiv.org/abs/2403.13031" target="_blank">RigorLLM: Resilient Guardrails for Large Language Models against Undesired Content</a></h3>
+            
             <p><strong>Authors:</strong> Zhuowen Yuan, Zidi Xiong, Yi Zeng, Ning Yu, Ruoxi Jia, Dawn Song, Bo Li</p>
             <p><strong>Summary:</strong> arXiv:2403.13031v1 Announce Type: cross 
 Abstract: Recent advancements in Large Language Models (LLMs) have showcased remarkable capabilities across various tasks in different domains. However, the emergence of biases and the potential for generating harmful content in LLMs, particularly under malicious inputs, pose significant challenges. Current mitigation strategies, while effective, are not resilient under adversarial attacks. This paper introduces Resilient Guardrails for Large Language Models (RigorLLM), a novel framework designed to efficiently and effectively moderate harmful and unsafe inputs and outputs for LLMs. By employing a multi-faceted approach that includes energy-based training data augmentation through Langevin dynamics, optimizing a safe suffix for inputs via minimax optimization, and integrating a fusion-based model combining robust KNN with LLMs based on our data augmentation, RigorLLM offers a robust solution to harmful content moderation. Our experimental evaluations demonstrate that RigorLLM not only outperforms existing baselines like OpenAI API and Perspective API in detecting harmful content but also exhibits unparalleled resilience to jailbreaking attacks. The innovative use of constrained optimization and a fusion-based guardrail approach represents a significant step forward in developing more secure and reliable LLMs, setting a new standard for content moderation frameworks in the face of evolving digital threats.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13031" target="_blank">https://arxiv.org/abs/2403.13031</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13031">https://arxiv.org/abs/2403.13031</a></p>
             <p><strong>Category:</strong> cs.CR</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although it doesn't directly cover the subtopics you provided, it corresponds to your interest in large language models as it discusses a new framework for moderating harmful and unsafe inputs, an aspect that can be crucial when large language models are used to control software or web browsers.</p>
         </div>
         
         <div class="paper-box">
-            <h3>Arcee's MergeKit: A Toolkit for Merging Large Language Models</h3>
+            <h3><a href="https://arxiv.org/abs/2403.13257" target="_blank">Arcee's MergeKit: A Toolkit for Merging Large Language Models</a></h3>
+            <a href="https://arxiv.org/html/2403.13257v1/extracted/5482855/figures/model_merging_classification.png" target="_blank"><img src="https://arxiv.org/html/2403.13257v1/extracted/5482855/figures/model_merging_classification.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Charles Goddard, Shamane Siriwardhana, Malikeh Ehghaghi, Luke Meyers, Vlad Karpukhin, Brian Benedict, Mark McQuade, Jacob Solawetz</p>
             <p><strong>Summary:</strong> arXiv:2403.13257v1 Announce Type: cross 
 Abstract: The rapid expansion of the open-source language model landscape presents an opportunity to merge the competencies of these model checkpoints by combining their parameters. Advances in transfer learning, the process of fine-tuning pre-trained models for specific tasks, has resulted in the development of vast amounts of task-specific models, typically specialized in individual tasks and unable to utilize each other's strengths. Model merging facilitates the creation of multitask models without the need for additional training, offering a promising avenue for enhancing model performance and versatility. By preserving the intrinsic capabilities of the original models, model merging addresses complex challenges in AI - including the difficulties of catastrophic forgetting and multi-task learning. To support this expanding area of research, we introduce MergeKit, a comprehensive, open-source library designed to facilitate the application of model merging strategies. MergeKit offers an extensible framework to efficiently merge models on any hardware, providing utility to researchers and practitioners. To date, thousands of models have been merged by the open-source community, leading to the creation of some of the worlds most powerful open-source model checkpoints, as assessed by the Open LLM Leaderboard. The library is accessible at https://github.com/arcee-ai/MergeKit.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13257" target="_blank">https://arxiv.org/abs/2403.13257</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13257">https://arxiv.org/abs/2403.13257</a></p>
             <p><strong>Category:</strong> cs.CL</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper discusses the 'MergeKit', a toolkit for merging large language models, which aligns with your interest in agents based on large-language models and its potential application in tasks such as software control. However, it does not explicitly mention aspects like controlling software or web browsers.</p>
         </div>
         
         <div class="paper-box">
-            <h3>CONLINE: Complex Code Generation and Refinement with Online Searching and Correctness Testing</h3>
+            <h3><a href="https://arxiv.org/abs/2403.13583" target="_blank">CONLINE: Complex Code Generation and Refinement with Online Searching and Correctness Testing</a></h3>
+            <a href="https://arxiv.org/html/2403.13583v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.13583v1/x1.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Xinyi He, Jiaru Zou, Yun Lin, Mengyu Zhou, Shi Han, Zejian Yuan, Dongmei Zhang</p>
             <p><strong>Summary:</strong> arXiv:2403.13583v1 Announce Type: cross 
 Abstract: Large Language Models (LLMs) have revolutionized code generation ability by converting natural language descriptions into executable code. However, generating complex code within real-world scenarios remains challenging due to intricate structures, subtle bugs, understanding of advanced data types, and lack of supplementary contents. To address these challenges, we introduce the CONLINE framework, which enhances code generation by incorporating planned online searches for information retrieval and automated correctness testing for iterative refinement. CONLINE also serializes the complex inputs and outputs to improve comprehension and generate test case to ensure the framework's adaptability for real-world applications. CONLINE is validated through rigorous experiments on the DS-1000 and ClassEval datasets. It shows that CONLINE substantially improves the quality of complex code generation, highlighting its potential to enhance the practicality and reliability of LLMs in generating intricate code.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13583" target="_blank">https://arxiv.org/abs/2403.13583</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13583">https://arxiv.org/abs/2403.13583</a></p>
             <p><strong>Category:</strong> cs.SE</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper can be useful for your interests as it discusses the enhancement of code generation using large language models. However, it is more relevant to the software control aspect, and it lacks the specific focus on web browsers or general automation.</p>
         </div>
         
         <div class="paper-box">
-            <h3>Federated Foundation Models: Privacy-Preserving and Collaborative Learning for Large Models</h3>
+            <h3><a href="https://arxiv.org/abs/2305.11414" target="_blank">Federated Foundation Models: Privacy-Preserving and Collaborative Learning for Large Models</a></h3>
+            <a href="https://arxiv.org/html/2305.11414v3/extracted/5482373/content/figures/ffm_benefits.png" target="_blank"><img src="https://arxiv.org/html/2305.11414v3/extracted/5482373/content/figures/ffm_benefits.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Sixing Yu, J. Pablo Mu\~noz, Ali Jannesari</p>
             <p><strong>Summary:</strong> arXiv:2305.11414v3 Announce Type: replace 
 Abstract: Foundation Models (FMs), such as LLaMA, BERT, GPT, ViT, and CLIP, have demonstrated remarkable success in a wide range of applications, driven by their ability to leverage vast amounts of data for pre-training. However, optimizing FMs often requires access to sensitive data, raising privacy concerns and limiting their applicability in many domains. In this paper, we propose the Federated Foundation Models (FFMs) paradigm, which combines the benefits of FMs and Federated Learning (FL) to enable privacy-preserving and collaborative learning across multiple end-users. We discuss the potential benefits and challenges of integrating FL into the lifespan of FMs, covering pre-training, fine-tuning, and application. We further outline potential future research avenues in FFM, including FFM pre-training, FFM fine-tuning, and federated prompt tuning, which allow the development of more personalized and context-aware models while ensuring data privacy. Moreover, we explore the possibility of continual/lifelong learning in FFMs, as increased computational power at the edge may unlock the potential for optimizing FMs using newly generated private data close to the data source. The proposed FFM concepts offer a flexible and scalable framework for training large language models in a privacy-preserving manner, setting the stage for subsequent advancements in both FM training and federated learning.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2305.11414" target="_blank">https://arxiv.org/abs/2305.11414</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2305.11414">https://arxiv.org/abs/2305.11414</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> While this paper doesn't focus specifically on controlling specific software or web browsers through large language models, it does discuss the usage of foundation models (which include large language models) and their training, which could be very relevant for creating agents. Moreover, it suggests a privacy-preserving manner of training these models, a topic that could be important considering the nature of controlling software or browsers.</p>
         </div>
         
         <div class="paper-box">
-            <h3>MELTing point: Mobile Evaluation of Language Transformers</h3>
+            <h3><a href="https://arxiv.org/abs/2403.12844" target="_blank">MELTing point: Mobile Evaluation of Language Transformers</a></h3>
+            <a href="https://arxiv.org/html/2403.12844v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.12844v2/x1.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Stefanos Laskaridis, Kleomenis Katevas, Lorenzo Minto, Hamed Haddadi</p>
             <p><strong>Summary:</strong> arXiv:2403.12844v2 Announce Type: replace 
 Abstract: Transformers have revolutionized the machine learning landscape, gradually making their way into everyday tasks and equipping our computers with ``sparks of intelligence''. However, their runtime requirements have prevented them from being broadly deployed on mobile. As personal devices become increasingly powerful and prompt privacy becomes an ever more pressing issue, we explore the current state of mobile execution of Large Language Models (LLMs). To achieve this, we have created our own automation infrastructure, MELT, which supports the headless execution and benchmarking of LLMs on device, supporting different models, devices and frameworks, including Android, iOS and Nvidia Jetson devices. We evaluate popular instruction fine-tuned LLMs and leverage different frameworks to measure their end-to-end and granular performance, tracing their memory and energy requirements along the way.
   Our analysis is the first systematic study of on-device LLM execution, quantifying performance, energy efficiency and accuracy across various state-of-the-art models and showcases the state of on-device intelligence in the era of hyperscale models. Results highlight the performance heterogeneity across targets and corroborates that LLM inference is largely memory-bound. Quantization drastically reduces memory requirements and renders execution viable, but at a non-negligible accuracy cost. Drawing from its energy footprint and thermal behavior, the continuous execution of LLMs remains elusive, as both factors negatively affect user experience. Last, our experience shows that the ecosystem is still in its infancy, and algorithmic as well as hardware breakthroughs can significantly shift the execution cost. We expect NPU acceleration, and framework-hardware co-design to be the biggest bet towards efficient standalone execution, with the alternative of offloading tailored towards edge deployments.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12844" target="_blank">https://arxiv.org/abs/2403.12844</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12844">https://arxiv.org/abs/2403.12844</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper discusses the application of Large Language Models (LLMs) in mobile platforms, focusing on their performance and the challenges towards continuous execution. While it does not explicitly mention software or web browser control, it fits broadly within your interest in the application and evaluation of LLMs in practical contexts.</p>
         </div>
         
         <div class="paper-box">
-            <h3>Can It Edit? Evaluating the Ability of Large Language Models to Follow Code Editing Instructions</h3>
+            <h3><a href="https://arxiv.org/abs/2310.00117" target="_blank">ABScribe: Rapid Exploration & Organization of Multiple Writing Variations in Human-AI Co-Writing Tasks using Large Language Models</a></h3>
+            <a href="https://arxiv.org/html/2310.00117v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2310.00117v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Mohi Reza, Nathan Laundry, Ilya Musabirov, Peter Dushniku, Zhi Yuan "Michael" Yu, Kashish Mittal, Tovi Grossman, Michael Liut, Anastasia Kuzminykh, Joseph Jay Williams</p>
+            <p><strong>Summary:</strong> arXiv:2310.00117v3 Announce Type: replace-cross 
+Abstract: Exploring alternative ideas by rewriting text is integral to the writing process. State-of-the-art Large Language Models (LLMs) can simplify writing variation generation. However, current interfaces pose challenges for simultaneous consideration of multiple variations: creating new variations without overwriting text can be difficult, and pasting them sequentially can clutter documents, increasing workload and disrupting writers' flow. To tackle this, we present ABScribe, an interface that supports rapid, yet visually structured, exploration and organization of writing variations in human-AI co-writing tasks. With ABScribe, users can swiftly modify variations using LLM prompts, which are auto-converted into reusable buttons. Variations are stored adjacently within text fields for rapid in-place comparisons using mouse-over interactions on a popup toolbar. Our user study with 12 writers shows that ABScribe significantly reduces task workload (d = 1.20, p < 0.001), enhances user perceptions of the revision process (d = 2.41, p < 0.001) compared to a popular baseline workflow, and provides insights into how writers explore variations using LLMs.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2310.00117">https://arxiv.org/abs/2310.00117</a></p>
+            <p><strong>Category:</strong> cs.HC</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although this paper doesn't strictly focus on using large language models for control tasks, it showcases the use of large language models in a co-writing task. Specifically, it showcases how large language models can be used to generate multiple variations of text, a type of automation which aligns with your interest in computer automation using large language models.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2312.12450" target="_blank">Can It Edit? Evaluating the Ability of Large Language Models to Follow Code Editing Instructions</a></h3>
+            <a href="https://arxiv.org/html/2312.12450v5/x1.png" target="_blank"><img src="https://arxiv.org/html/2312.12450v5/x1.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Federico Cassano, Luisa Li, Akul Sethi, Noah Shinn, Abby Brennan-Jones, Jacob Ginesin, Edward Berman, George Chakhnashvili, Anton Lozhkov, Carolyn Jane Anderson, Arjun Guha</p>
             <p><strong>Summary:</strong> arXiv:2312.12450v5 Announce Type: replace-cross 
 Abstract: A significant amount of research is focused on developing and evaluating large language models for a variety of code synthesis tasks. These include synthesizing code from natural language, synthesizing tests from code, and synthesizing explanations of code. In contrast, the behavior of instructional code editing with LLMs is understudied. These are tasks in which the model is provided a block of code and an instruction to modify the code. The editing instruction may ask for a feature to be added or removed, describe a bug and ask for a fix, or ask for a different kind of solution. We introduce a carefully crafted benchmark of code editing tasks and use it to evaluate several cutting edge LLMs. Our evaluation exposes a significant gap between the capabilities of state-of-the-art open and closed models. For example, even GPT-3.5-Turbo is better than the best open model at code editing tasks. We also introduce a new, carefully curated, permissively licensed training dataset of code editing tasks coupled with natural language instructions. Using this training dataset, we show that we can fine-tune open Code LLMs to significantly improve their code editing capabilities, closing the gap between open and closed models. All code, data, and models are available at https://github.com/nuprl/CanItEdit.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2312.12450" target="_blank">https://arxiv.org/abs/2312.12450</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2312.12450">https://arxiv.org/abs/2312.12450</a></p>
             <p><strong>Category:</strong> cs.SE</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to the 'Agents based on Large-Language Models' topic. It particularly relates to using large language models for handling software tasks as it discusses how to improve the code editing capabilities of these models. However, it does not specifically mention controlling web browsers or overall computer automation.</p>
         </div>
         
         <div class="paper-box">
-            <h3>AgentOhana: Design Unified Data and Training Pipeline for Effective Agent Learning</h3>
-            <p><strong>Authors:</strong> Jianguo Zhang, Tian Lan, Rithesh Murthy, Zhiwei Liu, Weiran Yao, Juntao Tan, Thai Hoang, Liangwei Yang, Yihao Feng, Zuxin Liu, Tulika Awalgaonkar, Juan Carlos Niebles, Silvio Savarese, Shelby Heinecke, Huan Wang, Caiming Xiong</p>
-            <p><strong>Summary:</strong> arXiv:2402.15506v3 Announce Type: replace-cross 
-Abstract: Autonomous agents powered by large language models (LLMs) have garnered significant research attention. However, fully harnessing the potential of LLMs for agent-based tasks presents inherent challenges due to the heterogeneous nature of diverse data sources featuring multi-turn trajectories. In this paper, we introduce \textbf{AgentOhana} as a comprehensive solution to address these challenges. \textit{AgentOhana} aggregates agent trajectories from distinct environments, spanning a wide array of scenarios. It meticulously standardizes and unifies these trajectories into a consistent format, streamlining the creation of a generic data loader optimized for agent training. Leveraging the data unification, our training pipeline maintains equilibrium across different data sources and preserves independent randomness across devices during dataset partitioning and model training. Additionally, we present \textbf{xLAM-v0.1}, a large action model tailored for AI agents, which demonstrates exceptional performance across various benchmarks. Begin the exploration at \url{https://github.com/SalesforceAIResearch/xLAM}.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.15506" target="_blank">https://arxiv.org/abs/2402.15506</a></p>
-            <p><strong>Category:</strong> cs.AI</p>
-            <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
-        </div>
-        
-        <div class="paper-box">
-            <h3>Modeling Collaborator: Enabling Subjective Vision Classification With Minimal Human Effort via LLM Tool-Use</h3>
+            <h3><a href="https://arxiv.org/abs/2403.02626" target="_blank">Modeling Collaborator: Enabling Subjective Vision Classification With Minimal Human Effort via LLM Tool-Use</a></h3>
+            <a href="https://arxiv.org/html/2403.02626v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.02626v2/x1.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Imad Eddine Toubal, Aditya Avinash, Neil Gordon Alldrin, Jan Dlabal, Wenlei Zhou, Enming Luo, Otilia Stretcu, Hao Xiong, Chun-Ta Lu, Howard Zhou, Ranjay Krishna, Ariel Fuxman, Tom Duerig</p>
             <p><strong>Summary:</strong> arXiv:2403.02626v2 Announce Type: replace-cross 
 Abstract: From content moderation to wildlife conservation, the number of applications that require models to recognize nuanced or subjective visual concepts is growing. Traditionally, developing classifiers for such concepts requires substantial manual effort measured in hours, days, or even months to identify and annotate data needed for training. Even with recently proposed Agile Modeling techniques, which enable rapid bootstrapping of image classifiers, users are still required to spend 30 minutes or more of monotonous, repetitive data labeling just to train a single classifier. Drawing on Fiske's Cognitive Miser theory, we propose a new framework that alleviates manual effort by replacing human labeling with natural language interactions, reducing the total effort required to define a concept by an order of magnitude: from labeling 2,000 images to only 100 plus some natural language interactions. Our framework leverages recent advances in foundation models, both large language models and vision-language models, to carve out the concept space through conversation and by automatically labeling training data points. Most importantly, our framework eliminates the need for crowd-sourced annotations. Moreover, our framework ultimately produces lightweight classification models that are deployable in cost-sensitive scenarios. Across 15 subjective concepts and across 2 public image classification datasets, our trained models outperform traditional Agile Modeling as well as state-of-the-art zero-shot classification models like ALIGN, CLIP, CuPL, and large visual question-answering models like PaLI-X.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.02626" target="_blank">https://arxiv.org/abs/2403.02626</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.02626">https://arxiv.org/abs/2403.02626</a></p>
             <p><strong>Category:</strong> cs.CV</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to your interests as it discusses the application of large language and vision-language models in natural language interactions and automatic labeling of training data points, which is an aspect of software and web browser control.</p>
         </div>
         
         <div class="paper-box">
-            <h3>In Search of Truth: An Interrogation Approach to Hallucination Detection</h3>
+            <h3><a href="https://arxiv.org/abs/2403.02889" target="_blank">In Search of Truth: An Interrogation Approach to Hallucination Detection</a></h3>
+            <a href="https://arxiv.org/html/2403.02889v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.02889v2/x1.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Yakir Yehuda, Itzik Malkiel, Oren Barkan, Jonathan Weill, Royi Ronen, Noam Koenigstein</p>
             <p><strong>Summary:</strong> arXiv:2403.02889v2 Announce Type: replace-cross 
 Abstract: Despite the many advances of Large Language Models (LLMs) and their unprecedented rapid evolution, their impact and integration into every facet of our daily lives is limited due to various reasons. One critical factor hindering their widespread adoption is the occurrence of hallucinations, where LLMs invent answers that sound realistic, yet drift away from factual truth. In this paper, we present a novel method for detecting hallucinations in large language models, which tackles a critical issue in the adoption of these models in various real-world scenarios. Through extensive evaluations across multiple datasets and LLMs, including Llama-2, we study the hallucination levels of various recent LLMs and demonstrate the effectiveness of our method to automatically detect them. Notably, we observe up to 62% hallucinations for Llama-2 in a specific experiment, where our method achieves a Balanced Accuracy (B-ACC) of 87%, all without relying on external knowledge.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.02889" target="_blank">https://arxiv.org/abs/2403.02889</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.02889">https://arxiv.org/abs/2403.02889</a></p>
             <p><strong>Category:</strong> cs.CL</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: Using large language models to control software)</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> While this paper does not specifically discuss controlling software or web browsers, it does address a significant problem hindering the adoption and utility of large language models in various scenarios (hallucinations). Being able to detect and potentially mitigate these hallucinations could be vital in developing more reliable and practical large language model agents.</p>
         </div>
-        </div><h2>Causality</h2><div class='papers-container'>
+        </div><h2 onclick="toggleSection('section_time-series')">Time-series</h2><div id='section_time-series' class='papers-container'>
         <div class="paper-box">
-            <h3>Extracting the Multiscale Causal Backbone of Brain Dynamics</h3>
+            <h3><a href="https://arxiv.org/abs/2403.13176" target="_blank">Castor: Competing shapelets for fast and accurate time series classification</a></h3>
+            <a href="https://arxiv.org/html/2403.13176v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.13176v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Isak Samsten, Zed Lee</p>
+            <p><strong>Summary:</strong> arXiv:2403.13176v1 Announce Type: new 
+Abstract: Shapelets are discriminative subsequences, originally embedded in shapelet-based decision trees but have since been extended to shapelet-based transformations. We propose Castor, a simple, efficient, and accurate time series classification algorithm that utilizes shapelets to transform time series. The transformation organizes shapelets into groups with varying dilation and allows the shapelets to compete over the time context to construct a diverse feature representation. By organizing the shapelets into groups, we enable the transformation to transition between levels of competition, resulting in methods that more closely resemble distance-based transformations or dictionary-based transformations. We demonstrate, through an extensive empirical investigation, that Castor yields transformations that result in classifiers that are significantly more accurate than several state-of-the-art classifiers. In an extensive ablation study, we examine the effect of choosing hyperparameters and suggest accurate and efficient default values.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13176">https://arxiv.org/abs/2403.13176</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> While the paper does not introduce a new deep learning model for time series, it does propose a new model, Castor, for time series classification. It could therefore be of interest if you're looking to explore various models in the time series domain.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2403.13724" target="_blank">Probabilistic Forecasting with Stochastic Interpolants and F\"ollmer Processes</a></h3>
+            <a href="https://arxiv.org/html/2403.13724v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.13724v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Yifan Chen, Mark Goldstein, Mengjian Hua, Michael S. Albergo, Nicholas M. Boffi, Eric Vanden-Eijnden</p>
+            <p><strong>Summary:</strong> arXiv:2403.13724v1 Announce Type: new 
+Abstract: We propose a framework for probabilistic forecasting of dynamical systems based on generative modeling. Given observations of the system state over time, we formulate the forecasting problem as sampling from the conditional distribution of the future system state given its current state. To this end, we leverage the framework of stochastic interpolants, which facilitates the construction of a generative model between an arbitrary base distribution and the target. We design a fictitious, non-physical stochastic dynamics that takes as initial condition the current system state and produces as output a sample from the target conditional distribution in finite time and without bias. This process therefore maps a point mass centered at the current state onto a probabilistic ensemble of forecasts. We prove that the drift coefficient entering the stochastic differential equation (SDE) achieving this task is non-singular, and that it can be learned efficiently by square loss regression over the time-series data. We show that the drift and the diffusion coefficients of this SDE can be adjusted after training, and that a specific choice that minimizes the impact of the estimation error gives a F\"ollmer process. We highlight the utility of our approach on several complex, high-dimensional forecasting problems, including stochastically forced Navier-Stokes and video prediction on the KTH and CLEVRER datasets.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.13724">https://arxiv.org/abs/2403.13724</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper proposes a new framework for probabilistic forecasting of dynamical systems, which is closely related to your interest in 'new deep learning methods for time series'. However, as it is not explicitly stated to be a deep learning method, the score is 4 instead of 5.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2306.07292" target="_blank">$GRU^{spa}$: Gated Recurrent Unit with Spatial Attention for Spatio-Temporal Disaggregation</a></h3>
+            <a href="https://arxiv.org/html/2306.07292v3/extracted/5482367/visualizations/geo-boundaries.png" target="_blank"><img src="https://arxiv.org/html/2306.07292v3/extracted/5482367/visualizations/geo-boundaries.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Bin Han, Bill Howe</p>
+            <p><strong>Summary:</strong> arXiv:2306.07292v3 Announce Type: replace 
+Abstract: Open data is frequently released spatially aggregated, usually to comply with privacy policies. But coarse, heterogeneous aggregations complicate learning and integration for downstream AI/ML systems. In this work, we consider models to disaggregate spatio-temporal data from a low-resolution, irregular partition (e.g., census tract) to a high-resolution, irregular partition (e.g., city block). We propose a model, Gated Recurrent Unit with Spatial Attention ($GRU^{spa}$), where spatial attention layers are integrated into the original Gated Recurrent Unit (GRU) model. The spatial attention layers capture spatial interactions among regions, while the gated recurrent module captures the temporal dependencies. Additionally, we utilize containment relationships between different geographic levels (e.g., when a given city block is wholly contained in a given census tract) to constrain the spatial attention layers. For situations where limited historical training data is available, we study transfer learning scenarios and show that a model pre-trained on one city variable can be fine-tuned for another city variable using only a few hundred samples. Evaluating these techniques on two mobility datasets, we find that $GRU^{spa}$ provides a significant improvement over other neural models as well as typical heuristic methods, allowing us to synthesize realistic point data over small regions useful for training downstream models.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2306.07292">https://arxiv.org/abs/2306.07292</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> The paper is introducing a new deep learning model, Gated Recurrent Unit with Spatial Attention ($GRU^{spa}$), which captures spatio-temporal dependencies. It's relevant to your interest in new methods for time series forecasting, however, it might not be directly related to some of your subtopics like transformer-like models for time series or multimodal deep learning models for time series.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2402.18546" target="_blank">Generalizability Under Sensor Failure: Tokenization + Transformers Enable More Robust Latent Spaces</a></h3>
+            <a href="https://arxiv.org/html/2402.18546v3/extracted/5482522/figures/fig1_withTitle.png" target="_blank"><img src="https://arxiv.org/html/2402.18546v3/extracted/5482522/figures/fig1_withTitle.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Geeling Chau, Yujin An, Ahamed Raffey Iqbal, Soon-Jo Chung, Yisong Yue, Sabera Talukder</p>
+            <p><strong>Summary:</strong> arXiv:2402.18546v3 Announce Type: replace 
+Abstract: A major goal in neuroscience is to discover neural data representations that generalize. This goal is challenged by variability along recording sessions (e.g. environment), subjects (e.g. varying neural structures), and sensors (e.g. sensor noise), among others. Recent work has begun to address generalization across sessions and subjects, but few study robustness to sensor failure which is highly prevalent in neuroscience experiments. In order to address these generalizability dimensions we first collect our own electroencephalography dataset with numerous sessions, subjects, and sensors, then study two time series models: EEGNet (Lawhern et al., 2018) and TOTEM (Talukder et al., 2024). EEGNet is a widely used convolutional neural network, while TOTEM is a discrete time series tokenizer and transformer model. We find that TOTEM outperforms or matches EEGNet across all generalizability cases. Finally through analysis of TOTEM's latent codebook we observe that tokenization enables generalization.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.18546">https://arxiv.org/abs/2402.18546</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper could be of interest as it investigates tokenization and transformer models (TOTEM) for time series data in the field of neuroscience. While not specifically about forecasting, it does propose new methods of handling time series data, which may have implications for forecasting models.</p>
+        </div>
+        </div><h2 onclick="toggleSection('section_causality')">Causality</h2><div id='section_causality' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2311.00118" target="_blank">Extracting the Multiscale Causal Backbone of Brain Dynamics</a></h3>
+            <a href="https://arxiv.org/html/2311.00118v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2311.00118v2/x1.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Gabriele D'Acunto, Francesco Bonchi, Gianmarco De Francisci Morales, Giovanni Petri</p>
             <p><strong>Summary:</strong> arXiv:2311.00118v2 Announce Type: replace 
 Abstract: The bulk of the research effort on brain connectivity revolves around statistical associations among brain regions, which do not directly relate to the causal mechanisms governing brain dynamics. Here we propose the multiscale causal backbone (MCB) of brain dynamics, shared by a set of individuals across multiple temporal scales, and devise a principled methodology to extract it.
   Our approach leverages recent advances in multiscale causal structure learning and optimizes the trade-off between the model fit and its complexity. Empirical assessment on synthetic data shows the superiority of our methodology over a baseline based on canonical functional connectivity networks. When applied to resting-state fMRI data, we find sparse MCBs for both the left and right brain hemispheres. Thanks to its multiscale nature, our approach shows that at low-frequency bands, causal dynamics are driven by brain regions associated with high-level cognitive functions; at higher frequencies instead, nodes related to sensory processing play a crucial role. Finally, our analysis of individual multiscale causal structures confirms the existence of a causal fingerprint of brain connectivity, thus supporting the existing extensive research in brain connectivity fingerprinting from a causal perspective.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2311.00118" target="_blank">https://arxiv.org/abs/2311.00118</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2311.00118">https://arxiv.org/abs/2311.00118</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> causality (topic: Causal representation learning)</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is relevant as it provides a method for extracting and understanding the causal relationships governing brain dynamics. Though it does not specifically focus on causal representation learning or discovery within the context of machine learning, it does touch upon the concept of causal structure learning which is crucial to your interests.</p>
         </div>
         
         <div class="paper-box">
-            <h3>Few-Shot Causal Representation Learning for Out-of-Distribution Generalization on Heterogeneous Graphs</h3>
+            <h3><a href="https://arxiv.org/abs/2401.03597" target="_blank">Few-Shot Causal Representation Learning for Out-of-Distribution Generalization on Heterogeneous Graphs</a></h3>
+            <a href="https://arxiv.org/html/2401.03597v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2401.03597v2/x1.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Pengfei Ding, Yan Wang, Guanfeng Liu, Nan Wang</p>
             <p><strong>Summary:</strong> arXiv:2401.03597v2 Announce Type: replace 
 Abstract: Heterogeneous graph few-shot learning (HGFL) has been developed to address the label sparsity issue in heterogeneous graphs (HGs), which consist of various types of nodes and edges. The core concept of HGFL is to extract knowledge from rich-labeled classes in a source HG, transfer this knowledge to a target HG to facilitate learning new classes with few-labeled training data, and finally make predictions on unlabeled testing data. Existing methods typically assume that the source HG, training data, and testing data all share the same distribution. However, in practice, distribution shifts among these three types of data are inevitable due to two reasons: (1) the limited availability of the source HG that matches the target HG distribution, and (2) the unpredictable data generation mechanism of the target HG. Such distribution shifts result in ineffective knowledge transfer and poor learning performance in existing methods, thereby leading to a novel problem of out-of-distribution (OOD) generalization in HGFL. To address this challenging problem, we propose a novel Causal OOD Heterogeneous graph Few-shot learning model, namely COHF. In COHF, we first characterize distribution shifts in HGs with a structural causal model, establishing an invariance principle for OOD generalization in HGFL. Then, following this invariance principle, we propose a new variational autoencoder-based heterogeneous graph neural network to mitigate the impact of distribution shifts. Finally, by integrating this network with a novel meta-learning framework, COHF effectively transfers knowledge to the target HG to predict new classes with few-labeled data. Extensive experiments on seven real-world datasets have demonstrated the superior performance of COHF over the state-of-the-art methods.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2401.03597" target="_blank">https://arxiv.org/abs/2401.03597</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2401.03597">https://arxiv.org/abs/2401.03597</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> causality (topic: Causal representation learning)</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is closely related to your interest in 'Causality and machine learning'. It mainly introduces a novel model called COHF (Causal OOD Heterogeneous graph Few-shot learning). This model leverages the concept of causal representation learning and addresses a new problem of out-of-distribution (OOD) generalization in HGFL (Heterogeneous graph few-shot learning). It may not directly cover 'Using large language models in causal discovery', but it provides substantial knowledge about 'Causal Representation Learning'.</p>
         </div>
         
         <div class="paper-box">
-            <h3>Mitigating Reversal Curse in Large Language Models via Semantic-aware Permutation Training</h3>
+            <h3><a href="https://arxiv.org/abs/2403.00758" target="_blank">Mitigating Reversal Curse in Large Language Models via Semantic-aware Permutation Training</a></h3>
+            <a href="https://arxiv.org/html/2403.00758v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.00758v3/x1.png" class="paper-figure" alt="Main Figure"></a>
             <p><strong>Authors:</strong> Qingyan Guo, Rui Wang, Junliang Guo, Xu Tan, Jiang Bian, Yujiu Yang</p>
             <p><strong>Summary:</strong> arXiv:2403.00758v3 Announce Type: replace-cross 
 Abstract: While large language models (LLMs) have achieved impressive performance across diverse tasks, recent studies showcase that causal LLMs suffer from the "reversal curse". It is a typical example that the model knows "A's father is B", but is unable to reason "B's child is A". This limitation poses a challenge to the advancement of artificial general intelligence (AGI), as it suggests a gap in the models' ability to comprehend and apply bidirectional reasoning. In this paper, we first conduct substantial evaluation and identify that the root cause of the reversal curse lies in the different word order between the training and inference stage, namely, the poor ability of causal language models to predict antecedent words within the training data. Accordingly, permutation on the training data is considered as a potential solution, since this can make the model predict antecedent words or tokens. However, previous permutation methods may disrupt complete phrases or entities, thereby posing challenges for the model to comprehend and learn from training data. To address this issue, we propose Semantic-aware Permutation Training (SPT), which addresses this issue by segmenting the training sentences into semantic units (i.e., entities or phrases) with an assistant language model and permuting these units before feeding into the model. Extensive experiments demonstrate that SPT effectively mitigates the reversal curse since the performance on reversed questions approximates that on the forward ones, and significantly advances the performance of existing works.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.00758" target="_blank">https://arxiv.org/abs/2403.00758</a></p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.00758">https://arxiv.org/abs/2403.00758</a></p>
             <p><strong>Category:</strong> cs.CL</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> causality (topic: Causal representation learning)</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> The paper is relevant to your interest in causality and machine learning, specifically regarding large language models. It tackles the problem of 'reversal curse' in large language models and proposes a new method, Semantic-aware Permutation Training (SPT), that improves the model's ability to apply bidirectional reasoning, which is a critical aspect of causal representation learning and discovery.</p>
         </div>
-        </div><div class='timestamp'>Report generated on March 21, 2024 at 00:17:03</div></body></html>
+        </div><div class='timestamp'>Report generated on March 21, 2024 at 18:18:19</div></body></html>

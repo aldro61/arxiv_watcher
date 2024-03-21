@@ -24,18 +24,51 @@
         </head>
         <body>
         <h1>Report for March 20, 2024</h1>
-        <h2>Time-series</h2><div class='papers-container'>
+        <h2>Causality</h2><div class='papers-container'>
         <div class="paper-box">
-            <h3>Temporally-Consistent Koopman Autoencoders for Forecasting Dynamical Systems</h3>
-            <p><strong>Authors:</strong> Indranil Nayak, Debdipta Goswami, Mrinal Kumar, Fernando Teixeira</p>
-            <p><strong>Summary:</strong> arXiv:2403.12335v1 Announce Type: new 
-Abstract: Absence of sufficiently high-quality data often poses a key challenge in data-driven modeling of high-dimensional spatio-temporal dynamical systems. Koopman Autoencoders (KAEs) harness the expressivity of deep neural networks (DNNs), the dimension reduction capabilities of autoencoders, and the spectral properties of the Koopman operator to learn a reduced-order feature space with simpler, linear dynamics. However, the effectiveness of KAEs is hindered by limited and noisy training datasets, leading to poor generalizability. To address this, we introduce the Temporally-Consistent Koopman Autoencoder (tcKAE), designed to generate accurate long-term predictions even with constrained and noisy training data. This is achieved through a consistency regularization term that enforces prediction coherence across different time steps, thus enhancing the robustness and generalizability of tcKAE over existing models. We provide analytical justification for this approach based on Koopman spectral theory and empirically demonstrate tcKAE's superior performance over state-of-the-art KAE models across a variety of test cases, including simple pendulum oscillations, kinetic plasmas, fluid flows, and sea surface temperature data.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12335" target="_blank">https://arxiv.org/abs/2403.12335</a></p>
+            <h3>GCAM: Gaussian and causal-attention model of food fine-grained recognition</h3>
+            <p><strong>Authors:</strong> Guohang Zhuang, Yue Hu, Tianxing Yan, JiaZhan Gao</p>
+            <p><strong>Summary:</strong> arXiv:2403.12109v1 Announce Type: new 
+Abstract: Currently, most food recognition relies on deep learning for category classification. However, these approaches struggle to effectively distinguish between visually similar food samples, highlighting the pressing need to address fine-grained issues in food recognition. To mitigate these challenges, we propose the adoption of a Gaussian and causal-attention model for fine-grained object recognition.In particular, we train to obtain Gaussian features over target regions, followed by the extraction of fine-grained features from the objects, thereby enhancing the feature mapping capabilities of the target regions. To counteract data drift resulting from uneven data distributions, we employ a counterfactual reasoning approach. By using counterfactual interventions, we analyze the impact of the learned image attention mechanism on network predictions, enabling the network to acquire more useful attention weights for fine-grained image recognition. Finally, we design a learnable loss strategy to balance training stability across various modules, ultimately improving the accuracy of the final target recognition. We validate our approach on four relevant datasets, demonstrating its excellent performance across these four datasets.We experimentally show that GCAM surpasses state-of-the-art methods on the ETH-FOOD101, UECFOOD256, and Vireo-FOOD172 datasets. Furthermore, our approach also achieves state-of-the-art performance on the CUB-200 dataset.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12109" target="_blank">https://arxiv.org/abs/2403.12109</a></p>
             <p><strong>Category:</strong> cs.LG</p>
-            <p><strong>Interest score:</strong> 5</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Deep learning models for time series)</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality (topic: Causal representation learning)</p>
         </div>
         
+        <div class="paper-box">
+            <h3>Conformal Monte Carlo Meta-learners for Predictive Inference of Individual Treatment Effects</h3>
+            <p><strong>Authors:</strong> Jef Jonkers, Jarne Verhaeghe, Glenn Van Wallendael, Luc Duchateau, Sofie Van Hoecke</p>
+            <p><strong>Summary:</strong> arXiv:2402.04906v2 Announce Type: replace 
+Abstract: Knowledge of the effect of interventions, called the treatment effect, is paramount for decision-making. Approaches to estimating this treatment effect, e.g. by using Conditional Average Treatment Effect (CATE) estimators, often only provide a point estimate of this treatment effect, while additional uncertainty quantification is frequently desired instead. Therefore, we present a novel method, the Conformal Monte Carlo (CMC) meta-learners, leveraging conformal predictive systems, Monte Carlo sampling, and CATE meta-learners, to instead produce a predictive distribution usable in individualized decision-making. Furthermore, we show how specific assumptions on the noise distribution of the outcome heavily affect these uncertainty predictions. Nonetheless, the CMC framework shows strong experimental coverage while retaining small interval widths to provide estimates of the true individual treatment effect.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.04906" target="_blank">https://arxiv.org/abs/2402.04906</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality (topic: Causal discovery)</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3>Unveiling Latent Causal Rules: A Temporal Point Process Approach for Abnormal Event Explanation</h3>
+            <p><strong>Authors:</strong> Yiling Kuang, Chao Yang, Yang Yang, Shuang Li</p>
+            <p><strong>Summary:</strong> arXiv:2402.05946v2 Announce Type: replace 
+Abstract: In high-stakes systems such as healthcare, it is critical to understand the causal reasons behind unusual events, such as sudden changes in patient's health. Unveiling the causal reasons helps with quick diagnoses and precise treatment planning. In this paper, we propose an automated method for uncovering "if-then" logic rules to explain observational events. We introduce temporal point processes to model the events of interest, and discover the set of latent rules to explain the occurrence of events. To achieve this, we employ an Expectation-Maximization (EM) algorithm. In the E-step, we calculate the likelihood of each event being explained by each discovered rule. In the M-step, we update both the rule set and model parameters to enhance the likelihood function's lower bound. Notably, we optimize the rule set in a differential manner. Our approach demonstrates accurate performance in both discovering rules and identifying root causes. We showcase its promising results using synthetic and real healthcare datasets.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.05946" target="_blank">https://arxiv.org/abs/2402.05946</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality (topic: Causal discovery)</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3>Toward a Theory of Causation for Interpreting Neural Code Models</h3>
+            <p><strong>Authors:</strong> David N. Palacio, Nathan Cooper, Alvaro Rodriguez, Kevin Moran, Denys Poshyvanyk</p>
+            <p><strong>Summary:</strong> arXiv:2302.03788v2 Announce Type: replace-cross 
+Abstract: Neural Language Models of Code, or Neural Code Models (NCMs), are rapidly progressing from research prototypes to commercial developer tools. As such, understanding the capabilities and limitations of such models is becoming critical. However, the abilities of these models are typically measured using automated metrics that often only reveal a portion of their real-world performance. While, in general, the performance of NCMs appears promising, currently much is unknown about how such models arrive at decisions. To this end, this paper introduces $do_{code}$, a post hoc interpretability method specific to NCMs that is capable of explaining model predictions. $do_{code}$ is based upon causal inference to enable programming language-oriented explanations. While the theoretical underpinnings of $do_{code}$ are extensible to exploring different model properties, we provide a concrete instantiation that aims to mitigate the impact of spurious correlations by grounding explanations of model behavior in properties of programming languages. To demonstrate the practical benefit of $do_{code}$, we illustrate the insights that our framework can provide by performing a case study on two popular deep learning architectures and ten NCMs. The results of this case study illustrate that our studied NCMs are sensitive to changes in code syntax. All our NCMs, except for the BERT-like model, statistically learn to predict tokens related to blocks of code (\eg brackets, parenthesis, semicolon) with less confounding bias as compared to other programming language constructs. These insights demonstrate the potential of $do_{code}$ as a useful method to detect and facilitate the elimination of confounding bias in NCMs.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2302.03788" target="_blank">https://arxiv.org/abs/2302.03788</a></p>
+            <p><strong>Category:</strong> cs.SE</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality (topic: Causal representation learning)</p>
+        </div>
+        </div><h2>Time-series</h2><div class='papers-container'>
         <div class="paper-box">
             <h3>Advancing Time Series Classification with Multimodal Language Modeling</h3>
             <p><strong>Authors:</strong> Mingyue Cheng, Yiheng Chen, Qi Liu, Zhiding Liu, Yucong Luo</p>
@@ -44,18 +77,7 @@ Abstract: For the advancements of time series classification, scrutinizing previ
             <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12371" target="_blank">https://arxiv.org/abs/2403.12371</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 5</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Multimodal methods for time series)</p>
-        </div>
-        
-        <div class="paper-box">
-            <h3>Learning Transferable Time Series Classifier with Cross-Domain Pre-training from Language Model</h3>
-            <p><strong>Authors:</strong> Mingyue Cheng, Xiaoyu Tao, Qi Liu, Hao Zhang, Yiheng Chen, Chenyi Lei</p>
-            <p><strong>Summary:</strong> arXiv:2403.12372v1 Announce Type: new 
-Abstract: Advancements in self-supervised pre-training (SSL) have significantly advanced the field of learning transferable time series representations, which can be very useful in enhancing the downstream task. Despite being effective, most existing works struggle to achieve cross-domain SSL pre-training, missing valuable opportunities to integrate patterns and features from different domains. The main challenge lies in the significant differences in the characteristics of time-series data across different domains, such as variations in the number of channels and temporal resolution scales. To address this challenge, we propose CrossTimeNet, a novel cross-domain SSL learning framework to learn transferable knowledge from various domains to largely benefit the target downstream task. One of the key characteristics of CrossTimeNet is the newly designed time series tokenization module, which could effectively convert the raw time series into a sequence of discrete tokens based on a reconstruction optimization process. Besides, we highlight that predicting a high proportion of corrupted tokens can be very helpful for extracting informative patterns across different domains during SSL pre-training, which has been largely overlooked in past years. Furthermore, unlike previous works, our work treats the pre-training language model (PLM) as the initialization of the encoder network, investigating the feasibility of transferring the knowledge learned by the PLM to the time series area. Through these efforts, the path to cross-domain pre-training of a generic time series model can be effectively paved. We conduct extensive experiments in a real-world scenario across various time series classification domains. The experimental results clearly confirm CrossTimeNet's superior performance.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12372" target="_blank">https://arxiv.org/abs/2403.12372</a></p>
-            <p><strong>Category:</strong> cs.LG</p>
-            <p><strong>Interest score:</strong> 5</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Deep learning models for time series)</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New multimodal deep learning models for time series)</p>
         </div>
         
         <div class="paper-box">
@@ -66,19 +88,7 @@ Abstract: In recent years, Contrastive Learning (CL) has become a predominant re
             <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12641" target="_blank">https://arxiv.org/abs/2403.12641</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 5</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Deep learning models for time series)</p>
-        </div>
-        
-        <div class="paper-box">
-            <h3>Learning Multi-Pattern Normalities in the Frequency Domain for Efficient Time Series Anomaly Detection</h3>
-            <p><strong>Authors:</strong> Feiyi Chen, Yingying zhang, Zhen Qin, Lunting Fan, Renhe Jiang, Yuxuan Liang, Qingsong Wen, Shuiguang Deng</p>
-            <p><strong>Summary:</strong> arXiv:2311.16191v2 Announce Type: replace 
-Abstract: Anomaly detection significantly enhances the robustness of cloud systems. While neural network-based methods have recently demonstrated strong advantages, they encounter practical challenges in cloud environments: the contradiction between the impracticality of maintaining a unique model for each service and the limited ability to deal with diverse normal patterns by a unified model, as well as issues with handling heavy traffic in real time and short-term anomaly detection sensitivity.
-  Thus, we propose MACE, a multi-normal-pattern accommodated and efficient anomaly detection method in the frequency domain for time series anomaly detection. There are three novel characteristics of it: (i) a pattern extraction mechanism excelling at handling diverse normal patterns with a unified model, which enables the model to identify anomalies by examining the correlation between the data sample and its service normal pattern, instead of solely focusing on the data sample itself; (ii) a dualistic convolution mechanism that amplifies short-term anomalies in the time domain and hinders the reconstruction of anomalies in the frequency domain, which enlarges the reconstruction error disparity between anomaly and normality and facilitates anomaly detection; (iii) leveraging the sparsity and parallelism of frequency domain to enhance model efficiency. We theoretically and experimentally prove that using a strategically selected subset of Fourier bases can not only reduce computational overhead but is also profitable to distinguish anomalies, compared to using the complete spectrum. Moreover, extensive experiments demonstrate MACE's effectiveness in handling diverse normal patterns with a unified model and it achieves state-of-the-art performance with high efficiency.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2311.16191" target="_blank">https://arxiv.org/abs/2311.16191</a></p>
-            <p><strong>Category:</strong> cs.LG</p>
-            <p><strong>Interest score:</strong> 5</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Deep learning models for time series)</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
         </div>
         
         <div class="paper-box">
@@ -89,7 +99,29 @@ Abstract: Large-scale hydrodynamic models generally rely on fixed-resolution spa
             <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12226" target="_blank">https://arxiv.org/abs/2403.12226</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Deep learning models for time series)</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3>Temporally-Consistent Koopman Autoencoders for Forecasting Dynamical Systems</h3>
+            <p><strong>Authors:</strong> Indranil Nayak, Debdipta Goswami, Mrinal Kumar, Fernando Teixeira</p>
+            <p><strong>Summary:</strong> arXiv:2403.12335v1 Announce Type: new 
+Abstract: Absence of sufficiently high-quality data often poses a key challenge in data-driven modeling of high-dimensional spatio-temporal dynamical systems. Koopman Autoencoders (KAEs) harness the expressivity of deep neural networks (DNNs), the dimension reduction capabilities of autoencoders, and the spectral properties of the Koopman operator to learn a reduced-order feature space with simpler, linear dynamics. However, the effectiveness of KAEs is hindered by limited and noisy training datasets, leading to poor generalizability. To address this, we introduce the Temporally-Consistent Koopman Autoencoder (tcKAE), designed to generate accurate long-term predictions even with constrained and noisy training data. This is achieved through a consistency regularization term that enforces prediction coherence across different time steps, thus enhancing the robustness and generalizability of tcKAE over existing models. We provide analytical justification for this approach based on Koopman spectral theory and empirically demonstrate tcKAE's superior performance over state-of-the-art KAE models across a variety of test cases, including simple pendulum oscillations, kinetic plasmas, fluid flows, and sea surface temperature data.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12335" target="_blank">https://arxiv.org/abs/2403.12335</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3>Learning Transferable Time Series Classifier with Cross-Domain Pre-training from Language Model</h3>
+            <p><strong>Authors:</strong> Mingyue Cheng, Xiaoyu Tao, Qi Liu, Hao Zhang, Yiheng Chen, Chenyi Lei</p>
+            <p><strong>Summary:</strong> arXiv:2403.12372v1 Announce Type: new 
+Abstract: Advancements in self-supervised pre-training (SSL) have significantly advanced the field of learning transferable time series representations, which can be very useful in enhancing the downstream task. Despite being effective, most existing works struggle to achieve cross-domain SSL pre-training, missing valuable opportunities to integrate patterns and features from different domains. The main challenge lies in the significant differences in the characteristics of time-series data across different domains, such as variations in the number of channels and temporal resolution scales. To address this challenge, we propose CrossTimeNet, a novel cross-domain SSL learning framework to learn transferable knowledge from various domains to largely benefit the target downstream task. One of the key characteristics of CrossTimeNet is the newly designed time series tokenization module, which could effectively convert the raw time series into a sequence of discrete tokens based on a reconstruction optimization process. Besides, we highlight that predicting a high proportion of corrupted tokens can be very helpful for extracting informative patterns across different domains during SSL pre-training, which has been largely overlooked in past years. Furthermore, unlike previous works, our work treats the pre-training language model (PLM) as the initialization of the encoder network, investigating the feasibility of transferring the knowledge learned by the PLM to the time series area. Through these efforts, the path to cross-domain pre-training of a generic time series model can be effectively paved. We conduct extensive experiments in a real-world scenario across various time series classification domains. The experimental results clearly confirm CrossTimeNet's superior performance.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12372" target="_blank">https://arxiv.org/abs/2403.12372</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
         </div>
         
         <div class="paper-box">
@@ -100,18 +132,30 @@ Abstract: Spacecraft operations are highly critical, demanding impeccable reliab
             <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12864" target="_blank">https://arxiv.org/abs/2403.12864</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Deep learning models for time series)</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
         </div>
         
         <div class="paper-box">
-            <h3>Copula Conformal Prediction for Multi-step Time Series Forecasting</h3>
-            <p><strong>Authors:</strong> Sophia Sun, Rose Yu</p>
-            <p><strong>Summary:</strong> arXiv:2212.03281v4 Announce Type: replace 
-Abstract: Accurate uncertainty measurement is a key step to building robust and reliable machine learning systems. Conformal prediction is a distribution-free uncertainty quantification algorithm popular for its ease of implementation, statistical coverage guarantees, and versatility for underlying forecasters. However, existing conformal prediction algorithms for time series are limited to single-step prediction without considering the temporal dependency. In this paper, we propose a Copula Conformal Prediction algorithm for multivariate, multi-step Time Series forecasting, CopulaCPTS. We prove that CopulaCPTS has finite sample validity guarantee. On several synthetic and real-world multivariate time series datasets, we show that CopulaCPTS produces more calibrated and sharp confidence intervals for multi-step prediction tasks than existing techniques.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2212.03281" target="_blank">https://arxiv.org/abs/2212.03281</a></p>
+            <h3>Behave-XAI: Deep Explainable Learning of Behavioral Representational Data</h3>
+            <p><strong>Authors:</strong> Rossi Kamal, Zuzana Kubincova</p>
+            <p><strong>Summary:</strong> arXiv:2301.00016v2 Announce Type: replace 
+Abstract: According to the latest trend of artificial intelligence, AI-systems needs to clarify regarding general,specific decisions,services provided by it. Only consumer is satisfied, with explanation , for example, why any classification result is the outcome of any given time. This actually motivates us using explainable or human understandable AI for a behavioral mining scenario, where users engagement on digital platform is determined from context, such as emotion, activity, weather, etc. However, the output of AI-system is not always systematically correct, and often systematically correct, but apparently not-perfect and thereby creating confusions, such as, why the decision is given? What is the reason underneath? In this context, we first formulate the behavioral mining problem in deep convolutional neural network architecture. Eventually, we apply a recursive neural network due to the presence of time-series data from users physiological and environmental sensor-readings. Once the model is developed, explanations are presented with the advent of XAI models in front of users. This critical step involves extensive trial with users preference on explanations over conventional AI, judgement of credibility of explanation.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2301.00016" target="_blank">https://arxiv.org/abs/2301.00016</a></p>
             <p><strong>Category:</strong> cs.LG</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Deep learning models for time series)</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3>Learning Multi-Pattern Normalities in the Frequency Domain for Efficient Time Series Anomaly Detection</h3>
+            <p><strong>Authors:</strong> Feiyi Chen, Yingying zhang, Zhen Qin, Lunting Fan, Renhe Jiang, Yuxuan Liang, Qingsong Wen, Shuiguang Deng</p>
+            <p><strong>Summary:</strong> arXiv:2311.16191v2 Announce Type: replace 
+Abstract: Anomaly detection significantly enhances the robustness of cloud systems. While neural network-based methods have recently demonstrated strong advantages, they encounter practical challenges in cloud environments: the contradiction between the impracticality of maintaining a unique model for each service and the limited ability to deal with diverse normal patterns by a unified model, as well as issues with handling heavy traffic in real time and short-term anomaly detection sensitivity.
+  Thus, we propose MACE, a multi-normal-pattern accommodated and efficient anomaly detection method in the frequency domain for time series anomaly detection. There are three novel characteristics of it: (i) a pattern extraction mechanism excelling at handling diverse normal patterns with a unified model, which enables the model to identify anomalies by examining the correlation between the data sample and its service normal pattern, instead of solely focusing on the data sample itself; (ii) a dualistic convolution mechanism that amplifies short-term anomalies in the time domain and hinders the reconstruction of anomalies in the frequency domain, which enlarges the reconstruction error disparity between anomaly and normality and facilitates anomaly detection; (iii) leveraging the sparsity and parallelism of frequency domain to enhance model efficiency. We theoretically and experimentally prove that using a strategically selected subset of Fourier bases can not only reduce computational overhead but is also profitable to distinguish anomalies, compared to using the complete spectrum. Moreover, extensive experiments demonstrate MACE's effectiveness in handling diverse normal patterns with a unified model and it achieves state-of-the-art performance with high efficiency.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2311.16191" target="_blank">https://arxiv.org/abs/2311.16191</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
         </div>
         
         <div class="paper-box">
@@ -122,20 +166,9 @@ Abstract: Electrocardiograms (ECG) are widely employed as a diagnostic tool for 
             <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.09450" target="_blank">https://arxiv.org/abs/2402.09450</a></p>
             <p><strong>Category:</strong> eess.SP</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> time-series (topic: Deep learning models for time series)</p>
+            <p><strong>Interest tag:</strong> time-series (topic: New deep learning methods for time series)</p>
         </div>
         </div><h2>Llm-agents</h2><div class='papers-container'>
-        <div class="paper-box">
-            <h3>Knowledge Graph Large Language Model (KG-LLM) for Link Prediction</h3>
-            <p><strong>Authors:</strong> Dong Shu, Tianle Chen, Mingyu Jin, Yiting Zhang, Chong Zhang, Mengnan Du, Yongfeng Zhang</p>
-            <p><strong>Summary:</strong> arXiv:2403.07311v4 Announce Type: replace-cross 
-Abstract: The task of predicting multiple links within knowledge graphs (KGs) stands as a challenge in the field of knowledge graph analysis, a challenge increasingly resolvable due to advancements in natural language processing (NLP) and KG embedding techniques. This paper introduces a novel methodology, the Knowledge Graph Large Language Model Framework (KG-LLM), which leverages pivotal NLP paradigms, including chain-of-thought (CoT) prompting and in-context learning (ICL), to enhance multi-hop link prediction in KGs. By converting the KG to a CoT prompt, our framework is designed to discern and learn the latent representations of entities and their interrelations. To show the efficacy of the KG-LLM Framework, we fine-tune three leading Large Language Models (LLMs) within this framework, employing both non-ICL and ICL tasks for a comprehensive evaluation. Further, we explore the framework's potential to provide LLMs with zero-shot capabilities for handling previously unseen prompts. Our experimental findings discover that integrating ICL and CoT not only augments the performance of our approach but also significantly boosts the models' generalization capacity, thereby ensuring more precise predictions in unfamiliar scenarios.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.07311" target="_blank">https://arxiv.org/abs/2403.07311</a></p>
-            <p><strong>Category:</strong> cs.CL</p>
-            <p><strong>Interest score:</strong> 5</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
-        </div>
-        
         <div class="paper-box">
             <h3>MELTing point: Mobile Evaluation of Language Transformers</h3>
             <p><strong>Authors:</strong> Stefanos Laskaridis, Kleomenis Kateveas, Lorenzo Minto, Hamed Haddadi</p>
@@ -160,11 +193,33 @@ Abstract: Cryptic crosswords are puzzles that rely not only on general knowledge
         </div>
         
         <div class="paper-box">
+            <h3>Fusing Domain-Specific Content from Large Language Models into Knowledge Graphs for Enhanced Zero Shot Object State Classification</h3>
+            <p><strong>Authors:</strong> Filippos Gouidis, Katerina Papantoniou, Konstantinos Papoutsakis Theodore Patkos, Antonis Argyros, Dimitris Plexousakis</p>
+            <p><strong>Summary:</strong> arXiv:2403.12151v1 Announce Type: cross 
+Abstract: Domain-specific knowledge can significantly contribute to addressing a wide variety of vision tasks. However, the generation of such knowledge entails considerable human labor and time costs. This study investigates the potential of Large Language Models (LLMs) in generating and providing domain-specific information through semantic embeddings. To achieve this, an LLM is integrated into a pipeline that utilizes Knowledge Graphs and pre-trained semantic vectors in the context of the Vision-based Zero-shot Object State Classification task. We thoroughly examine the behavior of the LLM through an extensive ablation study. Our findings reveal that the integration of LLM-based embeddings, in combination with general-purpose pre-trained embeddings, leads to substantial performance improvements. Drawing insights from this ablation study, we conduct a comparative analysis against competing models, thereby highlighting the state-of-the-art performance achieved by the proposed approach.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12151" target="_blank">https://arxiv.org/abs/2403.12151</a></p>
+            <p><strong>Category:</strong> cs.AI</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
+        </div>
+        
+        <div class="paper-box">
             <h3>Reference-based Metrics Disprove Themselves in Question Generation</h3>
             <p><strong>Authors:</strong> Bang Nguyen, Mengxia Yu, Yun Huang, Meng Jiang</p>
             <p><strong>Summary:</strong> arXiv:2403.12242v1 Announce Type: cross 
 Abstract: Reference-based metrics such as BLEU and BERTScore are widely used to evaluate question generation (QG). In this study, on QG benchmarks such as SQuAD and HotpotQA, we find that using human-written references cannot guarantee the effectiveness of the reference-based metrics. Most QG benchmarks have only one reference; we replicated the annotation process and collect another reference. A good metric was expected to grade a human-validated question no worse than generated questions. However, the results of reference-based metrics on our newly collected reference disproved the metrics themselves. We propose a reference-free metric consisted of multi-dimensional criteria such as naturalness, answerability, and complexity, utilizing large language models. These criteria are not constrained to the syntactic or semantic of a single reference question, and the metric does not require a diverse set of references. Experiments reveal that our metric accurately distinguishes between high-quality questions and flawed ones, and achieves state-of-the-art alignment with human judgment.</p>
             <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12242" target="_blank">https://arxiv.org/abs/2403.12242</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3>FinLlama: Financial Sentiment Classification for Algorithmic Trading Applications</h3>
+            <p><strong>Authors:</strong> Thanos Konstantinidis, Giorgos Iacovides, Mingxue Xu, Tony G. Constantinides, Danilo Mandic</p>
+            <p><strong>Summary:</strong> arXiv:2403.12285v1 Announce Type: cross 
+Abstract: There are multiple sources of financial news online which influence market movements and trader's decisions. This highlights the need for accurate sentiment analysis, in addition to having appropriate algorithmic trading techniques, to arrive at better informed trading decisions. Standard lexicon based sentiment approaches have demonstrated their power in aiding financial decisions. However, they are known to suffer from issues related to context sensitivity and word ordering. Large Language Models (LLMs) can also be used in this context, but they are not finance-specific and tend to require significant computational resources. To facilitate a finance specific LLM framework, we introduce a novel approach based on the Llama 2 7B foundational model, in order to benefit from its generative nature and comprehensive language manipulation. This is achieved by fine-tuning the Llama2 7B model on a small portion of supervised financial sentiment analysis data, so as to jointly handle the complexities of financial lexicon and context, and further equipping it with a neural network based decision mechanism. Such a generator-classifier scheme, referred to as FinLlama, is trained not only to classify the sentiment valence but also quantify its strength, thus offering traders a nuanced insight into financial news articles. Complementing this, the implementation of parameter-efficient fine-tuning through LoRA optimises trainable parameters, thus minimising computational and memory requirements, without sacrificing accuracy. Simulation results demonstrate the ability of the proposed FinLlama to provide a framework for enhanced portfolio management decisions and increased market returns. These results underpin the ability of FinLlama to construct high-return portfolios which exhibit enhanced resilience, even during volatile periods and unpredictable market events.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12285" target="_blank">https://arxiv.org/abs/2403.12285</a></p>
             <p><strong>Category:</strong> cs.CL</p>
             <p><strong>Interest score:</strong> 4</p>
             <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
@@ -177,17 +232,6 @@ Abstract: Reference-based metrics such as BLEU and BERTScore are widely used to 
 Abstract: Although social media platforms are a prominent arena for users to engage in interpersonal discussions and express opinions, the facade and anonymity offered by social media may allow users to spew hate speech and offensive content. Given the massive scale of such platforms, there arises a need to automatically identify and flag instances of hate speech. Although several hate speech detection methods exist, most of these black-box methods are not interpretable or explainable by design. To address the lack of interpretability, in this paper, we propose to use state-of-the-art Large Language Models (LLMs) to extract features in the form of rationales from the input text, to train a base hate speech classifier, thereby enabling faithful interpretability by design. Our framework effectively combines the textual understanding capabilities of LLMs and the discriminative power of state-of-the-art hate speech classifiers to make these classifiers faithfully interpretable. Our comprehensive evaluation on a variety of social media hate speech datasets demonstrate: (1) the goodness of the LLM-extracted rationales, and (2) the surprising retention of detector performance even after training to ensure interpretability.</p>
             <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12403" target="_blank">https://arxiv.org/abs/2403.12403</a></p>
             <p><strong>Category:</strong> cs.CL</p>
-            <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based web agents)</p>
-        </div>
-        
-        <div class="paper-box">
-            <h3>Securing Large Language Models: Threats, Vulnerabilities and Responsible Practices</h3>
-            <p><strong>Authors:</strong> Sara Abdali, Richard Anarfi, CJ Barberan, Jia He</p>
-            <p><strong>Summary:</strong> arXiv:2403.12503v1 Announce Type: cross 
-Abstract: Large language models (LLMs) have significantly transformed the landscape of Natural Language Processing (NLP). Their impact extends across a diverse spectrum of tasks, revolutionizing how we approach language understanding and generations. Nevertheless, alongside their remarkable utility, LLMs introduce critical security and risk considerations. These challenges warrant careful examination to ensure responsible deployment and safeguard against potential vulnerabilities. This research paper thoroughly investigates security and privacy concerns related to LLMs from five thematic perspectives: security and privacy concerns, vulnerabilities against adversarial attacks, potential harms caused by misuses of LLMs, mitigation strategies to address these challenges while identifying limitations of current strategies. Lastly, the paper recommends promising avenues for future research to enhance the security and risk management of LLMs.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.12503" target="_blank">https://arxiv.org/abs/2403.12503</a></p>
-            <p><strong>Category:</strong> cs.CR</p>
             <p><strong>Interest score:</strong> 4</p>
             <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
         </div>
@@ -217,45 +261,12 @@ Abstract: This paper focuses on task-agnostic prompt compression for better gene
         </div>
         
         <div class="paper-box">
-            <h3>EasyEdit: An Easy-to-use Knowledge Editing Framework for Large Language Models</h3>
-            <p><strong>Authors:</strong> Peng Wang, Ningyu Zhang, Bozhong Tian, Zekun Xi, Yunzhi Yao, Ziwen Xu, Mengru Wang, Shengyu Mao, Xiaohan Wang, Siyuan Cheng, Kangwei Liu, Yuansheng Ni, Guozhou Zheng, Huajun Chen</p>
-            <p><strong>Summary:</strong> arXiv:2308.07269v2 Announce Type: replace-cross 
-Abstract: Large Language Models (LLMs) usually suffer from knowledge cutoff or fallacy issues, which means they are unaware of unseen events or generate text with incorrect facts owing to outdated/noisy data. To this end, many knowledge editing approaches for LLMs have emerged -- aiming to subtly inject/edit updated knowledge or adjust undesired behavior while minimizing the impact on unrelated inputs. Nevertheless, due to significant differences among various knowledge editing methods and the variations in task setups, there is no standard implementation framework available for the community, which hinders practitioners from applying knowledge editing to applications. To address these issues, we propose EasyEdit, an easy-to-use knowledge editing framework for LLMs. It supports various cutting-edge knowledge editing approaches and can be readily applied to many well-known LLMs such as T5, GPT-J, LlaMA, etc. Empirically, we report the knowledge editing results on LlaMA-2 with EasyEdit, demonstrating that knowledge editing surpasses traditional fine-tuning in terms of reliability and generalization. We have released the source code on GitHub, along with Google Colab tutorials and comprehensive documentation for beginners to get started. Besides, we present an online system for real-time knowledge editing, and a demo video.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2308.07269" target="_blank">https://arxiv.org/abs/2308.07269</a></p>
-            <p><strong>Category:</strong> cs.CL</p>
-            <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
-        </div>
-        
-        <div class="paper-box">
-            <h3>PGA: Personalizing Grasping Agents with Single Human-Robot Interaction</h3>
-            <p><strong>Authors:</strong> Junghyun Kim, Gi-Cheon Kang, Jaein Kim, Seoyun Yang, Minjoon Jung, Byoung-Tak Zhang</p>
-            <p><strong>Summary:</strong> arXiv:2310.12547v2 Announce Type: replace-cross 
-Abstract: Language-Conditioned Robotic Grasping (LCRG) aims to develop robots that comprehend and grasp objects based on natural language instructions. While the ability to understand personal objects like my wallet facilitates more natural interaction with human users, current LCRG systems only allow generic language instructions, e.g., the black-colored wallet next to the laptop. To this end, we introduce a task scenario GraspMine alongside a novel dataset aimed at pinpointing and grasping personal objects given personal indicators via learning from a single human-robot interaction, rather than a large labeled dataset. Our proposed method, Personalized Grasping Agent (PGA), addresses GraspMine by leveraging the unlabeled image data of the user's environment, called Reminiscence. Specifically, PGA acquires personal object information by a user presenting a personal object with its associated indicator, followed by PGA inspecting the object by rotating it. Based on the acquired information, PGA pseudo-labels objects in the Reminiscence by our proposed label propagation algorithm. Harnessing the information acquired from the interactions and the pseudo-labeled objects in the Reminiscence, PGA adapts the object grounding model to grasp personal objects. This results in significant efficiency while previous LCRG systems rely on resource-intensive human annotations -- necessitating hundreds of labeled data to learn my wallet. Moreover, PGA outperforms baseline methods across all metrics and even shows comparable performance compared to the fully-supervised method, which learns from 9k annotated data samples. We further validate PGA's real-world applicability by employing a physical robot to execute GrsapMine. Code and data are publicly available at https://github.com/JHKim-snu/PGA.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2310.12547" target="_blank">https://arxiv.org/abs/2310.12547</a></p>
-            <p><strong>Category:</strong> cs.RO</p>
-            <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
-        </div>
-        
-        <div class="paper-box">
             <h3>DRESS: Instructing Large Vision-Language Models to Align and Interact with Humans via Natural Language Feedback</h3>
             <p><strong>Authors:</strong> Yangyi Chen, Karan Sikka, Michael Cogswell, Heng Ji, Ajay Divakaran</p>
             <p><strong>Summary:</strong> arXiv:2311.10081v2 Announce Type: replace-cross 
 Abstract: We present DRESS, a large vision language model (LVLM) that innovatively exploits Natural Language feedback (NLF) from Large Language Models to enhance its alignment and interactions by addressing two key limitations in the state-of-the-art LVLMs. First, prior LVLMs generally rely only on the instruction finetuning stage to enhance alignment with human preferences. Without incorporating extra feedback, they are still prone to generate unhelpful, hallucinated, or harmful responses. Second, while the visual instruction tuning data is generally structured in a multi-turn dialogue format, the connections and dependencies among consecutive conversational turns are weak. This reduces the capacity for effective multi-turn interactions. To tackle these, we propose a novel categorization of the NLF into two key types: critique and refinement. The critique NLF identifies the strengths and weaknesses of the responses and is used to align the LVLMs with human preferences. The refinement NLF offers concrete suggestions for improvement and is adopted to improve the interaction ability of the LVLMs-- which focuses on LVLMs' ability to refine responses by incorporating feedback in multi-turn interactions. To address the non-differentiable nature of NLF, we generalize conditional reinforcement learning for training. Our experimental results demonstrate that DRESS can generate more helpful (9.76%), honest (11.52%), and harmless (21.03%) responses, and more effectively learn from feedback during multi-turn interactions compared to SOTA LVMLs.</p>
             <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2311.10081" target="_blank">https://arxiv.org/abs/2311.10081</a></p>
             <p><strong>Category:</strong> cs.CV</p>
-            <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
-        </div>
-        
-        <div class="paper-box">
-            <h3>Attacks, Defenses and Evaluations for LLM Conversation Safety: A Survey</h3>
-            <p><strong>Authors:</strong> Zhichen Dong, Zhanhui Zhou, Chao Yang, Jing Shao, Yu Qiao</p>
-            <p><strong>Summary:</strong> arXiv:2402.09283v2 Announce Type: replace-cross 
-Abstract: Large Language Models (LLMs) are now commonplace in conversation applications. However, their risks of misuse for generating harmful responses have raised serious societal concerns and spurred recent research on LLM conversation safety. Therefore, in this survey, we provide a comprehensive overview of recent studies, covering three critical aspects of LLM conversation safety: attacks, defenses, and evaluations. Our goal is to provide a structured summary that enhances understanding of LLM conversation safety and encourages further investigation into this important subject. For easy reference, we have categorized all the studies mentioned in this survey according to our taxonomy, available at: https://github.com/niconi19/LLM-conversation-safety.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.09283" target="_blank">https://arxiv.org/abs/2402.09283</a></p>
-            <p><strong>Category:</strong> cs.CL</p>
             <p><strong>Interest score:</strong> 4</p>
             <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
         </div>
@@ -281,37 +292,48 @@ Abstract: Advanced life forms, sustained by the synergistic interaction of neura
             <p><strong>Interest score:</strong> 4</p>
             <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
         </div>
-        </div><h2>Causality</h2><div class='papers-container'>
+        
         <div class="paper-box">
-            <h3>Conformal Monte Carlo Meta-learners for Predictive Inference of Individual Treatment Effects</h3>
-            <p><strong>Authors:</strong> Jef Jonkers, Jarne Verhaeghe, Glenn Van Wallendael, Luc Duchateau, Sofie Van Hoecke</p>
-            <p><strong>Summary:</strong> arXiv:2402.04906v2 Announce Type: replace 
-Abstract: Knowledge of the effect of interventions, called the treatment effect, is paramount for decision-making. Approaches to estimating this treatment effect, e.g. by using Conditional Average Treatment Effect (CATE) estimators, often only provide a point estimate of this treatment effect, while additional uncertainty quantification is frequently desired instead. Therefore, we present a novel method, the Conformal Monte Carlo (CMC) meta-learners, leveraging conformal predictive systems, Monte Carlo sampling, and CATE meta-learners, to instead produce a predictive distribution usable in individualized decision-making. Furthermore, we show how specific assumptions on the noise distribution of the outcome heavily affect these uncertainty predictions. Nonetheless, the CMC framework shows strong experimental coverage while retaining small interval widths to provide estimates of the true individual treatment effect.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.04906" target="_blank">https://arxiv.org/abs/2402.04906</a></p>
-            <p><strong>Category:</strong> cs.LG</p>
+            <h3>RLingua: Improving Reinforcement Learning Sample Efficiency in Robotic Manipulations With Large Language Models</h3>
+            <p><strong>Authors:</strong> Liangliang Chen, Yutian Lei, Shiyu Jin, Ying Zhang, Liangjun Zhang</p>
+            <p><strong>Summary:</strong> arXiv:2403.06420v2 Announce Type: replace-cross 
+Abstract: Reinforcement learning (RL) has demonstrated its capability in solving various tasks but is notorious for its low sample efficiency. In this paper, we propose RLingua, a framework that can leverage the internal knowledge of large language models (LLMs) to reduce the sample complexity of RL in robotic manipulations. To this end, we first present a method for extracting the prior knowledge of LLMs by prompt engineering so that a preliminary rule-based robot controller for a specific task can be generated in a user-friendly manner. Despite being imperfect, the LLM-generated robot controller is utilized to produce action samples during rollouts with a decaying probability, thereby improving RL's sample efficiency. We employ TD3, the widely-used RL baseline method, and modify the actor loss to regularize the policy learning towards the LLM-generated controller. RLingua also provides a novel method of improving the imperfect LLM-generated robot controllers by RL. We demonstrate that RLingua can significantly reduce the sample complexity of TD3 in four robot tasks of panda_gym and achieve high success rates in 12 sampled sparsely rewarded robot tasks in RLBench, where the standard TD3 fails. Additionally, We validated RLingua's effectiveness in real-world robot experiments through Sim2Real, demonstrating that the learned policies are effectively transferable to real robot tasks. Further details about our work are available at our project website https://rlingua.github.io.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.06420" target="_blank">https://arxiv.org/abs/2403.06420</a></p>
+            <p><strong>Category:</strong> cs.RO</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> causality (topic: Causal representation learning)</p>
+            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
         </div>
         
         <div class="paper-box">
-            <h3>Unveiling Latent Causal Rules: A Temporal Point Process Approach for Abnormal Event Explanation</h3>
-            <p><strong>Authors:</strong> Yiling Kuang, Chao Yang, Yang Yang, Shuang Li</p>
-            <p><strong>Summary:</strong> arXiv:2402.05946v2 Announce Type: replace 
-Abstract: In high-stakes systems such as healthcare, it is critical to understand the causal reasons behind unusual events, such as sudden changes in patient's health. Unveiling the causal reasons helps with quick diagnoses and precise treatment planning. In this paper, we propose an automated method for uncovering "if-then" logic rules to explain observational events. We introduce temporal point processes to model the events of interest, and discover the set of latent rules to explain the occurrence of events. To achieve this, we employ an Expectation-Maximization (EM) algorithm. In the E-step, we calculate the likelihood of each event being explained by each discovered rule. In the M-step, we update both the rule set and model parameters to enhance the likelihood function's lower bound. Notably, we optimize the rule set in a differential manner. Our approach demonstrates accurate performance in both discovering rules and identifying root causes. We showcase its promising results using synthetic and real healthcare datasets.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.05946" target="_blank">https://arxiv.org/abs/2402.05946</a></p>
-            <p><strong>Category:</strong> cs.LG</p>
+            <h3>Knowledge Graph Large Language Model (KG-LLM) for Link Prediction</h3>
+            <p><strong>Authors:</strong> Dong Shu, Tianle Chen, Mingyu Jin, Yiting Zhang, Chong Zhang, Mengnan Du, Yongfeng Zhang</p>
+            <p><strong>Summary:</strong> arXiv:2403.07311v4 Announce Type: replace-cross 
+Abstract: The task of predicting multiple links within knowledge graphs (KGs) stands as a challenge in the field of knowledge graph analysis, a challenge increasingly resolvable due to advancements in natural language processing (NLP) and KG embedding techniques. This paper introduces a novel methodology, the Knowledge Graph Large Language Model Framework (KG-LLM), which leverages pivotal NLP paradigms, including chain-of-thought (CoT) prompting and in-context learning (ICL), to enhance multi-hop link prediction in KGs. By converting the KG to a CoT prompt, our framework is designed to discern and learn the latent representations of entities and their interrelations. To show the efficacy of the KG-LLM Framework, we fine-tune three leading Large Language Models (LLMs) within this framework, employing both non-ICL and ICL tasks for a comprehensive evaluation. Further, we explore the framework's potential to provide LLMs with zero-shot capabilities for handling previously unseen prompts. Our experimental findings discover that integrating ICL and CoT not only augments the performance of our approach but also significantly boosts the models' generalization capacity, thereby ensuring more precise predictions in unfamiliar scenarios.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.07311" target="_blank">https://arxiv.org/abs/2403.07311</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> causality (topic: Causal discovery)</p>
+            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
         </div>
         
         <div class="paper-box">
-            <h3>Toward a Theory of Causation for Interpreting Neural Code Models</h3>
-            <p><strong>Authors:</strong> David N. Palacio, Nathan Cooper, Alvaro Rodriguez, Kevin Moran, Denys Poshyvanyk</p>
-            <p><strong>Summary:</strong> arXiv:2302.03788v2 Announce Type: replace-cross 
-Abstract: Neural Language Models of Code, or Neural Code Models (NCMs), are rapidly progressing from research prototypes to commercial developer tools. As such, understanding the capabilities and limitations of such models is becoming critical. However, the abilities of these models are typically measured using automated metrics that often only reveal a portion of their real-world performance. While, in general, the performance of NCMs appears promising, currently much is unknown about how such models arrive at decisions. To this end, this paper introduces $do_{code}$, a post hoc interpretability method specific to NCMs that is capable of explaining model predictions. $do_{code}$ is based upon causal inference to enable programming language-oriented explanations. While the theoretical underpinnings of $do_{code}$ are extensible to exploring different model properties, we provide a concrete instantiation that aims to mitigate the impact of spurious correlations by grounding explanations of model behavior in properties of programming languages. To demonstrate the practical benefit of $do_{code}$, we illustrate the insights that our framework can provide by performing a case study on two popular deep learning architectures and ten NCMs. The results of this case study illustrate that our studied NCMs are sensitive to changes in code syntax. All our NCMs, except for the BERT-like model, statistically learn to predict tokens related to blocks of code (\eg brackets, parenthesis, semicolon) with less confounding bias as compared to other programming language constructs. These insights demonstrate the potential of $do_{code}$ as a useful method to detect and facilitate the elimination of confounding bias in NCMs.</p>
-            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2302.03788" target="_blank">https://arxiv.org/abs/2302.03788</a></p>
-            <p><strong>Category:</strong> cs.SE</p>
+            <h3>MM1: Methods, Analysis & Insights from Multimodal LLM Pre-training</h3>
+            <p><strong>Authors:</strong> Brandon McKinzie, Zhe Gan, Jean-Philippe Fauconnier, Sam Dodge, Bowen Zhang, Philipp Dufter, Dhruti Shah, Xianzhi Du, Futang Peng, Floris Weers, Anton Belyi, Haotian Zhang, Karanjeet Singh, Doug Kang, Ankur Jain, Hongyu H\`e, Max Schwarzer, Tom Gunter, Xiang Kong, Aonan Zhang, Jianyu Wang, Chong Wang, Nan Du, Tao Lei, Sam Wiseman, Mark Lee, Zirui Wang, Ruoming Pang, Peter Grasch, Alexander Toshev, Yinfei Yang</p>
+            <p><strong>Summary:</strong> arXiv:2403.09611v2 Announce Type: replace-cross 
+Abstract: In this work, we discuss building performant Multimodal Large Language Models (MLLMs). In particular, we study the importance of various architecture components and data choices. Through careful and comprehensive ablations of the image encoder, the vision language connector, and various pre-training data choices, we identified several crucial design lessons. For example, we demonstrate that for large-scale multimodal pre-training using a careful mix of image-caption, interleaved image-text, and text-only data is crucial for achieving state-of-the-art (SOTA) few-shot results across multiple benchmarks, compared to other published pre-training results. Further, we show that the image encoder together with image resolution and the image token count has substantial impact, while the vision-language connector design is of comparatively negligible importance. By scaling up the presented recipe, we build MM1, a family of multimodal models up to 30B parameters, including both dense models and mixture-of-experts (MoE) variants, that are SOTA in pre-training metrics and achieve competitive performance after supervised fine-tuning on a range of established multimodal benchmarks. Thanks to large-scale pre-training, MM1 enjoys appealing properties such as enhanced in-context learning, and multi-image reasoning, enabling few-shot chain-of-thought prompting.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.09611" target="_blank">https://arxiv.org/abs/2403.09611</a></p>
+            <p><strong>Category:</strong> cs.CV</p>
             <p><strong>Interest score:</strong> 4</p>
-            <p><strong>Interest tag:</strong> causality (topic: Causal representation learning)</p>
+            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
         </div>
-        </div><div class='timestamp'>Report generated on March 20, 2024 at 23:39:02</div></body></html>
+        
+        <div class="paper-box">
+            <h3>Meta-Prompting for Automating Zero-shot Visual Recognition with LLMs</h3>
+            <p><strong>Authors:</strong> M. Jehanzeb Mirza, Leonid Karlinsky, Wei Lin, Sivan Doveh, Jakub Micorek, Mateusz Kozinski, Hilde Kuhene, Horst Possegger</p>
+            <p><strong>Summary:</strong> arXiv:2403.11755v2 Announce Type: replace-cross 
+Abstract: Prompt ensembling of Large Language Model (LLM) generated category-specific prompts has emerged as an effective method to enhance zero-shot recognition ability of Vision-Language Models (VLMs). To obtain these category-specific prompts, the present methods rely on hand-crafting the prompts to the LLMs for generating VLM prompts for the downstream tasks. However, this requires manually composing these task-specific prompts and still, they might not cover the diverse set of visual concepts and task-specific styles associated with the categories of interest. To effectively take humans out of the loop and completely automate the prompt generation process for zero-shot recognition, we propose Meta-Prompting for Visual Recognition (MPVR). Taking as input only minimal information about the target task, in the form of its short natural language description, and a list of associated class labels, MPVR automatically produces a diverse set of category-specific prompts resulting in a strong zero-shot classifier. MPVR generalizes effectively across various popular zero-shot image recognition benchmarks belonging to widely different domains when tested with multiple LLMs and VLMs. For example, MPVR obtains a zero-shot recognition improvement over CLIP by up to 19.8% and 18.2% (5.0% and 4.5% on average over 20 datasets) leveraging GPT and Mixtral LLMs, respectively</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.11755" target="_blank">https://arxiv.org/abs/2403.11755</a></p>
+            <p><strong>Category:</strong> cs.CV</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents (topic: LLM-based agents that interact with software)</p>
+        </div>
+        </div><div class='timestamp'>Report generated on March 20, 2024 at 23:47:30</div></body></html>

@@ -46,12 +46,11 @@ class Paper:
 
         self.__interest_analysis = None
 
-    # Add a decorator to retry 5 times max
+    @property
     @retry(
         stop=stop_after_attempt(5),
         retry=retry_if_exception_type(Exception),
     )
-    @property
     def _interest_analysis(self):
         if self.__interest_analysis is None:
             completion = openai_client.chat.completions.create(

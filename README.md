@@ -13,3 +13,4 @@
 [./papers_2024_04_07.html](./papers_2024_04_07.html)
 [./papers_2024_04_08.html](./papers_2024_04_08.html)
 [./papers_2024_04_09.html](./papers_2024_04_09.html)
+[./papers_2024_04_10.html](./papers_2024_04_10.html)

@@ -25,3 +25,4 @@
 [./papers_2024_04_23.html](./papers_2024_04_23.html)
 [./papers_2024_04_24.html](./papers_2024_04_24.html)
 [./papers_2024_04_25.html](./papers_2024_04_25.html)
+[./papers_2024_04_28.html](./papers_2024_04_28.html)

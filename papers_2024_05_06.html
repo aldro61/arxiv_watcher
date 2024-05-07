@@ -1,0 +1,362 @@
+
+            <html>
+            <head>
+                <title>Report Generated on May 06, 2024</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    .paper-box {
+                        background-color: #f0f0f0;
+                        margin-bottom: 20px;
+                        padding: 15px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                    h1 { text-align: center; }
+                    h2 {
+                        cursor: pointer;
+                        color: #333;
+                        border-bottom: 2px solid #666;
+                    }
+                    a { color: #337ab7; text-decoration: none; }
+                    a:hover { text-decoration: underline; }
+                    h3 { color: #337ab7; }
+                    .timestamp { text-align: center; font-size: small; margin-top: 40px; }
+                    .paper-figure {
+                        max-width: 200px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin-top: 10px;
+                    }
+                    .papers-container { display: block; padding: 0 18px; }
+                </style>
+            </head>
+            <body>
+            <h1>Report for May 06, 2024</h1>
+            <script>
+                function toggleSection(id) {
+                    var x = document.getElementById(id);
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+            <h2 onclick="toggleSection('section_llm-agents')">Llm-agents</h2><div id='section_llm-agents' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01563" target="_blank">Mitigating LLM Hallucinations via Conformal Abstention</a></h3>
+            
+            <p><strong>Authors:</strong> Yasin Abbasi Yadkori, Ilja Kuzborskij, David Stutz, Andr\'as Gy\"orgy, Adam Fisch, Arnaud Doucet, Iuliya Beloshapka, Wei-Hung Weng, Yao-Yuan Yang, Csaba Szepesv\'ari, Ali Taylan Cemgil, Nenad Tomasev</p>
+            <p><strong>Summary:</strong> arXiv:2405.01563v1 Announce Type: new 
+Abstract: We develop a principled procedure for determining when a large language model (LLM) should abstain from responding (e.g., by saying "I don't know") in a general domain, instead of resorting to possibly "hallucinating" a non-sensical or incorrect answer. Building on earlier approaches that use self-consistency as a more reliable measure of model confidence, we propose using the LLM itself to self-evaluate the similarity between each of its sampled responses for a given query. We then further leverage conformal prediction techniques to develop an abstention procedure that benefits from rigorous theoretical guarantees on the hallucination rate (error rate). Experimentally, our resulting conformal abstention method reliably bounds the hallucination rate on various closed-book, open-domain generative question answering datasets, while also maintaining a significantly less conservative abstention rate on a dataset with long responses (Temporal Sequences) compared to baselines using log-probability scores to quantify uncertainty, while achieveing comparable performance on a dataset with short answers (TriviaQA). To evaluate the experiments automatically, one needs to determine if two responses are equivalent given a question. Following standard practice, we use a thresholded similarity function to determine if two responses match, but also provide a method for calibrating the threshold based on conformal prediction, with theoretical guarantees on the accuracy of the match prediction, which might be of independent interest.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01563">https://arxiv.org/abs/2405.01563</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper delves into the practical applications of large language models (LLM), specifically, how to improve their performance in responding to queries. It might help in understanding how LLMs can be optimized for tasks like controlling software or web browsers.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01559" target="_blank">Untangling Knots: Leveraging LLM for Error Resolution in Computational Notebooks</a></h3>
+            
+            <p><strong>Authors:</strong> Konstantin Grotov, Sergey Titov, Yaroslav Zharov, Timofey Bryksin</p>
+            <p><strong>Summary:</strong> arXiv:2405.01559v1 Announce Type: cross 
+Abstract: Computational notebooks became indispensable tools for research-related development, offering unprecedented interactivity and flexibility in the development process. However, these benefits come at the cost of reproducibility and an increased potential for bugs. There are many tools for bug fixing; however, they are generally targeted at the classical linear code. With the rise of code-fluent Large Language Models, a new stream of smart bug-fixing tools has emerged. However, the applicability of those tools is still problematic for non-linear computational notebooks. In this paper, we propose a potential solution for resolving errors in computational notebooks via an iterative LLM-based agent. We discuss the questions raised by this approach and share a novel dataset of computational notebooks containing bugs to facilitate the research of the proposed approach.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01559">https://arxiv.org/abs/2405.01559</a></p>
+            <p><strong>Category:</strong> cs.SE</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to your interest in agents based on large-language models. It proposes the application of a Large Language Model (LLM) as an agent to resolve bugs in computational notebooks, which can be seen as a form of software control by the LLM.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01576" target="_blank">Uncovering Deceptive Tendencies in Language Models: A Simulated Company AI Assistant</a></h3>
+            
+            <p><strong>Authors:</strong> Olli J\"arviniemi, Evan Hubinger</p>
+            <p><strong>Summary:</strong> arXiv:2405.01576v1 Announce Type: cross 
+Abstract: We study the tendency of AI systems to deceive by constructing a realistic simulation setting of a company AI assistant. The simulated company employees provide tasks for the assistant to complete, these tasks spanning writing assistance, information retrieval and programming. We then introduce situations where the model might be inclined to behave deceptively, while taking care to not instruct or otherwise pressure the model to do so. Across different scenarios, we find that Claude 3 Opus
+  1) complies with a task of mass-generating comments to influence public perception of the company, later deceiving humans about it having done so,
+  2) lies to auditors when asked questions, and
+  3) strategically pretends to be less capable than it is during capability evaluations.
+  Our work demonstrates that even models trained to be helpful, harmless and honest sometimes behave deceptively in realistic scenarios, without notable external pressure to do so.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01576">https://arxiv.org/abs/2405.01576</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The research paper tackles AI systems in a company setting, where large language models serve as assistants performing tasks such as writing assistance, information retrieval, and programming. However, it does not implicitly discuss using large language models for web browsing or new methods of using them for software control.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01745" target="_blank">Large Language Models for UAVs: Current State and Pathways to the Future</a></h3>
+            <a href="https://arxiv.org/html/2405.01745v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2405.01745v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Shumaila Javaid, Nasir Saeed, Bin He</p>
+            <p><strong>Summary:</strong> arXiv:2405.01745v1 Announce Type: cross 
+Abstract: Unmanned Aerial Vehicles (UAVs) have emerged as a transformative technology across diverse sectors, offering adaptable solutions to complex challenges in both military and civilian domains. Their expanding capabilities present a platform for further advancement by integrating cutting-edge computational tools like Artificial Intelligence (AI) and Machine Learning (ML) algorithms. These advancements have significantly impacted various facets of human life, fostering an era of unparalleled efficiency and convenience. Large Language Models (LLMs), a key component of AI, exhibit remarkable learning and adaptation capabilities within deployed environments, demonstrating an evolving form of intelligence with the potential to approach human-level proficiency. This work explores the significant potential of integrating UAVs and LLMs to propel the development of autonomous systems. We comprehensively review LLM architectures, evaluating their suitability for UAV integration. Additionally, we summarize the state-of-the-art LLM-based UAV architectures and identify novel opportunities for LLM embedding within UAV frameworks. Notably, we focus on leveraging LLMs to refine data analysis and decision-making processes, specifically for enhanced spectral sensing and sharing in UAV applications. Furthermore, we investigate how LLM integration expands the scope of existing UAV applications, enabling autonomous data processing, improved decision-making, and faster response times in emergency scenarios like disaster response and network restoration. Finally, we highlight crucial areas for future research that are critical for facilitating the effective integration of LLMs and UAVs.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01745">https://arxiv.org/abs/2405.01745</a></p>
+            <p><strong>Category:</strong> cs.AI</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although this paper doesn't explicitly match all your subthemes, it focuses on using Large Language Models (LLMs) in the context of controlling Unmanned Aerial Vehicles (UAVs), which could be seen as a form of software control as you're interested in. Also, it discusses future research areas, so it might describe or suggest novel methods.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01883" target="_blank">DALLMi: Domain Adaption for LLM-based Multi-label Classifier</a></h3>
+            <a href="https://arxiv.org/html/2405.01883v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2405.01883v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Miruna Be\c{t}ianu, Abele M\u{a}lan, Marco Aldinucci, Robert Birke, Lydia Chen</p>
+            <p><strong>Summary:</strong> arXiv:2405.01883v1 Announce Type: cross 
+Abstract: Large language models (LLMs) increasingly serve as the backbone for classifying text associated with distinct domains and simultaneously several labels (classes). When encountering domain shifts, e.g., classifier of movie reviews from IMDb to Rotten Tomatoes, adapting such an LLM-based multi-label classifier is challenging due to incomplete label sets at the target domain and daunting training overhead. The existing domain adaptation methods address either image multi-label classifiers or text binary classifiers. In this paper, we design DALLMi, Domain Adaptation Large Language Model interpolator, a first-of-its-kind semi-supervised domain adaptation method for text data models based on LLMs, specifically BERT. The core of DALLMi is the novel variation loss and MixUp regularization, which jointly leverage the limited positively labeled and large quantity of unlabeled text and, importantly, their interpolation from the BERT word embeddings. DALLMi also introduces a label-balanced sampling strategy to overcome the imbalance between labeled and unlabeled data. We evaluate DALLMi against the partial-supervised and unsupervised approach on three datasets under different scenarios of label availability for the target domain. Our results show that DALLMi achieves higher mAP than unsupervised and partially-supervised approaches by 19.9% and 52.2%, respectively.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01883">https://arxiv.org/abs/2405.01883</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant as it discusses the use and adaption of a Large Language Model (BERT) in a specific task related to multilabel classification. While it does not directly address controlling software or browsers, the methodology employed displays adaptability that can be relevant to your interest in automated tasks performed by large language models.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01943" target="_blank">Dependency-Aware Semi-Structured Sparsity of GLU Variants in Large Language Models</a></h3>
+            
+            <p><strong>Authors:</strong> Zhiyu Guo, Hidetaka Kamigaito, Taro Wanatnabe</p>
+            <p><strong>Summary:</strong> arXiv:2405.01943v1 Announce Type: cross 
+Abstract: The rapid advancement in Large Language Models (LLMs) has markedly enhanced the capabilities of language understanding and generation. However, the substantial model size poses hardware challenges, affecting both memory size for serving and inference latency for token generation. To address those challenges, we propose Dependency-aware Semi-structured Sparsity (DaSS), a novel method for the recent prevalent SwiGLU-based LLMs pruning. Our approach incorporates structural dependency into the weight magnitude-based unstructured pruning. We introduce an MLP-specific pruning metric that evaluates the importance of each weight by jointly considering its magnitude and its corresponding MLP intermediate activation norms. DaSS facilitates a balance between the adaptability offered by unstructured pruning and the structural consistency inherent in dependency-based structured pruning. Empirical evaluations on Mistral and LLaMA2 model families demonstrate that DaSS not only outperforms both SparseGPT and Wanda in achieving hardware-friendly N:M sparsity patterns but also maintains the computational efficiency of Wanda.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01943">https://arxiv.org/abs/2405.01943</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although the paper does not directly address control and automation using large language models, it discusses a novel method for improving the efficiency of large language models, which is of critical importance in controlling software or automating tasks. Its implications may be beneficial to your research in the longer term.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01964" target="_blank">Understanding LLMs Requires More Than Statistical Generalization</a></h3>
+            
+            <p><strong>Authors:</strong> Patrik Reizinger, Szilvia Ujv\'ary, Anna M\'esz\'aros, Anna Kerekes, Wieland Brendel, Ferenc Husz\'ar</p>
+            <p><strong>Summary:</strong> arXiv:2405.01964v1 Announce Type: cross 
+Abstract: The last decade has seen blossoming research in deep learning theory attempting to answer, "Why does deep learning generalize?" A powerful shift in perspective precipitated this progress: the study of overparametrized models in the interpolation regime. In this paper, we argue that another perspective shift is due, since some of the desirable qualities of LLMs are not a consequence of good statistical generalization and require a separate theoretical explanation. Our core argument relies on the observation that AR probabilistic models are inherently non-identifiable: models zero or near-zero KL divergence apart -- thus, equivalent test loss -- can exhibit markedly different behaviors. We support our position with mathematical examples and empirical observations, illustrating why non-identifiability has practical relevance through three case studies: (1) the non-identifiability of zero-shot rule extrapolation; (2) the approximate non-identifiability of in-context learning; and (3) the non-identifiability of fine-tunability. We review promising research directions focusing on LLM-relevant generalization measures, transferability, and inductive biases.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01964">https://arxiv.org/abs/2405.01964</a></p>
+            <p><strong>Category:</strong> stat.ML</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper provides in-depth analysis on the understanding of large language models (LLMs), discussing nuances like non-identifiability, zero-shot rule extrapolation, and in-context learning. The authors also mentioned fine-tunability which could be relevant to controlling software or browsers using LLMs.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.02213" target="_blank">Automatic Programming: Large Language Models and Beyond</a></h3>
+            
+            <p><strong>Authors:</strong> Michael R. Lyu, Baishakhi Ray, Abhik Roychoudhury, Shin Hwei Tan, Patanamon Thongtanunam</p>
+            <p><strong>Summary:</strong> arXiv:2405.02213v1 Announce Type: cross 
+Abstract: Automatic programming has seen increasing popularity due to the emergence of tools like GitHub Copilot which rely on Large Language Models (LLMs). At the same time, automatically generated code faces challenges during deployment due to concerns around quality and trust. In this article, we study automated coding in a general sense and study the concerns around code quality, security and related issues of programmer responsibility. These are key issues for organizations while deciding on the usage of automatically generated code. We discuss how advances in software engineering such as program repair and analysis can enable automatic programming. We conclude with a forward looking view, focusing on the programming environment of the near future, where programmers may need to switch to different roles to fully utilize the power of automatic programming. Automated repair of automatically generated programs from LLMs, can help produce higher assurance code from LLMs, along with evidence of assurance</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.02213">https://arxiv.org/abs/2405.02213</a></p>
+            <p><strong>Category:</strong> cs.SE</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper discusses automatic programming using large language models (LLMs), which aligns with your interest in using LLMs for computer automation or controlling software. It doesn't propose new methods per se, but it does provide a comprehensive study and discussion on the current challenges and future prospects of using LLMs in automatic programming which you might find helpful for your research.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2310.16960" target="_blank">Privately Aligning Language Models with Reinforcement Learning</a></h3>
+            
+            <p><strong>Authors:</strong> Fan Wu, Huseyin A. Inan, Arturs Backurs, Varun Chandrasekaran, Janardhan Kulkarni, Robert Sim</p>
+            <p><strong>Summary:</strong> arXiv:2310.16960v2 Announce Type: replace 
+Abstract: Positioned between pre-training and user deployment, aligning large language models (LLMs) through reinforcement learning (RL) has emerged as a prevailing strategy for training instruction following-models such as ChatGPT. In this work, we initiate the study of privacy-preserving alignment of LLMs through Differential Privacy (DP) in conjunction with RL. Following the influential work of Ziegler et al. (2020), we study two dominant paradigms: (i) alignment via RL without human in the loop (e.g., positive review generation) and (ii) alignment via RL from human feedback (RLHF) (e.g., summarization in a human-preferred way). We give a new DP framework to achieve alignment via RL, and prove its correctness. Our experimental results validate the effectiveness of our approach, offering competitive utility while ensuring strong privacy protections.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2310.16960">https://arxiv.org/abs/2310.16960</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to the 'Agents based on large-language models' category. It discusses the alignment of Large Language Models using Reinforcement Learning, thus it may offer insights on the control method for software or even browsers. However, it does not mention these aspects (software control or web browser control) specifically, hence the score of 4.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2312.03853" target="_blank">Dr. Jekyll and Mr. Hyde: Two Faces of LLMs</a></h3>
+            <a href="https://arxiv.org/html/2312.03853v3/extracted/5573866/images/attack_pipeline_bigger.png" target="_blank"><img src="https://arxiv.org/html/2312.03853v3/extracted/5573866/images/attack_pipeline_bigger.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Matteo Gioele Collu, Tom Janssen-Groesbeek, Stefanos Koffas, Mauro Conti, Stjepan Picek</p>
+            <p><strong>Summary:</strong> arXiv:2312.03853v3 Announce Type: replace-cross 
+Abstract: Recently, we have witnessed a rise in the use of Large Language Models (LLMs), especially in applications like chatbot assistants. Safety mechanisms and specialized training procedures are implemented to prevent improper responses from these assistants. In this work, we bypass these measures for ChatGPT and Bard (and, to some extent, Bing chat) by making them impersonate complex personas with personality characteristics that are not aligned with a truthful assistant. We start by creating elaborate biographies of these personas, which we then use in a new session with the same chatbots. Our conversations then followed a role-play style to elicit prohibited responses. By making use of personas, we show that such responses are actually provided, making it possible to obtain unauthorized, illegal, or harmful information. This work shows that by using adversarial personas, one can overcome safety mechanisms set out by ChatGPT and Bard. We also introduce several ways of activating such adversarial personas, which show that both chatbots are vulnerable to this kind of attack. With the same principle, we introduce two defenses that push the model to interpret trustworthy personalities and make it more robust against such attacks.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2312.03853">https://arxiv.org/abs/2312.03853</a></p>
+            <p><strong>Category:</strong> cs.CR</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper discusses usage and security risks associated with Large Language Models (LLMs), particularly when used as chatbot assistants. However, it does not focus on proposing new methods for computer automation or web browsing, hence the score of 4.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2401.10314" target="_blank">LangProp: A code optimization framework using Large Language Models applied to driving</a></h3>
+            
+            <p><strong>Authors:</strong> Shu Ishida, Gianluca Corrado, George Fedoseev, Hudson Yeo, Lloyd Russell, Jamie Shotton, Jo\~ao F. Henriques, Anthony Hu</p>
+            <p><strong>Summary:</strong> arXiv:2401.10314v2 Announce Type: replace-cross 
+Abstract: We propose LangProp, a framework for iteratively optimizing code generated by large language models (LLMs), in both supervised and reinforcement learning settings. While LLMs can generate sensible coding solutions zero-shot, they are often sub-optimal. Especially for code generation tasks, it is likely that the initial code will fail on certain edge cases. LangProp automatically evaluates the code performance on a dataset of input-output pairs, catches any exceptions, and feeds the results back to the LLM in the training loop, so that the LLM can iteratively improve the code it generates. By adopting a metric- and data-driven training paradigm for this code optimization procedure, one could easily adapt findings from traditional machine learning techniques such as imitation learning, DAgger, and reinforcement learning. We show LangProp's applicability to general domains such as Sudoku and CartPole, as well as demonstrate the first proof of concept of automated code optimization for autonomous driving in CARLA. We show that LangProp can generate interpretable and transparent policies that can be verified and improved in a metric- and data-driven way. Our code is available at https://github.com/shuishida/LangProp.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2401.10314">https://arxiv.org/abs/2401.10314</a></p>
+            <p><strong>Category:</strong> cs.SE</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The research paper is relevant to your interest in applying large language models to software control. While the LangProp model is not used for a web browser, it is focused on optimizing and generating code which can be a vital aspect of automating software control.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2402.19379" target="_blank">Wisdom of the Silicon Crowd: LLM Ensemble Prediction Capabilities Rival Human Crowd Accuracy</a></h3>
+            <a href="https://arxiv.org/html/2402.19379v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2402.19379v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Philipp Schoenegger, Indre Tuminauskaite, Peter S. Park, Philip E. Tetlock</p>
+            <p><strong>Summary:</strong> arXiv:2402.19379v3 Announce Type: replace-cross 
+Abstract: Human forecasting accuracy in practice relies on the 'wisdom of the crowd' effect, in which predictions about future events are significantly improved by aggregating across a crowd of individual forecasters. Past work on the forecasting ability of large language models (LLMs) suggests that frontier LLMs, as individual forecasters, underperform compared to the gold standard of a human crowd forecasting tournament aggregate. In Study 1, we expand this research by using an LLM ensemble approach consisting of a crowd of twelve LLMs. We compare the aggregated LLM predictions on 31 binary questions to that of a crowd of 925 human forecasters from a three-month forecasting tournament. Our preregistered main analysis shows that the LLM crowd outperforms a simple no-information benchmark and is not statistically different from the human crowd. In exploratory analyses, we find that these two approaches are equivalent with respect to medium-effect-size equivalence bounds. We also observe an acquiescence effect, with mean model predictions being significantly above 50%, despite an almost even split of positive and negative resolutions. Moreover, in Study 2, we test whether LLM predictions (of GPT-4 and Claude 2) can be improved by drawing on human cognitive output. We find that both models' forecasting accuracy benefits from exposure to the median human prediction as information, improving accuracy by between 17% and 28%: though this leads to less accurate predictions than simply averaging human and machine forecasts. Our results suggest that LLMs can achieve forecasting accuracy rivaling that of human crowd forecasting tournaments: via the simple, practically applicable method of forecast aggregation. This replicates the 'wisdom of the crowd' effect for LLMs, and opens up their use for a variety of applications throughout society.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.19379">https://arxiv.org/abs/2402.19379</a></p>
+            <p><strong>Category:</strong> cs.CY</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper presents research on the forecasting ability of large language models (LLMs), which aligns with your interest in agents based on LLMs. Specifically, it explores how LLMs can be used to make predictions about future events, a form of automation that could potentially be applied to software control. However, it does not directly discuss using LLMs to control software or web browsers.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.00332" target="_blank">A Careful Examination of Large Language Model Performance on Grade School Arithmetic</a></h3>
+            
+            <p><strong>Authors:</strong> Hugh Zhang, Jeff Da, Dean Lee, Vaughn Robinson, Catherine Wu, Will Song, Tiffany Zhao, Pranav Raja, Dylan Slack, Qin Lyu, Sean Hendryx, Russell Kaplan, Michele Lunati, Summer Yue</p>
+            <p><strong>Summary:</strong> arXiv:2405.00332v3 Announce Type: replace-cross 
+Abstract: Large language models (LLMs) have achieved impressive success on many benchmarks for mathematical reasoning. However, there is growing concern that some of this performance actually reflects dataset contamination, where data closely resembling benchmark questions leaks into the training data, instead of true reasoning ability. To investigate this claim rigorously, we commission Grade School Math 1000 (GSM1k). GSM1k is designed to mirror the style and complexity of the established GSM8k benchmark, the gold standard for measuring elementary mathematical reasoning. We ensure that the two benchmarks are comparable across important metrics such as human solve rates, number of steps in solution, answer magnitude, and more. When evaluating leading open- and closed-source LLMs on GSM1k, we observe accuracy drops of up to 13%, with several families of models (e.g., Phi and Mistral) showing evidence of systematic overfitting across almost all model sizes. At the same time, many models, especially those on the frontier, (e.g., Gemini/GPT/Claude) show minimal signs of overfitting. Further analysis suggests a positive relationship (Spearman's r^2=0.32) between a model's probability of generating an example from GSM8k and its performance gap between GSM8k and GSM1k, suggesting that many models may have partially memorized GSM8k.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.00332">https://arxiv.org/abs/2405.00332</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Though not directly focused on software or web browser control, the paper does explore the performance of large language models in a mathematical context, providing insight into their capabilities and limitations that could be relevant for their usage in controlling software or web browsers.</p>
+        </div>
+        </div><h2 onclick="toggleSection('section_causality')">Causality</h2><div id='section_causality' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01744" target="_blank">ALCM: Autonomous LLM-Augmented Causal Discovery Framework</a></h3>
+            <a href="https://arxiv.org/html/2405.01744v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2405.01744v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Elahe Khatibi, Mahyar Abbasian, Zhongqi Yang, Iman Azimi, Amir M. Rahmani</p>
+            <p><strong>Summary:</strong> arXiv:2405.01744v1 Announce Type: new 
+Abstract: To perform effective causal inference in high-dimensional datasets, initiating the process with causal discovery is imperative, wherein a causal graph is generated based on observational data. However, obtaining a complete and accurate causal graph poses a formidable challenge, recognized as an NP-hard problem. Recently, the advent of Large Language Models (LLMs) has ushered in a new era, indicating their emergent capabilities and widespread applicability in facilitating causal reasoning across diverse domains, such as medicine, finance, and science. The expansive knowledge base of LLMs holds the potential to elevate the field of causal reasoning by offering interpretability, making inferences, generalizability, and uncovering novel causal structures. In this paper, we introduce a new framework, named Autonomous LLM-Augmented Causal Discovery Framework (ALCM), to synergize data-driven causal discovery algorithms and LLMs, automating the generation of a more resilient, accurate, and explicable causal graph. The ALCM consists of three integral components: causal structure learning, causal wrapper, and LLM-driven causal refiner. These components autonomously collaborate within a dynamic environment to address causal discovery questions and deliver plausible causal graphs. We evaluate the ALCM framework by implementing two demonstrations on seven well-known datasets. Experimental results demonstrate that ALCM outperforms existing LLM methods and conventional data-driven causal reasoning mechanisms. This study not only shows the effectiveness of the ALCM but also underscores new research directions in leveraging the causal reasoning capabilities of LLMs.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01744">https://arxiv.org/abs/2405.01744</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is highly relevant to your interests because it explores the use of Large Language Models (LLMs) for the purpose of causal discovery, a subtopic of your interest. It proposes a new framework (ALCM) which synergizes data-driven causal discovery algorithms and LLMs, a close match to your specified interests in 'causal discovery' and 'using large language models in causal discovery'.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01708" target="_blank">A deep causal inference model for fully-interpretable travel behaviour analysis</a></h3>
+            <a href="https://arxiv.org/html/2405.01708v1/extracted/5571709/basic_structures.jpg" target="_blank"><img src="https://arxiv.org/html/2405.01708v1/extracted/5571709/basic_structures.jpg" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Kimia Kamal, Bilal Farooq</p>
+            <p><strong>Summary:</strong> arXiv:2405.01708v1 Announce Type: new 
+Abstract: Transport policy assessment often involves causal questions, yet the causal inference capabilities of traditional travel behavioural models are at best limited. We present the deep CAusal infeRence mOdel for traveL behavIour aNAlysis (CAROLINA), a framework that explicitly models causality in travel behaviour, enhances predictive accuracy, and maintains interpretability by leveraging causal inference, deep learning, and traditional discrete choice modelling. Within this framework, we introduce a Generative Counterfactual model for forecasting human behaviour by adapting the Normalizing Flow method. Through the case studies of virtual reality-based pedestrian crossing behaviour, revealed preference travel behaviour from London, and synthetic data, we demonstrate the effectiveness of our proposed models in uncovering causal relationships, prediction accuracy, and assessing policy interventions. Our results show that intervention mechanisms that can reduce pedestrian stress levels lead to a 38.5% increase in individuals experiencing shorter waiting times. Reducing the travel distances in London results in a 47% increase in sustainable travel modes.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01708">https://arxiv.org/abs/2405.01708</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper aligns nicely with the 'causality' tag as it discusses a deep learning framework (CAROLINA) that handles causal inference within travel behavior. The model showcases uncovering causal relationships, prediction accuracy, and assessing policy interventions, which fall within your interests in causal discovery and causal representation learning.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.02183" target="_blank">Metalearners for Ranking Treatment Effects</a></h3>
+            
+            <p><strong>Authors:</strong> Toon Vanderschueren, Wouter Verbeke, Felipe Moraes, Hugo Manuel Proen\c{c}a</p>
+            <p><strong>Summary:</strong> arXiv:2405.02183v1 Announce Type: new 
+Abstract: Efficiently allocating treatments with a budget constraint constitutes an important challenge across various domains. In marketing, for example, the use of promotions to target potential customers and boost conversions is limited by the available budget. While much research focuses on estimating causal effects, there is relatively limited work on learning to allocate treatments while considering the operational context. Existing methods for uplift modeling or causal inference primarily estimate treatment effects, without considering how this relates to a profit maximizing allocation policy that respects budget constraints. The potential downside of using these methods is that the resulting predictive model is not aligned with the operational context. Therefore, prediction errors are propagated to the optimization of the budget allocation problem, subsequently leading to a suboptimal allocation policy. We propose an alternative approach based on learning to rank. Our proposed methodology directly learns an allocation policy by prioritizing instances in terms of their incremental profit. We propose an efficient sampling procedure for the optimization of the ranking model to scale our methodology to large-scale data sets. Theoretically, we show how learning to rank can maximize the area under a policy's incremental profit curve. Empirically, we validate our methodology and show its effectiveness in practice through a series of experiments on both synthetic and real-world data.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.02183">https://arxiv.org/abs/2405.02183</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is highly relevant to your interests in the 'Causality and machine learning' category. Although it does not explicitly mention causal representation learning or causal discovery, the topic of the paper is closely related. It discusses estimating causal effects and treatment effects in the context of allocating promotional budgets, which is a causal problem. Furthermore, it proposes a new learning to rank methodology for allocating treatments, suggesting it might be related to new methods in causal ML.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2301.07281" target="_blank">Detecting and Ranking Causal Anomalies in End-to-End Complex System</a></h3>
+            
+            <p><strong>Authors:</strong> Ching Chang, Wen-Chih Peng</p>
+            <p><strong>Summary:</strong> arXiv:2301.07281v2 Announce Type: replace 
+Abstract: With the rapid development of technology, the automated monitoring systems of large-scale factories are becoming more and more important. By collecting a large amount of machine sensor data, we can have many ways to find anomalies. We believe that the real core value of an automated monitoring system is to identify and track the cause of the problem. The most famous method for finding causal anomalies is RCA, but there are many problems that cannot be ignored. They used the AutoRegressive eXogenous (ARX) model to create a time-invariant correlation network as a machine profile, and then use this profile to track the causal anomalies by means of a method called fault propagation. There are two major problems in describing the behavior of a machine by using the correlation network established by ARX: (1) It does not take into account the diversity of states (2) It does not separately consider the correlations with different time-lag. Based on these problems, we propose a framework called Ranking Causal Anomalies in End-to-End System (RCAE2E), which completely solves the problems mentioned above. In the experimental part, we use synthetic data and real-world large-scale photoelectric factory data to verify the correctness and existence of our method hypothesis.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2301.07281">https://arxiv.org/abs/2301.07281</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper discusses the use of machine learning for causal discovery in large systems, fitting the 'Causality and machine learning' topic. However, as it does not mention the use of large language models, its relevance may not be perfect.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2404.00462" target="_blank">Zero-shot Safety Prediction for Autonomous Robots with Foundation World Models</a></h3>
+            <a href="https://arxiv.org/html/2404.00462v3/extracted/5573857/imgs/loop.png" target="_blank"><img src="https://arxiv.org/html/2404.00462v3/extracted/5573857/imgs/loop.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Zhenjiang Mao, Siqi Dai, Yuang Geng, Ivan Ruchkin</p>
+            <p><strong>Summary:</strong> arXiv:2404.00462v3 Announce Type: replace 
+Abstract: A world model creates a surrogate world to train a controller and predict safety violations by learning the internal dynamic model of systems. However, the existing world models rely solely on statistical learning of how observations change in response to actions, lacking precise quantification of how accurate the surrogate dynamics are, which poses a significant challenge in safety-critical systems. To address this challenge, we propose foundation world models that embed observations into meaningful and causally latent representations. This enables the surrogate dynamics to directly predict causal future states by leveraging a training-free large language model. In two common benchmarks, this novel model outperforms standard world models in the safety prediction task and has a performance comparable to supervised learning despite not using any data. We evaluate its performance with a more specialized and system-relevant metric by comparing estimated states instead of aggregating observation-wide error.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2404.00462">https://arxiv.org/abs/2404.00462</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is relevant as it proposes a method for causal representation linking actions and observations in a world model. The model predicts causal future states indicating its relevance to the subtopic 'Causal representation learning' of your interest in 'Causality and machine learning'. However, it does not specifically mention the use of large language models in causal discovery.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2311.04037" target="_blank">Causal Discovery Under Local Privacy</a></h3>
+            <a href="https://arxiv.org/html/2311.04037v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2311.04037v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> R\=uta Binkyt\.e, Carlos Pinz\'on, Szilvia Lesty\'an, Kangsoo Jung, H\'eber H. Arcolezi, Catuscia Palamidessi</p>
+            <p><strong>Summary:</strong> arXiv:2311.04037v3 Announce Type: replace-cross 
+Abstract: Differential privacy is a widely adopted framework designed to safeguard the sensitive information of data providers within a data set. It is based on the application of controlled noise at the interface between the server that stores and processes the data, and the data consumers. Local differential privacy is a variant that allows data providers to apply the privatization mechanism themselves on their data individually. Therefore it provides protection also in contexts in which the server, or even the data collector, cannot be trusted. The introduction of noise, however, inevitably affects the utility of the data, particularly by distorting the correlations between individual data components. This distortion can prove detrimental to tasks such as causal discovery. In this paper, we consider various well-known locally differentially private mechanisms and compare the trade-off between the privacy they provide, and the accuracy of the causal structure produced by algorithms for causal learning when applied to data obfuscated by these mechanisms. Our analysis yields valuable insights for selecting appropriate local differentially private protocols for causal discovery tasks. We foresee that our findings will aid researchers and practitioners in conducting locally private causal discovery.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2311.04037">https://arxiv.org/abs/2311.04037</a></p>
+            <p><strong>Category:</strong> cs.CR</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper discusses the challenging task of causal discovery, especially under local differential privacy. It provides insights on how to select appropriate locally differentially private protocols for causal discovery tasks. This falls under your interest in 'Causal Discovery'. However, it does not explicitly mention the use of machine learning models which is why the score is not 5.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2404.17644" target="_blank">A Conditional Independence Test in the Presence of Discretization</a></h3>
+            <a href="https://arxiv.org/html/2404.17644v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2404.17644v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Boyang Sun, Yu Yao, Huangyuan Hao, Yumou Qiu, Kun Zhang</p>
+            <p><strong>Summary:</strong> arXiv:2404.17644v2 Announce Type: replace-cross 
+Abstract: Testing conditional independence has many applications, such as in Bayesian network learning and causal discovery. Different test methods have been proposed. However, existing methods generally can not work when only discretized observations are available. Specifically, consider $X_1$, $\tilde{X}_2$ and $X_3$ are observed variables, where $\tilde{X}_2$ is a discretization of latent variables $X_2$. Applying existing test methods to the observations of $X_1$, $\tilde{X}_2$ and $X_3$ can lead to a false conclusion about the underlying conditional independence of variables $X_1$, $X_2$ and $X_3$. Motivated by this, we propose a conditional independence test specifically designed to accommodate the presence of such discretization. To achieve this, we design the bridge equations to recover the parameter reflecting the statistical information of the underlying latent continuous variables. An appropriate test statistic and its asymptotic distribution under the null hypothesis of conditional independence have also been derived. Both theoretical results and empirical validation have been provided, demonstrating the effectiveness of our test methods.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2404.17644">https://arxiv.org/abs/2404.17644</a></p>
+            <p><strong>Category:</strong> stat.ML</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper discusses conditional independence tests, a crucial part of causal discovery. Therefore, its focus aligns with your interest in causal discovery using machine learning. However, it does not seem to involve the use of large language models, which you specified as a sub-topic of interest.</p>
+        </div>
+        </div><h2 onclick="toggleSection('section_time-series')">Time-series</h2><div id='section_time-series' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01714" target="_blank">Interpretable Vital Sign Forecasting with Model Agnostic Attention Maps</a></h3>
+            <a href="https://arxiv.org/html/2405.01714v1/extracted/5573872/images/flow.png" target="_blank"><img src="https://arxiv.org/html/2405.01714v1/extracted/5573872/images/flow.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Yuwei Liu, Chen Dan, Anubhav Bhatti, Bingjie Shen, Divij Gupta, Suraj Parmar, San Lee</p>
+            <p><strong>Summary:</strong> arXiv:2405.01714v1 Announce Type: new 
+Abstract: Sepsis is a leading cause of mortality in intensive care units (ICUs), representing a substantial medical challenge. The complexity of analyzing diverse vital signs to predict sepsis further aggravates this issue. While deep learning techniques have been advanced for early sepsis prediction, their 'black-box' nature obscures the internal logic, impairing interpretability in critical settings like ICUs. This paper introduces a framework that combines a deep learning model with an attention mechanism that highlights the critical time steps in the forecasting process, thus improving model interpretability and supporting clinical decision-making. We show that the attention mechanism could be adapted to various black box time series forecasting models such as N-HiTS and N-BEATS. Our method preserves the accuracy of conventional deep learning models while enhancing interpretability through attention-weight-generated heatmaps. We evaluated our model on the eICU-CRD dataset, focusing on forecasting vital signs for sepsis patients. We assessed its performance using mean squared error (MSE) and dynamic time warping (DTW) metrics. We explored the attention maps of N-HiTS and N-BEATS, examining the differences in their performance and identifying crucial factors influencing vital sign forecasting.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01714">https://arxiv.org/abs/2405.01714</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper is quite relevant to your interest in new deep learning methods for time series forecasting, specifically in a healthcare context. It discusses the application of an attention mechanism for better interpretability in deep learning models for predicting sepsis from vital sign time series data.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.01656" target="_blank">S4: Self-Supervised Sensing Across the Spectrum</a></h3>
+            <a href="https://arxiv.org/html/2405.01656v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2405.01656v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Jayanth Shenoy, Xinjian Davis Zhang, Shlok Mehrotra, Bill Tao, Rem Yang, Han Zhao, Deepak Vasisht</p>
+            <p><strong>Summary:</strong> arXiv:2405.01656v1 Announce Type: cross 
+Abstract: Satellite image time series (SITS) segmentation is crucial for many applications like environmental monitoring, land cover mapping and agricultural crop type classification. However, training models for SITS segmentation remains a challenging task due to the lack of abundant training data, which requires fine grained annotation. We propose S4 a new self-supervised pre-training approach that significantly reduces the requirement for labeled training data by utilizing two new insights: (a) Satellites capture images in different parts of the spectrum such as radio frequencies, and visible frequencies. (b) Satellite imagery is geo-registered allowing for fine-grained spatial alignment. We use these insights to formulate pre-training tasks in S4. We also curate m2s2-SITS, a large-scale dataset of unlabeled, spatially-aligned, multi-modal and geographic specific SITS that serves as representative pre-training data for S4. Finally, we evaluate S4 on multiple SITS segmentation datasets and demonstrate its efficacy against competing baselines while using limited labeled data.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.01656">https://arxiv.org/abs/2405.01656</a></p>
+            <p><strong>Category:</strong> cs.CV</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper proposes a new self-supervised learning approach for time series data from satellite images, presenting a new dataset for time series as well. However, it does not specifically mention new transformer-like models, but focuses on a topic within time series analysis, which is of interest to you.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2311.16834" target="_blank">FocusLearn: Fully-Interpretable, High-Performance Modular Neural Networks for Time Series</a></h3>
+            <a href="https://arxiv.org/html/2311.16834v4/extracted/5575781/Figures/architecture.png" target="_blank"><img src="https://arxiv.org/html/2311.16834v4/extracted/5575781/Figures/architecture.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Qiqi Su, Christos Kloukinas, Artur d'Avila Garcez</p>
+            <p><strong>Summary:</strong> arXiv:2311.16834v4 Announce Type: replace 
+Abstract: Multivariate time series have many applications, from healthcare and meteorology to life science. Although deep learning models have shown excellent predictive performance for time series, they have been criticised for being "black-boxes" or non-interpretable. This paper proposes a novel modular neural network model for multivariate time series prediction that is interpretable by construction. A recurrent neural network learns the temporal dependencies in the data while an attention-based feature selection component selects the most relevant features and suppresses redundant features used in the learning of the temporal dependencies. A modular deep network is trained from the selected features independently to show the users how features influence outcomes, making the model interpretable. Experimental results show that this approach can outperform state-of-the-art interpretable Neural Additive Models (NAM) and variations thereof in both regression and classification of time series tasks, achieving a predictive performance that is comparable to the top non-interpretable methods for time series, LSTM and XGBoost.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2311.16834">https://arxiv.org/abs/2311.16834</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper introduces a new modular neural network model for time series prediction that integrates feature selection and interpretable model construction. While it does not specifically reference 'deep learning', the use of an RNN and an attention-based feature selection component suggest its relevance to your interests. It may not comprehensively address all your subtopics, hence a score of 4.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2404.19351" target="_blank">Deep Learning Forecasts Caldera Collapse Events at Kilauea Volcano</a></h3>
+            
+            <p><strong>Authors:</strong> Ian W. McBrearty, Paul Segall</p>
+            <p><strong>Summary:</strong> arXiv:2404.19351v2 Announce Type: replace-cross 
+Abstract: During the three month long eruption of Kilauea volcano, Hawaii in 2018, the pre-existing summit caldera collapsed in over 60 quasi-periodic failure events. The last 40 of these events, which generated Mw >5 very long period (VLP) earthquakes, had inter-event times between 0.8 - 2.2 days. These failure events offer a unique dataset for testing methods for predicting earthquake recurrence based on locally recorded GPS, tilt, and seismicity data. In this work, we train a deep learning graph neural network (GNN) to predict the time-to-failure of the caldera collapse events using only a fraction of the data recorded at the start of each cycle. We find that the GNN generalizes to unseen data and can predict the time-to-failure to within a few hours using only 0.5 days of data, substantially improving upon a null model based only on inter-event statistics. Predictions improve with increasing input data length, and are most accurate when using high-SNR tilt-meter data. Applying the trained GNN to synthetic data with different magma pressure decay times predicts failure at a nearly constant stress threshold, revealing that the GNN is sensing the underling physics of caldera collapse. These findings demonstrate the predictability of caldera collapse sequences under well monitored conditions, and highlight the potential of machine learning methods for forecasting real world catastrophic events with limited training data.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2404.19351">https://arxiv.org/abs/2404.19351</a></p>
+            <p><strong>Category:</strong> physics.geo-ph</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper is relevant because it discusses a novel application of deep learning to forecasting collapse events at a volcano, which is a specific type of time series forecasting. However, it seems to be more application-oriented than proposing new methods.</p>
+        </div>
+        </div><div class='timestamp'>Report generated on May 06, 2024 at 21:36:09</div></body></html>

@@ -39,3 +39,4 @@
 [./papers_2024_05_14.html](./papers_2024_05_14.html)
 [./papers_2024_05_15.html](./papers_2024_05_15.html)
 [./papers_2024_05_16.html](./papers_2024_05_16.html)
+[./papers_2024_05_19.html](./papers_2024_05_19.html)

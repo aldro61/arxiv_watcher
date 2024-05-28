@@ -45,3 +45,4 @@
 [./papers_2024_05_22.html](./papers_2024_05_22.html)
 [./papers_2024_05_23.html](./papers_2024_05_23.html)
 [./papers_2024_05_26.html](./papers_2024_05_26.html)
+[./papers_2024_05_27.html](./papers_2024_05_27.html)

@@ -47,3 +47,4 @@
 [./papers_2024_05_26.html](./papers_2024_05_26.html)
 [./papers_2024_05_27.html](./papers_2024_05_27.html)
 [./papers_2024_05_28.html](./papers_2024_05_28.html)
+[./papers_2024_05_29.html](./papers_2024_05_29.html)

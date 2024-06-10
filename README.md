@@ -54,3 +54,4 @@
 [./papers_2024_06_04.html](./papers_2024_06_04.html)
 [./papers_2024_06_05.html](./papers_2024_06_05.html)
 [./papers_2024_06_06.html](./papers_2024_06_06.html)
+[./papers_2024_06_09.html](./papers_2024_06_09.html)

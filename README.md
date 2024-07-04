@@ -61,3 +61,4 @@
 [./papers_2024_06_30.html](./papers_2024_06_30.html)
 [./papers_2024_07_01.html](./papers_2024_07_01.html)
 [./papers_2024_07_02.html](./papers_2024_07_02.html)
+[./papers_2024_07_03.html](./papers_2024_07_03.html)

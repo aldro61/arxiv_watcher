@@ -1,0 +1,542 @@
+
+            <html>
+            <head>
+                <title>Report Generated on July 09, 2024</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    .paper-box {
+                        background-color: #f0f0f0;
+                        margin-bottom: 20px;
+                        padding: 15px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                    h1 { text-align: center; }
+                    h2 {
+                        cursor: pointer;
+                        color: #333;
+                        border-bottom: 2px solid #666;
+                    }
+                    a { color: #337ab7; text-decoration: none; }
+                    a:hover { text-decoration: underline; }
+                    h3 { color: #337ab7; }
+                    .timestamp { text-align: center; font-size: small; margin-top: 40px; }
+                    .paper-figure {
+                        max-width: 200px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin-top: 10px;
+                    }
+                    .papers-container { display: block; padding: 0 18px; }
+                </style>
+            </head>
+            <body>
+            <h1>Report for July 09, 2024</h1>
+            <script>
+                function toggleSection(id) {
+                    var x = document.getElementById(id);
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+            <h2 onclick="toggleSection('section_llm-agents')">Llm-agents</h2><div id='section_llm-agents' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.04752" target="_blank">SpikeLLM: Scaling up Spiking Neural Network to Large Language Models via Saliency-based Spiking</a></h3>
+            <a href="https://arxiv.org/html/2407.04752v1/extracted/5710913/fig.png" target="_blank"><img src="https://arxiv.org/html/2407.04752v1/extracted/5710913/fig.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Xingrun Xing, Boyan Gao, Zheng Zhang, David A. Clifton, Shitao Xiao, Li Du, Guoqi Li, Jiajun Zhang</p>
+            <p><strong>Summary:</strong> arXiv:2407.04752v1 Announce Type: new 
+Abstract: The recent advancements in large language models (LLMs) with billions of parameters have significantly boosted their performance across various real-world applications. However, the inference processes for these models require substantial energy and computational resources, presenting considerable deployment challenges. In contrast, human brains, which contain approximately 86 billion biological neurons, exhibit significantly greater energy efficiency compared to LLMs with a similar number of parameters. Inspired by this, we redesign 7 to 70 billion parameter LLMs using bio-plausible spiking mechanisms, emulating the efficient behavior of the human brain. We propose the first spiking large language model as recent LLMs termed SpikeLLM. Coupled with the proposed model, a novel spike-driven quantization framework named Optimal Brain Spiking is introduced to reduce the energy cost and accelerate inference speed via two essential approaches: first (second)-order differentiation-based salient channel detection, and per-channel salient outlier expansion with Generalized Integrate-and-Fire neurons. Our proposed spike-driven quantization can plug in main streams of quantization training methods. In the OmniQuant pipeline, SpikeLLM significantly reduces 25.51% WikiText2 perplexity and improves 3.08% average accuracy of 6 zero-shot datasets on a LLAMA2-7B 4A4W model. In the GPTQ pipeline, SpikeLLM realizes a sparse ternary quantization, which achieves additive in all linear layers. Compared with PB-LLM with similar operations, SpikeLLM also exceeds significantly. We will release our code on GitHub.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.04752">https://arxiv.org/abs/2407.04752</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to your interests because it discusses developments in large language models (LLMs), particularly the creation of a more efficient model called SpikeLLM. While it doesn't directly discuss controlling software or web browsers, it addresses the broader application of LLMs and their optimization.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05693" target="_blank">Sub-SA: Strengthen In-context Learning via Submodular Selective Annotation</a></h3>
+            <a href="https://arxiv.org/html/2407.05693v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.05693v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Jian Qian, Miao Sun, Sifan Zhou, Ziyu Zhao, Ruizhi Hun, Patrick Chiang</p>
+            <p><strong>Summary:</strong> arXiv:2407.05693v1 Announce Type: new 
+Abstract: In-context learning (ICL) leverages in-context examples as prompts for the predictions of Large Language Models (LLMs). These prompts play a crucial role in achieving strong performance. However, the selection of suitable prompts from a large pool of labeled examples often entails significant annotation costs. To address this challenge, we propose \textbf{Sub-SA} (\textbf{Sub}modular \textbf{S}elective \textbf{A}nnotation), a submodule-based selective annotation method. The aim of Sub-SA is to reduce annotation costs while improving the quality of in-context examples and minimizing the time consumption of the selection process. In Sub-SA, we design a submodular function that facilitates effective subset selection for annotation and demonstrates the characteristics of monotonically and submodularity from the theoretical perspective. Specifically, we propose \textbf{RPR} (\textbf{R}eward and \textbf{P}enalty \textbf{R}egularization) to better balance the diversity and representativeness of the unlabeled dataset attributed to a reward term and a penalty term, respectively. Consequently, the selection for annotations can be effectively addressed with a simple yet effective greedy search algorithm based on the submodular function. Finally, we apply the similarity prompt retrieval to get the examples for ICL.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05693">https://arxiv.org/abs/2407.05693</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant because it delves into the usage and performance of Large Language Models (LLMs), which is one of your interests. It doesn't appear to specifically discuss using LLMs for controlling software or web browsers. However, it does explore the overall improvement of LLMs, which might be relevant and interesting to you.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.06083" target="_blank">A Survey of Controllable Learning: Methods and Applications in Information Retrieval</a></h3>
+            <a href="https://arxiv.org/html/2407.06083v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.06083v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Chenglei Shen, Xiao Zhang, Teng Shi, Changshuo Zhang, Guofu Xie, Jun Xu</p>
+            <p><strong>Summary:</strong> arXiv:2407.06083v1 Announce Type: new 
+Abstract: Controllable learning (CL) emerges as a critical component in trustworthy machine learning, ensuring that learners meet predefined targets and can adaptively adjust without retraining according to the changes in those targets. We provide a formal definition of CL, and discuss its applications in information retrieval (IR) where information needs are often complex and dynamic. The survey categorizes CL according to who controls (users or platforms), what is controllable (e.g., retrieval objectives, users' historical behaviors, controllable environmental adaptation), how control is implemented (e.g., rule-based method, Pareto optimization, Hypernetwork), and where to implement control (e.g.,pre-processing, in-processing, post-processing methods). Then, we identify challenges faced by CL across training, evaluation, task setting, and deployment in online environments. Additionally, we outline promising directions for CL in theoretical analysis, efficient computation, empowering large language models, application scenarios and evaluation frameworks in IR.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.06083">https://arxiv.org/abs/2407.06083</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper could interest you because it discusses 'empowering large language models', and the concept of controllable learning could have applications to controlling software and web browsers or in computer automation.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.06085" target="_blank">LLMcap: Large Language Model for Unsupervised PCAP Failure Detection</a></h3>
+            <a href="https://arxiv.org/html/2407.06085v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.06085v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Lukasz Tulczyjew, Kinan Jarrah, Charles Abondo, Dina Bennett, Nathanael Weill</p>
+            <p><strong>Summary:</strong> arXiv:2407.06085v1 Announce Type: new 
+Abstract: The integration of advanced technologies into telecommunication networks complicates troubleshooting, posing challenges for manual error identification in Packet Capture (PCAP) data. This manual approach, requiring substantial resources, becomes impractical at larger scales. Machine learning (ML) methods offer alternatives, but the scarcity of labeled data limits accuracy. In this study, we propose a self-supervised, large language model-based (LLMcap) method for PCAP failure detection. LLMcap leverages language-learning abilities and employs masked language modeling to learn grammar, context, and structure. Tested rigorously on various PCAPs, it demonstrates high accuracy despite the absence of labeled data during training, presenting a promising solution for efficient network analysis. Index Terms: Network troubleshooting, Packet Capture Analysis, Self-Supervised Learning, Large Language Model, Network Quality of Service, Network Performance.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.06085">https://arxiv.org/abs/2407.06085</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although this paper doesn't directly address control of software or web browsers, it leverages large language models for packet capture failure detection which falls under computer automation using large language models. It could thus potentially interest you from that perspective.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.04787" target="_blank">Re-Tuning: Overcoming the Compositionality Limits of Large Language Models with Recursive Tuning</a></h3>
+            <a href="https://arxiv.org/html/2407.04787v1/extracted/5709504/figures/src/main.png" target="_blank"><img src="https://arxiv.org/html/2407.04787v1/extracted/5709504/figures/src/main.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Eric Pasewark, Kyle Montgomery, Kefei Duan, Dawn Song, Chenguang Wang</p>
+            <p><strong>Summary:</strong> arXiv:2407.04787v1 Announce Type: cross 
+Abstract: We present a new method for large language models to solve compositional tasks. Although they have shown strong performance on traditional language understanding tasks, large language models struggle to solve compositional tasks, where the solution depends on solving smaller instances of the same problem. We propose a natural approach to solve compositional tasks recursively. Our method, Re-Tuning, tunes models to break down a problem into subproblems, solve those subproblems, and combine the results. We show that our method significantly improves model performance on three representative compositional tasks: integer addition, dynamic programming, and parity. Compared to state-of-the-art methods that keep intermediate steps towards solving the problems, Re-Tuning achieves significantly higher accuracy and is more GPU memory efficient.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.04787">https://arxiv.org/abs/2407.04787</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper could be interesting for you because it discusses the method to improve large language models' solutions to tasks by breaking down the problem into subproblems, which aligns with your interest in using large language models for computer automation. However, it does not directly address controlling software or web browsers.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.04981" target="_blank">TRACE: TRansformer-based Attribution using Contrastive Embeddings in LLMs</a></h3>
+            <a href="https://arxiv.org/html/2407.04981v1/extracted/5714059/images/Framework.png" target="_blank"><img src="https://arxiv.org/html/2407.04981v1/extracted/5714059/images/Framework.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Cheng Wang, Xinyang Lu, See-Kiong Ng, Bryan Kian Hsiang Low</p>
+            <p><strong>Summary:</strong> arXiv:2407.04981v1 Announce Type: cross 
+Abstract: The rapid evolution of large language models (LLMs) represents a substantial leap forward in natural language understanding and generation. However, alongside these advancements come significant challenges related to the accountability and transparency of LLM responses. Reliable source attribution is essential to adhering to stringent legal and regulatory standards, including those set forth by the General Data Protection Regulation. Despite the well-established methods in source attribution within the computer vision domain, the application of robust attribution frameworks to natural language processing remains underexplored. To bridge this gap, we propose a novel and versatile TRansformer-based Attribution framework using Contrastive Embeddings called TRACE that, in particular, exploits contrastive learning for source attribution. We perform an extensive empirical evaluation to demonstrate the performance and efficiency of TRACE in various settings and show that TRACE significantly improves the ability to attribute sources accurately, making it a valuable tool for enhancing the reliability and trustworthiness of LLMs.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.04981">https://arxiv.org/abs/2407.04981</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant as it focuses on large language models, specifically on their accountability and transparency, which is related to your subtopic of using large language models for computer automation and to control software. However, it doesn't directly deal with automation or control, hence giving it a slightly lower score.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05040" target="_blank">Code Less, Align More: Efficient LLM Fine-tuning for Code Generation with Data Pruning</a></h3>
+            <a href="https://arxiv.org/html/2407.05040v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.05040v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Yun-Da Tsai, Mingjie Liu, Haoxing Ren</p>
+            <p><strong>Summary:</strong> arXiv:2407.05040v1 Announce Type: cross 
+Abstract: Recent work targeting large language models (LLMs) for code generation demonstrated that increasing the amount of training data through synthetic code generation often leads to exceptional performance. In this paper we explore data pruning methods aimed at enhancing the efficiency of model training specifically for code LLMs. We present techniques that integrate various clustering and pruning metrics to selectively reduce training data without compromising the accuracy and functionality of the generated code. We observe significant redundancies in synthetic training data generation, where our experiments demonstrate that benchmark performance can be largely preserved by training on only 10% of the data. Moreover, we observe consistent improvements in benchmark results through moderate pruning of the training data. Our experiments show that these pruning strategies not only reduce the computational resources needed but also enhance the overall quality code generation.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05040">https://arxiv.org/abs/2407.05040</a></p>
+            <p><strong>Category:</strong> cs.SE</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to your interests as it explores the fine-tuning of large language models for code generation, which can be seen as a form of software control through an LLM. The focus on enhancing the efficiency of the training process through data pruning methods is also a new approach, aligning it with your interest in research papers that propose new methods.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05134" target="_blank">Solving for X and Beyond: Can Large Language Models Solve Complex Math Problems with More-Than-Two Unknowns?</a></h3>
+            <a href="https://arxiv.org/html/2407.05134v1/extracted/5714008/figures/mwp_generation.png" target="_blank"><img src="https://arxiv.org/html/2407.05134v1/extracted/5714008/figures/mwp_generation.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Kuei-Chun Kao, Ruochen Wang, Cho-Jui Hsieh</p>
+            <p><strong>Summary:</strong> arXiv:2407.05134v1 Announce Type: cross 
+Abstract: Large Language Models (LLMs) have demonstrated remarkable performance in solving math problems, a hallmark of human intelligence. Despite high success rates on current benchmarks; however, these often feature simple problems with only one or two unknowns, which do not sufficiently challenge their reasoning capacities. This paper introduces a novel benchmark, BeyondX, designed to address these limitations by incorporating problems with multiple unknowns. Recognizing the challenges in proposing multi-unknown problems from scratch, we developed BeyondX using an innovative automated pipeline that progressively increases complexity by expanding the number of unknowns in simpler problems. Empirical study on BeyondX reveals that the performance of existing LLMs, even those fine-tuned specifically on math tasks, significantly decreases as the number of unknowns increases - with a performance drop of up to 70\% observed in GPT-4. To tackle these challenges, we propose the Formulate-and-Solve strategy, a generalized prompting approach that effectively handles problems with an arbitrary number of unknowns. Our findings reveal that this strategy not only enhances LLM performance on the BeyondX benchmark but also provides deeper insights into the computational limits of LLMs when faced with more complex mathematical challenges.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05134">https://arxiv.org/abs/2407.05134</a></p>
+            <p><strong>Category:</strong> cs.AI</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although the paper does not directly cover software or browser control, it does address the capabilities of large language models in solving complex tasks, which could potentially extend to the areas of interest you've outlined.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05194" target="_blank">LLMCloudHunter: Harnessing LLMs for Automated Extraction of Detection Rules from Cloud-Based CTI</a></h3>
+            <a href="https://arxiv.org/html/2407.05194v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.05194v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Yuval Schwartz, Lavi Benshimol, Dudu Mimran, Yuval Elovici, Asaf Shabtai</p>
+            <p><strong>Summary:</strong> arXiv:2407.05194v1 Announce Type: cross 
+Abstract: As the number and sophistication of cyber attacks have increased, threat hunting has become a critical aspect of active security, enabling proactive detection and mitigation of threats before they cause significant harm. Open-source cyber threat intelligence (OS-CTI) is a valuable resource for threat hunters, however, it often comes in unstructured formats that require further manual analysis. Previous studies aimed at automating OSCTI analysis are limited since (1) they failed to provide actionable outputs, (2) they did not take advantage of images present in OSCTI sources, and (3) they focused on on-premises environments, overlooking the growing importance of cloud environments. To address these gaps, we propose LLMCloudHunter, a novel framework that leverages large language models (LLMs) to automatically generate generic-signature detection rule candidates from textual and visual OSCTI data. We evaluated the quality of the rules generated by the proposed framework using 12 annotated real-world cloud threat reports. The results show that our framework achieved a precision of 92% and recall of 98% for the task of accurately extracting API calls made by the threat actor and a precision of 99% with a recall of 98% for IoCs. Additionally, 99.18% of the generated detection rule candidates were successfully compiled and converted into Splunk queries.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05194">https://arxiv.org/abs/2407.05194</a></p>
+            <p><strong>Category:</strong> cs.CR</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper seems relevant to your interest in using large language models for computer automation. It introduces a framework called LLMCloudHunter that uses large language models to automate rule extraction from cyber threat intelligence data. Although not directly focused on software or web browsers control, it touches on the aspect of automation using LLMs.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05413" target="_blank">SBoRA: Low-Rank Adaptation with Regional Weight Updates</a></h3>
+            <a href="https://arxiv.org/html/2407.05413v1/extracted/5714270/fig1_new.png" target="_blank"><img src="https://arxiv.org/html/2407.05413v1/extracted/5714270/fig1_new.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Lai-Man Po, Yuyang Liu, Haoxuan Wu, Tianqi Zhang, Wing-Yin Yu, Zeyu Jiang, Kun Li</p>
+            <p><strong>Summary:</strong> arXiv:2407.05413v1 Announce Type: cross 
+Abstract: This paper introduces Standard Basis LoRA (SBoRA), a novel parameter-efficient fine-tuning approach for Large Language Models that builds upon the pioneering works of Low-Rank Adaptation (LoRA) and Orthogonal Adaptation. SBoRA further reduces the computational and memory requirements of LoRA while enhancing learning performance. By leveraging orthogonal standard basis vectors to initialize one of the low-rank matrices, either A or B, SBoRA enables regional weight updates and memory-efficient fine-tuning. This approach gives rise to two variants, SBoRA-FA and SBoRA-FB, where only one of the matrices is updated, resulting in a sparse update matrix with a majority of zero rows or columns. Consequently, the majority of the fine-tuned model's weights remain unchanged from the pre-trained weights. This characteristic of SBoRA, wherein regional weight updates occur, is reminiscent of the modular organization of the human brain, which efficiently adapts to new tasks. Our empirical results demonstrate the superiority of SBoRA-FA over LoRA in various fine-tuning tasks, including commonsense reasoning and arithmetic reasoning. Furthermore, we evaluate the effectiveness of QSBoRA on quantized LLaMA models of varying scales, highlighting its potential for efficient adaptation to new tasks. Code is available at https://github.com/CityUHK-AI/SBoRA</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05413">https://arxiv.org/abs/2407.05413</a></p>
+            <p><strong>Category:</strong> cs.AI</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although not directly focused on controlling software or web browsers with large language models, this paper presents a new, efficient fine-tuning approach for Large Language Models. This fine-tuning could be beneficial for controlling agents based on LLMs, improving their performance in various tasks.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05483" target="_blank">Just read twice: closing the recall gap for recurrent language models</a></h3>
+            <a href="https://arxiv.org/html/2407.05483v1/extracted/5715729/figures/main_fig_jrt1.png" target="_blank"><img src="https://arxiv.org/html/2407.05483v1/extracted/5715729/figures/main_fig_jrt1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Simran Arora, Aman Timalsina, Aaryan Singhal, Benjamin Spector, Sabri Eyuboglu, Xinyi Zhao, Ashish Rao, Atri Rudra, Christopher R\'e</p>
+            <p><strong>Summary:</strong> arXiv:2407.05483v1 Announce Type: cross 
+Abstract: Recurrent large language models that compete with Transformers in language modeling perplexity are emerging at a rapid rate (e.g., Mamba, RWKV). Excitingly, these architectures use a constant amount of memory during inference. However, due to the limited memory, recurrent LMs cannot recall and use all the information in long contexts leading to brittle in-context learning (ICL) quality. A key challenge for efficient LMs is selecting what information to store versus discard. In this work, we observe the order in which information is shown to the LM impacts the selection difficulty. To formalize this, we show that the hardness of information recall reduces to the hardness of a problem called set disjointness (SD), a quintessential problem in communication complexity that requires a streaming algorithm (e.g., recurrent model) to decide whether inputted sets are disjoint. We empirically and theoretically show that the recurrent memory required to solve SD changes with set order, i.e., whether the smaller set appears first in-context. Our analysis suggests, to mitigate the reliance on data order, we can put information in the right order in-context or process prompts non-causally. Towards that end, we propose: (1) JRT-Prompt, where context gets repeated multiple times in the prompt, effectively showing the model all data orders. This gives $11.0 \pm 1.3$ points of improvement, averaged across $16$ recurrent LMs and the $6$ ICL tasks, with $11.9\times$ higher throughput than FlashAttention-2 for generation prefill (length $32$k, batch size $16$, NVidia H100). We then propose (2) JRT-RNN, which uses non-causal prefix-linear-attention to process prompts and provides $99\%$ of Transformer quality at $360$M params., $30$B tokens and $96\%$ at $1.3$B params., $50$B tokens on average across the tasks, with $19.2\times$ higher throughput for prefill than FA2.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05483">https://arxiv.org/abs/2407.05483</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper proposes an approach to improving the performance of recurrent large language models, which are fundamental components for your interest in agents based on large-language models. Although it doesn't explicitly cover the control of software or web browsers, the methods discussed are likely to enhance automation capabilities.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.06057" target="_blank">Variational Best-of-N Alignment</a></h3>
+            <a href="https://arxiv.org/html/2407.06057v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.06057v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Afra Amini, Tim Vieira, Ryan Cotterell</p>
+            <p><strong>Summary:</strong> arXiv:2407.06057v1 Announce Type: cross 
+Abstract: Best-of-N (BoN) is a popular and effective algorithm for aligning language models to human preferences. The algorithm works as follows: at inference time, N samples are drawn from the language model, and the sample with the highest reward, as judged by a reward model, is returned as the output. Despite its effectiveness, BoN is computationally expensive; it reduces sampling throughput by a factor of N. To make BoN more efficient at inference time, one strategy is to fine-tune the language model to mimic what BoN does during inference. To achieve this, we derive the distribution induced by the BoN algorithm. We then propose to fine-tune the language model to minimize backward KL divergence to the BoN distribution. Our approach is analogous to mean-field variational inference and, thus, we term it variational BoN (vBoN). To the extent this fine-tuning is successful and we end up with a good approximation, we have reduced the inference cost by a factor of N. Our experiments on a controlled generation task suggest that while variational BoN is not as effective as BoN in aligning language models, it is close to BoN performance as vBoN appears more often on the Pareto frontier of reward and KL divergence compared to models trained with KL-constrained RL objective.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.06057">https://arxiv.org/abs/2407.06057</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is focused on the efficient alignment of large language models to human preferences, which falls under your interest in large-language model-based agents. However, it does not specifically discuss control of software or browsers.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2310.17110" target="_blank">LLM4DyG: Can Large Language Models Solve Spatial-Temporal Problems on Dynamic Graphs?</a></h3>
+            <a href="https://arxiv.org/html/2310.17110v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2310.17110v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Zeyang Zhang, Xin Wang, Ziwei Zhang, Haoyang Li, Yijian Qin, Wenwu Zhu</p>
+            <p><strong>Summary:</strong> arXiv:2310.17110v3 Announce Type: replace 
+Abstract: In an era marked by the increasing adoption of Large Language Models (LLMs) for various tasks, there is a growing focus on exploring LLMs' capabilities in handling web data, particularly graph data. Dynamic graphs, which capture temporal network evolution patterns, are ubiquitous in real-world web data. Evaluating LLMs' competence in understanding spatial-temporal information on dynamic graphs is essential for their adoption in web applications, which remains unexplored in the literature. In this paper, we bridge the gap via proposing to evaluate LLMs' spatial-temporal understanding abilities on dynamic graphs, to the best of our knowledge, for the first time. Specifically, we propose the LLM4DyG benchmark, which includes nine specially designed tasks considering the capability evaluation of LLMs from both temporal and spatial dimensions. Then, we conduct extensive experiments to analyze the impacts of different data generators, data statistics, prompting techniques, and LLMs on the model performance. Finally, we propose Disentangled Spatial-Temporal Thoughts (DST2) for LLMs on dynamic graphs to enhance LLMs' spatial-temporal understanding abilities. Our main observations are: 1) LLMs have preliminary spatial-temporal understanding abilities on dynamic graphs, 2) Dynamic graph tasks show increasing difficulties for LLMs as the graph size and density increase, while not sensitive to the time span and data generation mechanism, 3) the proposed DST2 prompting method can help to improve LLMs' spatial-temporal understanding abilities on dynamic graphs for most tasks. The data and codes are publicly available at Github.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2310.17110">https://arxiv.org/abs/2310.17110</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper is very relevant to your interests in large language models and their application to dynamic graphs. The paper establishes a benchmark to understand the spatial-temporal abilities of these models, which can be key in software or web data control. Furthermore, new methodologies such as DST2 are proposed, bringing novelty to the table.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2403.11901" target="_blank">Larimar: Large Language Models with Episodic Memory Control</a></h3>
+            <a href="https://arxiv.org/html/2403.11901v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.11901v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Payel Das, Subhajit Chaudhury, Elliot Nelson, Igor Melnyk, Sarath Swaminathan, Sihui Dai, Aur\'elie Lozano, Georgios Kollias, Vijil Chenthamarakshan,  Ji\v{r}\'i,  Navr\'atil, Soham Dan, Pin-Yu Chen</p>
+            <p><strong>Summary:</strong> arXiv:2403.11901v3 Announce Type: replace 
+Abstract: Efficient and accurate updating of knowledge stored in Large Language Models (LLMs) is one of the most pressing research challenges today. This paper presents Larimar - a novel, brain-inspired architecture for enhancing LLMs with a distributed episodic memory. Larimar's memory allows for dynamic, one-shot updates of knowledge without the need for computationally expensive re-training or fine-tuning. Experimental results on multiple fact editing benchmarks demonstrate that Larimar attains accuracy comparable to most competitive baselines, even in the challenging sequential editing setup, but also excels in speed - yielding speed-ups of 8-10x depending on the base LLM - as well as flexibility due to the proposed architecture being simple, LLM-agnostic, and hence general. We further provide mechanisms for selective fact forgetting, information leakage prevention, and input context length generalization with Larimar and show their effectiveness. Our code is available at https://github.com/IBM/larimar</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.11901">https://arxiv.org/abs/2403.11901</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper introduces Larimar, a method that updates Large Language Models (LLMs) and controls memory. Even though it's not specifically about controlling software or web browsers, its advancements in LLMs could be applied to these subtopics. Since the user is interested in large language models, and the paper discusses a novel enhancement for them, it could be valuable for your research.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2406.04313" target="_blank">Improving Alignment and Robustness with Circuit Breakers</a></h3>
+            <a href="https://arxiv.org/html/2406.04313v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2406.04313v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Andy Zou, Long Phan, Justin Wang, Derek Duenas, Maxwell Lin, Maksym Andriushchenko, Rowan Wang, Zico Kolter, Matt Fredrikson, Dan Hendrycks</p>
+            <p><strong>Summary:</strong> arXiv:2406.04313v3 Announce Type: replace 
+Abstract: AI systems can take harmful actions and are highly vulnerable to adversarial attacks. We present an approach, inspired by recent advances in representation engineering, that interrupts the models as they respond with harmful outputs with "circuit breakers." Existing techniques aimed at improving alignment, such as refusal training, are often bypassed. Techniques such as adversarial training try to plug these holes by countering specific attacks. As an alternative to refusal training and adversarial training, circuit-breaking directly controls the representations that are responsible for harmful outputs in the first place. Our technique can be applied to both text-only and multimodal language models to prevent the generation of harmful outputs without sacrificing utility -- even in the presence of powerful unseen attacks. Notably, while adversarial robustness in standalone image recognition remains an open challenge, circuit breakers allow the larger multimodal system to reliably withstand image "hijacks" that aim to produce harmful content. Finally, we extend our approach to AI agents, demonstrating considerable reductions in the rate of harmful actions when they are under attack. Our approach represents a significant step forward in the development of reliable safeguards to harmful behavior and adversarial attacks.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2406.04313">https://arxiv.org/abs/2406.04313</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper discusses the use of circuit breakers to optimally control AI agent actions and responses, showing it can be applied to both text-only and multimodal language models, which are kinds of large language models. It is therefore related to your interest in AI agents based on large language models for computer automation.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.00617" target="_blank">Iterative Nash Policy Optimization: Aligning LLMs with General Preferences via No-Regret Learning</a></h3>
+            
+            <p><strong>Authors:</strong> Yuheng Zhang, Dian Yu, Baolin Peng, Linfeng Song, Ye Tian, Mingyue Huo, Nan Jiang, Haitao Mi, Dong Yu</p>
+            <p><strong>Summary:</strong> arXiv:2407.00617v2 Announce Type: replace 
+Abstract: Reinforcement Learning with Human Feedback (RLHF) has achieved great success in aligning large language models (LLMs) with human preferences. Prevalent RLHF approaches are reward-based, following the Bradley-Terry (BT) model assumption, which may not fully capture the complexity of human preferences. In this paper, we explore RLHF under a general preference framework and approach it from a game-theoretic perspective. Specifically, we formulate the problem as a two-player game and propose a novel algorithm, iterative Nash policy optimization (INPO). The key idea is to let the policy play against itself via no-regret learning, thereby approximating the Nash policy. Unlike previous methods, INPO bypasses the need for estimating the expected win rate for individual responses, which typically incurs high computational or annotation costs. Instead, we introduce a new loss objective that is directly minimized over a preference dataset. We provide theoretical analysis for our approach and demonstrate its effectiveness through experiments on various representative benchmarks. With an LLaMA-3-8B-based SFT model, INPO achieves a 41.5% length-controlled win rate on AlpacaEval 2.0 and a 38.3% win rate on Arena-Hard, showing substantial improvement over the state-of-the-art iterative algorithm [Dong et al., 2024] under the BT model assumption. Additionally, our ablation study highlights the benefits of incorporating KL regularization for response length control.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.00617">https://arxiv.org/abs/2407.00617</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to your interests in large language models to control software. It discusses aligning large language models (LLMs) with human preferences via a novel algorithm, which invloves automation and improved control, hence the relevance. However, it does not directly touch upon using LLMs to control web browsers, hence the score is not 5.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2310.01991" target="_blank">Fill in the Blank: Exploring and Enhancing LLM Capabilities for Backward Reasoning in Math Word Problems</a></h3>
+            <a href="https://arxiv.org/html/2310.01991v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2310.01991v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Aniruddha Deb, Neeva Oza, Sarthak Singla, Dinesh Khandelwal, Dinesh Garg, Parag Singla</p>
+            <p><strong>Summary:</strong> arXiv:2310.01991v2 Announce Type: replace-cross 
+Abstract: While forward reasoning (i.e., find the answer given the question) has been explored extensively in recent literature, backward reasoning is relatively unexplored. We examine the backward reasoning capabilities of LLMs on Math Word Problems (MWPs): given a mathematical question and its answer, with some details omitted from the question, can LLMs effectively retrieve the missing information? On modifying three benchmark datasets for this task, to evaluate this task: GSM8k, SVAMP, and MultiArith, we find a significant drop in the accuracy of models on this task compared to forward reasoning across SOTA LLMs (GPT4, GPT3.5, PaLM-2, and LLaMa). Motivated by the fact backward reasoning can be seen as the ''inverse'' of forward reasoning, we propose variations of three different forward reasoning strategies to improve performance. Rephrase reformulates the given problem into a forward reasoning problem, PAL-Tools combines the idea of Program-Aided LLMs to produce a set of equations that can be solved by an external solver, and Check your Work exploits the availability of natural verifier of high accuracy in the forward direction, interleaving solving and verification steps. Finally, realizing that each of our base methods correctly solves a different set of problems, we propose a novel Bayesian formulation for creating an ensemble over the base methods to further boost the accuracy. Extensive experimentation demonstrates successive improvement in the performance of LLMs on the backward reasoning task, using our strategies, with our ensemble-based method resulting in significant performance gains compared to the SOTA forward reasoning strategies we adapt.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2310.01991">https://arxiv.org/abs/2310.01991</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper is related to exploring attributes of large language models (LLMs), specifically, their abilities on backward reasoning in math word problems. Though it doesn't focus on controlling software or web browsers, it does focus on computer automation in a broader sense by seeking to enhance LLMs' problem-solving abilities.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2311.04131" target="_blank">Towards Interpretable Sequence Continuation: Analyzing Shared Circuits in Large Language Models</a></h3>
+            <a href="https://arxiv.org/html/2311.04131v4/extracted/5714538/diagrams/fig2_revise.png" target="_blank"><img src="https://arxiv.org/html/2311.04131v4/extracted/5714538/diagrams/fig2_revise.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Michael Lan, Phillip Torr, Fazl Barez</p>
+            <p><strong>Summary:</strong> arXiv:2311.04131v4 Announce Type: replace-cross 
+Abstract: While transformer models exhibit strong capabilities on linguistic tasks, their complex architectures make them difficult to interpret. Recent work has aimed to reverse engineer transformer models into human-readable representations called circuits that implement algorithmic functions. We extend this research by analyzing and comparing circuits for similar sequence continuation tasks, which include increasing sequences of Arabic numerals, number words, and months. By applying circuit interpretability analysis, we identify a key sub-circuit in both GPT-2 Small and Llama-2-7B responsible for detecting sequence members and for predicting the next member in a sequence. Our analysis reveals that semantically related sequences rely on shared circuit subgraphs with analogous roles. Additionally, we show that this sub-circuit has effects on various math-related prompts, such as on intervaled circuits, Spanish number word and months continuation, and natural language word problems. Overall, documenting shared computational structures enables better model behavior predictions, identification of errors, and safer editing procedures. This mechanistic understanding of transformers is a critical step towards building more robust, aligned, and interpretable language models.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2311.04131">https://arxiv.org/abs/2311.04131</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although the paper does not describe new methods to control software or web browsers using Large Language Models (LLMs), it discusses interpretability in transformer models, which are a type of LLM. This could be important and relevant for developing LLM agents as it contributes to the understanding of their inner workings.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2312.00700" target="_blank">GIFT: Generative Interpretable Fine-Tuning</a></h3>
+            <a href="https://arxiv.org/html/2312.00700v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2312.00700v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Chinmay Savadikar, Xi Song, Tianfu Wu</p>
+            <p><strong>Summary:</strong> arXiv:2312.00700v3 Announce Type: replace-cross 
+Abstract: We present Generative Interpretable Fine-Tuning (GIFT) for parameter-efficient fine-tuning of pretrained Transformer backbones, which can be formulated as a simple factorized matrix multiplication in the parameter space or equivalently in the activation/representation space, and thus embraces built-in interpretability. For a layer with weights $\omega\in \mathbb{R}^{d_{out}\times d_{in}}$, our proposed GIFT learns the fine-tuned weights $\hat{\omega}$ directly from $\omega$ as $\hat{\omega}=\omega\cdot (\mathbb{I}+\phi_{d_{in}\times r}\cdot\psi_{r\times d_{in}})$. $\Theta=(\phi, \psi)$ are the learnable parameters of the two linear layers. $\Theta$ can be shared by all layers selected for fine-tuning (e.g., all the Query and Value layers), or can be layer-type specific (e.g., different $\Theta$'s used for Query and Value), resulting in significantly fewer trainable parameters compared to layer-specific Low-Rank Adaptation (LoRA). We perform comprehensive evaluations on natural language tasks (commonsense and arithmetic reasoning, instruction tuning, and sequence classification), and fine-grained visual classification tasks. We obtain the best performance and parameter efficiency among baselines on commonsense reasoning, instruction tuning and visual recognition benchmarks. Compared to LoRA, we obtain 5.9% absolute increase in average accuracy with 53.8 times reduction of parameters on Commonsense170k using Llama-3 (8B), and 5.4% absolute increase in the win rate with 4 times reduction of parameters using Llama-2 (7B) during instruction tuning. Our GIFT also obtains a slightly higher win rate on instruction tuning than GPT 3.5 (Turbo 1106). We show the output of the first linear layer (i.e., $\omega\cdot \phi$) is surprisingly interpretable, which can play the role of a token-clustering head as a by-product to localize meaningful objects/parts in images for computer vision tasks.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2312.00700">https://arxiv.org/abs/2312.00700</a></p>
+            <p><strong>Category:</strong> cs.CV</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> While the paper contains relevant aspects across some of your topics (uses transformer models), it is most relevant to your interests in 'Agents based on large-language models', particularly control of various applications. The paper discusses 'instruction tuning', an aspect of controlling software, and provides results from evaluations on multiple language tasks. However, it doesn't directly handle time series or causality topics, and its focus on different applications instead of proposing new methods limit its score.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2401.06692" target="_blank">An Experimental Design Framework for Label-Efficient Supervised Finetuning of Large Language Models</a></h3>
+            <a href="https://arxiv.org/html/2401.06692v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2401.06692v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Gantavya Bhatt, Yifang Chen, Arnav M. Das, Jifan Zhang, Sang T. Truong, Stephen Mussmann, Yinglun Zhu, Jeffrey Bilmes, Simon S. Du, Kevin Jamieson, Jordan T. Ash, Robert D. Nowak</p>
+            <p><strong>Summary:</strong> arXiv:2401.06692v3 Announce Type: replace-cross 
+Abstract: Supervised finetuning (SFT) on instruction datasets has played a crucial role in achieving the remarkable zero-shot generalization capabilities observed in modern large language models (LLMs). However, the annotation efforts required to produce high quality responses for instructions are becoming prohibitively expensive, especially as the number of tasks spanned by instruction datasets continues to increase. Active learning is effective in identifying useful subsets of samples to annotate from an unlabeled pool, but its high computational cost remains a barrier to its widespread applicability in the context of LLMs. To mitigate the annotation cost of SFT and circumvent the computational bottlenecks of active learning, we propose using experimental design. Experimental design techniques select the most informative samples to label, and typically maximize some notion of uncertainty and/or diversity. In our work, we implement a framework that evaluates several existing and novel experimental design techniques and find that these methods consistently yield significant gains in label efficiency with little computational overhead. On generative tasks, our methods achieve the same generalization performance with only $50\%$ of annotation cost required by random sampling.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2401.06692">https://arxiv.org/abs/2401.06692</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper aligns with your interest in large language models. Although it does not explicitly describe controlling software or web browsers, it discusses 'supervised finetuning' of such models, thereby offering underlying methods which could be applicable in the desired scenarios.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2402.05133" target="_blank">Personalized Language Modeling from Personalized Human Feedback</a></h3>
+            <a href="https://arxiv.org/html/2402.05133v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2402.05133v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Xinyu Li, Zachary C. Lipton, Liu Leqi</p>
+            <p><strong>Summary:</strong> arXiv:2402.05133v2 Announce Type: replace-cross 
+Abstract: Reinforcement Learning from Human Feedback (RLHF) is commonly used to fine-tune large language models to better align with human preferences. However, the underlying premise of algorithms developed under this framework can be problematic when user preferences encoded in human feedback are diverse. In this work, we aim to address this problem by developing methods for building personalized language models. We first formally introduce the task of learning from personalized human feedback and explain why vanilla RLHF can be ineffective in this context. We then propose a general Personalized-RLHF (P-RLHF) framework, including a user model that maps user information to user representations and can flexibly encode our assumptions on user preferences. We develop new learning objectives to perform personalized Direct Preference Optimization that jointly learns a user model and a personalized language model. We demonstrate the efficacy of our proposed method through (1) a synthetic task where we fine-tune a GPT-J 6B model to align with users with conflicting preferences on generation length; and (2) an instruction following task where we fine-tune a Tulu-7B model to generate responses for users with diverse preferences on the style of responses. In both cases, our learned models can generate personalized responses that are better aligned with the preferences of individual users.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.05133">https://arxiv.org/abs/2402.05133</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper discusses the method of using large language models for personalisation purposes. Although it does not specifically discuss controlling software or web browsers, it includes the use of these models to adjust preferences which could be applicable to both of your interests.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2403.06963" target="_blank">The pitfalls of next-token prediction</a></h3>
+            <a href="https://arxiv.org/html/2403.06963v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.06963v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Gregor Bachmann, Vaishnavh Nagarajan</p>
+            <p><strong>Summary:</strong> arXiv:2403.06963v2 Announce Type: replace-cross 
+Abstract: Can a mere next-token predictor faithfully model human intelligence? We crystallize this emerging concern and correct popular misconceptions surrounding it, and advocate a simple multi-token objective.
+  As a starting point, we argue that the two often-conflated phases of next-token prediction -- autoregressive inference and teacher-forced training -- must be treated distinctly. The popular criticism that errors can compound during autoregressive inference, crucially assumes that teacher-forcing has learned an accurate next-token predictor. This assumption sidesteps a more deep-rooted problem we expose: in certain classes of tasks, teacher-forcing can simply fail to learn an accurate next-token predictor in the first place. We describe a general mechanism of how teacher-forcing can fail, and design a minimal planning task where both the Transformer and the Mamba architecture empirically fail in that manner -- remarkably, despite the task being straightforward to learn.
+  Finally, we provide preliminary evidence that this failure can be resolved using a simple modification that predicts multiple tokens in advance. We hope this finding can ground future debates and inspire explorations beyond the next-token prediction paradigm. We make our code available under https://github.com/gregorbachmann/Next-Token-Failures</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.06963">https://arxiv.org/abs/2403.06963</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper might be of interest to you as it deals with the limitations and potential improvements in large language models, which is one of your areas of interest. While it does not specifically mention software or web browsers control, the discussions around next-token prediction and its failures could provide valuable insights for developing more efficient large language models for controlling software.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.10040" target="_blank">SynthesizRR: Generating Diverse Datasets with Retrieval Augmentation</a></h3>
+            <a href="https://arxiv.org/html/2405.10040v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2405.10040v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Abhishek Divekar, Greg Durrett</p>
+            <p><strong>Summary:</strong> arXiv:2405.10040v2 Announce Type: replace-cross 
+Abstract: It is often desirable to distill the capabilities of large language models (LLMs) into smaller student models due to compute and memory constraints. One way to do this for classification tasks is via dataset synthesis, which can be accomplished by generating examples of each label from the LLM. Prior approaches to synthesis use few-shot prompting, which relies on the LLM's parametric knowledge to generate usable examples. However, this leads to issues of repetition, bias towards popular entities, and stylistic differences from human text. In this work, we propose Synthesize by Retrieval and Refinement (SynthesizRR), which uses retrieval augmentation to introduce variety into the dataset synthesis process: as retrieved passages vary, the LLM is seeded with different content to generate its examples. We empirically study the synthesis of six datasets, covering topic classification, sentiment analysis, tone detection, and humor, requiring complex synthesis strategies. We find that SynthesizRR greatly improves lexical and semantic diversity, similarity to human-written text, and distillation performance, when compared to 32-shot prompting and four prior approaches. We release our extensive codebase at https://github.com/amazon-science/synthesizrr</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.10040">https://arxiv.org/abs/2405.10040</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper seems to be about the use of large language models in the creation and synthesis of new datasets. It discusses the usage of retrieval augmentation as a way to introduce variety into the dataset synthesis process. Although it doesn't specifically address using large language models to control software, browsers, or automation, it still covers the utilization of large language models in quite a unique context which could be of interest.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.14734" target="_blank">SimPO: Simple Preference Optimization with a Reference-Free Reward</a></h3>
+            <a href="https://arxiv.org/html/2405.14734v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2405.14734v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Yu Meng, Mengzhou Xia, Danqi Chen</p>
+            <p><strong>Summary:</strong> arXiv:2405.14734v2 Announce Type: replace-cross 
+Abstract: Direct Preference Optimization (DPO) is a widely used offline preference optimization algorithm that reparameterizes reward functions in reinforcement learning from human feedback (RLHF) to enhance simplicity and training stability. In this work, we propose SimPO, a simpler yet more effective approach. The effectiveness of SimPO is attributed to a key design: using the average log probability of a sequence as the implicit reward. This reward formulation better aligns with model generation and eliminates the need for a reference model, making it more compute and memory efficient. Additionally, we introduce a target reward margin to the Bradley-Terry objective to encourage a larger margin between the winning and losing responses, further enhancing the algorithm's performance. We compare SimPO to DPO and its latest variants across various state-of-the-art training setups, including both base and instruction-tuned models like Mistral and Llama3. We evaluated on extensive instruction-following benchmarks, including AlpacaEval 2, MT-Bench, and the recent challenging Arena-Hard benchmark. Our results demonstrate that SimPO consistently and significantly outperforms existing approaches without substantially increasing response length. Specifically, SimPO outperforms DPO by up to 6.4 points on AlpacaEval 2 and by up to 7.5 points on Arena-Hard. Our top-performing model, built on Llama3-8B-Instruct, achieves a remarkable 53.7 length-controlled win rate on AlpacaEval 2 -- surpassing Claude 3 Opus on the leaderboard, and a 36.5 win rate on Arena-Hard -- making it the strongest 8B open-source model.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.14734">https://arxiv.org/abs/2405.14734</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper describes the use of a large language model to learn from human feedback in a reinforcement learning setup. This falls under the broader topic of agent-based control using large language models, even though it does not directly represent automation of software or web browsers.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.04472" target="_blank">EventChat: Implementation and user-centric evaluation of a large language model-driven conversational recommender system for exploring leisure events in an SME context</a></h3>
+            
+            <p><strong>Authors:</strong> Hannes Kunstmann, Joseph Ollier, Joel Persson, Florian von Wangenheim</p>
+            <p><strong>Summary:</strong> arXiv:2407.04472v2 Announce Type: replace-cross 
+Abstract: Large language models (LLMs) present an enormous evolution in the strategic potential of conversational recommender systems (CRS). Yet to date, research has predominantly focused upon technical frameworks to implement LLM-driven CRS, rather than end-user evaluations or strategic implications for firms, particularly from the perspective of a small to medium enterprises (SME) that makeup the bedrock of the global economy. In the current paper, we detail the design of an LLM-driven CRS in an SME setting, and its subsequent performance in the field using both objective system metrics and subjective user evaluations. While doing so, we additionally outline a short-form revised ResQue model for evaluating LLM-driven CRS, enabling replicability in a rapidly evolving field. Our results reveal good system performance from a user experience perspective (85.5% recommendation accuracy) but underscore latency, cost, and quality issues challenging business viability. Notably, with a median cost of $0.04 per interaction and a latency of 5.7s, cost-effectiveness and response time emerge as crucial areas for achieving a more user-friendly and economically viable LLM-driven CRS for SME settings. One major driver of these costs is the use of an advanced LLM as a ranker within the retrieval-augmented generation (RAG) technique. Our results additionally indicate that relying solely on approaches such as Prompt-based learning with ChatGPT as the underlying LLM makes it challenging to achieve satisfying quality in a production environment. Strategic considerations for SMEs deploying an LLM-driven CRS are outlined, particularly considering trade-offs in the current technical landscape.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.04472">https://arxiv.org/abs/2407.04472</a></p>
+            <p><strong>Category:</strong> cs.IR</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper outlines an LLM-driven conversational recommender system, which might be linked to controlling software with large language models. While not a direct match, it discusses strategic considerations and user experience which could be beneficial in your context. Although it doesn't propose a new method but rather an application, it might provide useful insights for consideration.</p>
+        </div>
+        </div><h2 onclick="toggleSection('section_causality')">Causality</h2><div id='section_causality' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.04980" target="_blank">Enabling Causal Discovery in Post-Nonlinear Models with Normalizing Flows</a></h3>
+            <a href="https://arxiv.org/html/2407.04980v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.04980v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Nu Hoang, Bao Duong, Thin Nguyen</p>
+            <p><strong>Summary:</strong> arXiv:2407.04980v1 Announce Type: new 
+Abstract: Post-nonlinear (PNL) causal models stand out as a versatile and adaptable framework for modeling intricate causal relationships. However, accurately capturing the invertibility constraint required in PNL models remains challenging in existing studies. To address this problem, we introduce CAF-PoNo (Causal discovery via Normalizing Flows for Post-Nonlinear models), harnessing the power of the normalizing flows architecture to enforce the crucial invertibility constraint in PNL models. Through normalizing flows, our method precisely reconstructs the hidden noise, which plays a vital role in cause-effect identification through statistical independence testing. Furthermore, the proposed approach exhibits remarkable extensibility, as it can be seamlessly expanded to facilitate multivariate causal discovery via causal order identification, empowering us to efficiently unravel complex causal relationships. Extensive experimental evaluations on both simulated and real datasets consistently demonstrate that the proposed method outperforms several state-of-the-art approaches in both bivariate and multivariate causal discovery tasks.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.04980">https://arxiv.org/abs/2407.04980</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is very relevant to your interests in 'Causality and machine learning'. It proposes a new method, CAF-PoNo, that uses normalizing flows for post-nonlinear models, thereby introducing an innovative approach to causal discovery. It also validates the method extensively, making it a strong addition to your research.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.04992" target="_blank">Scalable Variational Causal Discovery Unconstrained by Acyclicity</a></h3>
+            <a href="https://arxiv.org/html/2407.04992v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.04992v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Nu Hoang, Bao Duong, Thin Nguyen</p>
+            <p><strong>Summary:</strong> arXiv:2407.04992v1 Announce Type: new 
+Abstract: Bayesian causal discovery offers the power to quantify epistemic uncertainties among a broad range of structurally diverse causal theories potentially explaining the data, represented in forms of directed acyclic graphs (DAGs). However, existing methods struggle with efficient DAG sampling due to the complex acyclicity constraint. In this study, we propose a scalable Bayesian approach to effectively learn the posterior distribution over causal graphs given observational data thanks to the ability to generate DAGs without explicitly enforcing acyclicity. Specifically, we introduce a novel differentiable DAG sampling method that can generate a valid acyclic causal graph by mapping an unconstrained distribution of implicit topological orders to a distribution over DAGs. Given this efficient DAG sampling scheme, we are able to model the posterior distribution over causal graphs using a simple variational distribution over a continuous domain, which can be learned via the variational inference framework. Extensive empirical experiments on both simulated and real datasets demonstrate the superior performance of the proposed model compared to several state-of-the-art baselines.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.04992">https://arxiv.org/abs/2407.04992</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is very relevant to your interests. It discusses a new method for causal discovery using scalable Bayesian approaches. The method offers the ability to better understand causal graphs, a topic of your interest.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2406.00853" target="_blank">A Tutorial on Doubly Robust Learning for Causal Inference</a></h3>
+            
+            <p><strong>Authors:</strong> Hlynur Dav\'i{\dh} Hlynsson</p>
+            <p><strong>Summary:</strong> arXiv:2406.00853v2 Announce Type: replace-cross 
+Abstract: Doubly robust learning offers a robust framework for causal inference from observational data by integrating propensity score and outcome modeling. Despite its theoretical appeal, practical adoption remains limited due to perceived complexity and inaccessible software. This tutorial aims to demystify doubly robust methods and demonstrate their application using the EconML package. We provide an introduction to causal inference, discuss the principles of outcome modeling and propensity scores, and illustrate the doubly robust approach through simulated case studies. By simplifying the methodology and offering practical coding examples, we intend to make doubly robust learning accessible to researchers and practitioners in data science and statistics.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2406.00853">https://arxiv.org/abs/2406.00853</a></p>
+            <p><strong>Category:</strong> stat.ML</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is highly relevant as it discusses a robust framework for causal inference from observational data, which directly corresponds with your interest in causal discovery. Furthermore, it even implies the practical use of machine learning, as evident from a mention of the EconML package.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05330" target="_blank">Fast Proxy Experiment Design for Causal Effect Identification</a></h3>
+            <a href="https://arxiv.org/html/2407.05330v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.05330v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Sepehr Elahi, Sina Akbari, Jalal Etesami, Negar Kiyavash, Patrick Thiran</p>
+            <p><strong>Summary:</strong> arXiv:2407.05330v1 Announce Type: new 
+Abstract: Identifying causal effects is a key problem of interest across many disciplines. The two long-standing approaches to estimate causal effects are observational and experimental (randomized) studies. Observational studies can suffer from unmeasured confounding, which may render the causal effects unidentifiable. On the other hand, direct experiments on the target variable may be too costly or even infeasible to conduct. A middle ground between these two approaches is to estimate the causal effect of interest through proxy experiments, which are conducted on variables with a lower cost to intervene on compared to the main target. Akbari et al. [2022] studied this setting and demonstrated that the problem of designing the optimal (minimum-cost) experiment for causal effect identification is NP-complete and provided a naive algorithm that may require solving exponentially many NP-hard problems as a sub-routine in the worst case. In this work, we provide a few reformulations of the problem that allow for designing significantly more efficient algorithms to solve it as witnessed by our extensive simulations. Additionally, we study the closely-related problem of designing experiments that enable us to identify a given effect through valid adjustments sets.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05330">https://arxiv.org/abs/2407.05330</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper seems pertinent to your interests in 'Causality and Machine Learning' as it primarily focuses on causal effect identification, an aspect of causal discovery. While it doesn't explicitly mention use of large language models, it addresses the problem of conducting experiments for identifying causal effects, which might bear some relevance to your interests in new methods for causal representation learning and causal discovery.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05732" target="_blank">FairPFN: Transformers Can do Counterfactual Fairness</a></h3>
+            <a href="https://arxiv.org/html/2407.05732v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.05732v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Jake Robertson, Noah Hollmann, Noor Awad, Frank Hutter</p>
+            <p><strong>Summary:</strong> arXiv:2407.05732v1 Announce Type: new 
+Abstract: Machine Learning systems are increasingly prevalent across healthcare, law enforcement, and finance but often operate on historical data, which may carry biases against certain demographic groups. Causal and counterfactual fairness provides an intuitive way to define fairness that closely aligns with legal standards. Despite its theoretical benefits, counterfactual fairness comes with several practical limitations, largely related to the reliance on domain knowledge and approximate causal discovery techniques in constructing a causal model. In this study, we take a fresh perspective on counterfactually fair prediction, building upon recent work in in context learning (ICL) and prior fitted networks (PFNs) to learn a transformer called FairPFN. This model is pretrained using synthetic fairness data to eliminate the causal effects of protected attributes directly from observational data, removing the requirement of access to the correct causal model in practice. In our experiments, we thoroughly assess the effectiveness of FairPFN in eliminating the causal impact of protected attributes on a series of synthetic case studies and real world datasets. Our findings pave the way for a new and promising research area: transformers for causal and counterfactual fairness.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05732">https://arxiv.org/abs/2407.05732</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to your interest in causality and machine learning. It talks about counterfactual fairness, a concept in causal inference, and the use of transformers, a type of machine learning model. However, it does not heavily delve into causal representation learning or causal discovery.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05954" target="_blank">Causality-driven Sequence Segmentation for Enhancing Multiphase Industrial Process Data Analysis and Soft Sensing</a></h3>
+            <a href="https://arxiv.org/html/2407.05954v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.05954v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Yimeng He, Le Yao, Xinmin Zhang, Xiangyin Kong, Zhihuan Song</p>
+            <p><strong>Summary:</strong> arXiv:2407.05954v1 Announce Type: new 
+Abstract: The dynamic characteristics of multiphase industrial processes present significant challenges in the field of industrial big data modeling. Traditional soft sensing models frequently neglect the process dynamics and have difficulty in capturing transient phenomena like phase transitions. To address this issue, this article introduces a causality-driven sequence segmentation (CDSS) model. This model first identifies the local dynamic properties of the causal relationships between variables, which are also referred to as causal mechanisms. It then segments the sequence into different phases based on the sudden shifts in causal mechanisms that occur during phase transitions. Additionally, a novel metric, similarity distance, is designed to evaluate the temporal consistency of causal mechanisms, which includes both causal similarity distance and stable similarity distance. The discovered causal relationships in each phase are represented as a temporal causal graph (TCG). Furthermore, a soft sensing model called temporal-causal graph convolutional network (TC-GCN) is trained for each phase, by using the time-extended data and the adjacency matrix of TCG. The numerical examples are utilized to validate the proposed CDSS model, and the segmentation results demonstrate that CDSS has excellent performance on segmenting both stable and unstable multiphase series. Especially, it has higher accuracy in separating non-stationary time series compared to other methods. The effectiveness of the proposed CDSS model and the TC-GCN model is also verified through a penicillin fermentation process. Experimental results indicate that the breakpoints discovered by CDSS align well with the reaction mechanisms and TC-GCN significantly has excellent predictive accuracy.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05954">https://arxiv.org/abs/2407.05954</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper should be of interest. Even though it doesn't mention machine learning per se, it discusses a model that is used to identify local dynamic properties of causal relationships for the purpose of industrial big data modeling. There's a clear focus on causal discovery, creating a soft sensing model and even building a novel metric for evaluating temporal consistency of causal mechanisms.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.06015" target="_blank">Simulation-based Benchmarking for Causal Structure Learning in Gene Perturbation Experiments</a></h3>
+            <a href="https://arxiv.org/html/2407.06015v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.06015v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Luka Kova\v{c}evi\'c, Izzy Newsham, Sach Mukherjee, John Whittaker</p>
+            <p><strong>Summary:</strong> arXiv:2407.06015v1 Announce Type: cross 
+Abstract: Causal structure learning (CSL) refers to the task of learning causal relationships from data. Advances in CSL now allow learning of causal graphs in diverse application domains, which has the potential to facilitate data-driven causal decision-making. Real-world CSL performance depends on a number of $\textit{context-specific}$ factors, including context-specific data distributions and non-linear dependencies, that are important in practical use-cases. However, our understanding of how to assess and select CSL methods in specific contexts remains limited. To address this gap, we present $\textit{CausalRegNet}$, a multiplicative effect structural causal model that allows for generating observational and interventional data incorporating context-specific properties, with a focus on the setting of gene perturbation experiments. Using real-world gene perturbation data, we show that CausalRegNet generates accurate distributions and scales far better than current simulation frameworks. We illustrate the use of CausalRegNet in assessing CSL methods in the context of interventional experiments in biology.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.06015">https://arxiv.org/abs/2407.06015</a></p>
+            <p><strong>Category:</strong> stat.ML</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to your interest in Causality and Machine Learning. It discusses the subject of causal structure learning, which aligns with your interest in causal discovery. Additionally, it demonstrates the application of CSL methods using a new model, CausalRegNet, in the context of biological experiments.</p>
+        </div>
+        </div><h2 onclick="toggleSection('section_time-series')">Time-series</h2><div id='section_time-series' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2401.10134" target="_blank">Spatial-Temporal Large Language Model for Traffic Prediction</a></h3>
+            
+            <p><strong>Authors:</strong> Chenxi Liu, Sun Yang, Qianxiong Xu, Zhishuai Li, Cheng Long, Ziyue Li, Rui Zhao</p>
+            <p><strong>Summary:</strong> arXiv:2401.10134v4 Announce Type: replace 
+Abstract: Traffic prediction, an essential component for intelligent transportation systems, endeavours to use historical data to foresee future traffic features at specific locations. Although existing traffic prediction models often emphasize developing complex neural network structures, their accuracy has not improved. Recently, large language models have shown outstanding capabilities in time series analysis. Differing from existing models, LLMs progress mainly through parameter expansion and extensive pretraining while maintaining their fundamental structures. Motivated by these developments, we propose a Spatial-Temporal Large Language Model (ST-LLM) for traffic prediction. In the ST-LLM, we define timesteps at each location as tokens and design a spatial-temporal embedding to learn the spatial location and global temporal patterns of these tokens. Additionally, we integrate these embeddings by a fusion convolution to each token for a unified spatial-temporal representation. Furthermore, we innovate a partially frozen attention strategy to adapt the LLM to capture global spatial-temporal dependencies for traffic prediction. Comprehensive experiments on real traffic datasets offer evidence that ST-LLM is a powerful spatial-temporal learner that outperforms state-of-the-art models. Notably, the ST-LLM also exhibits robust performance in both few-shot and zero-shot prediction scenarios. The code is publicly available at https://github.com/ChenxiLiu-HNU/ST-LLM.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2401.10134">https://arxiv.org/abs/2401.10134</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper is highly relevant to your interest in deep learning and time series. It proposes a new deep learning method (Spatial-Temporal Large Language Model), emphasizing on forecasting traffic prediction and showcasing its applicability in few-shot and zero-shot prediction scenarios. It is demonstrating potential advancements in the time-series domain using large language models.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2403.05798" target="_blank">$\textbf{S}^2$IP-LLM: Semantic Space Informed Prompt Learning with LLM for Time Series Forecasting</a></h3>
+            <a href="https://arxiv.org/html/2403.05798v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2403.05798v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Zijie Pan, Yushan Jiang, Sahil Garg, Anderson Schneider, Yuriy Nevmyvaka, Dongjin Song</p>
+            <p><strong>Summary:</strong> arXiv:2403.05798v2 Announce Type: replace 
+Abstract: Recently, there has been a growing interest in leveraging pre-trained large language models (LLMs) for various time series applications. However, the semantic space of LLMs, established through the pre-training, is still underexplored and may help yield more distinctive and informative representations to facilitate time series forecasting. To this end, we propose Semantic Space Informed Prompt learning with LLM ($S^2$IP-LLM) to align the pre-trained semantic space with time series embeddings space and perform time series forecasting based on learned prompts from the joint space. We first design a tokenization module tailored for cross-modality alignment, which explicitly concatenates patches of decomposed time series components to create embeddings that effectively encode the temporal dynamics. Next, we leverage the pre-trained word token embeddings to derive semantic anchors and align selected anchors with time series embeddings by maximizing the cosine similarity in the joint space. This way, $S^2$IP-LLM can retrieve relevant semantic anchors as prompts to provide strong indicators (context) for time series that exhibit different temporal dynamics. With thorough empirical studies on multiple benchmark datasets, we demonstrate that the proposed $S^2$IP-LLM can achieve superior forecasting performance over state-of-the-art baselines. Furthermore, our ablation studies and visualizations verify the necessity of prompt learning informed by semantic space.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2403.05798">https://arxiv.org/abs/2403.05798</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper is highly relevant to your interests as it proposes a new method, $S^2$IP-LLM, for time series forecasting by leveraging pre-trained large language models and aligning the pre-trained semantic space with time series embeddings space. This corresponds to your interest in new deep learning methods for time series and the use of foundation models for time series.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2406.12921" target="_blank">WindowMixer: Intra-Window and Inter-Window Modeling for Time Series Forecasting</a></h3>
+            
+            <p><strong>Authors:</strong> Quangao Liu, Ruiqi Li, Maowei Jiang, Wei Yang, Chen Liang, LongLong Pang, Zhuozhang Zou</p>
+            <p><strong>Summary:</strong> arXiv:2406.12921v2 Announce Type: replace 
+Abstract: Time series forecasting (TSF) is crucial in fields like economic forecasting, weather prediction, traffic flow analysis, and public health surveillance. Real-world time series data often include noise, outliers, and missing values, making accurate forecasting challenging. Traditional methods model point-to-point relationships, which limits their ability to capture complex temporal patterns and increases their susceptibility to noise.To address these issues, we introduce the WindowMixer model, built on an all-MLP framework. WindowMixer leverages the continuous nature of time series by examining temporal variations from a window-based perspective. It decomposes time series into trend and seasonal components, handling them individually. For trends, a fully connected (FC) layer makes predictions. For seasonal components, time windows are projected to produce window tokens, processed by Intra-Window-Mixer and Inter-Window-Mixer modules. The Intra-Window-Mixer models relationships within each window, while the Inter-Window-Mixer models relationships between windows. This approach captures intricate patterns and long-range dependencies in the data.Experiments show WindowMixer consistently outperforms existing methods in both long-term and short-term forecasting tasks.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2406.12921">https://arxiv.org/abs/2406.12921</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper is very relevant to your interest as it introduces a new deep learning approach, the WindowMixer model, for forecasting in time series. The new model handles temporal variations from a window-based perspective, which is unique and might hold insights for you.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05302" target="_blank">Mamba Hawkes Process</a></h3>
+            <a href="https://arxiv.org/html/2407.05302v1/extracted/5715032/Figure_mamba_mimic.png" target="_blank"><img src="https://arxiv.org/html/2407.05302v1/extracted/5715032/Figure_mamba_mimic.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Anningzhe Gao, Shan Dai, Yan Hu</p>
+            <p><strong>Summary:</strong> arXiv:2407.05302v1 Announce Type: new 
+Abstract: Irregular and asynchronous event sequences are prevalent in many domains, such as social media, finance, and healthcare. Traditional temporal point processes (TPPs), like Hawkes processes, often struggle to model mutual inhibition and nonlinearity effectively. While recent neural network models, including RNNs and Transformers, address some of these issues, they still face challenges with long-term dependencies and computational efficiency. In this paper, we introduce the Mamba Hawkes Process (MHP), which leverages the Mamba state space architecture to capture long-range dependencies and dynamic event interactions. Our results show that MHP outperforms existing models across various datasets. Additionally, we propose the Mamba Hawkes Process Extension (MHP-E), which combines Mamba and Transformer models to enhance predictive capabilities. We present the novel application of the Mamba architecture to Hawkes processes, a flexible and extensible model structure, and a theoretical analysis of the synergy between state space models and Hawkes processes. Experimental results demonstrate the superior performance of both MHP and MHP-E, advancing the field of temporal point process modeling.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05302">https://arxiv.org/abs/2407.05302</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> It's relevant because it introduces a new model for time series, and also discusses capturing long-range dependencies in time series data. It also presents a combination of different models to enhance predictive capabilities.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2407.05591" target="_blank">On the Power of Convolution Augmented Transformer</a></h3>
+            <a href="https://arxiv.org/html/2407.05591v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2407.05591v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Mingchen Li, Xuechen Zhang, Yixiao Huang, Samet Oymak</p>
+            <p><strong>Summary:</strong> arXiv:2407.05591v1 Announce Type: new 
+Abstract: The transformer architecture has catalyzed revolutionary advances in language modeling. However, recent architectural recipes, such as state-space models, have bridged the performance gap. Motivated by this, we examine the benefits of Convolution-Augmented Transformer (CAT) for recall, copying, and length generalization tasks. CAT incorporates convolutional filters in the K/Q/V embeddings of an attention layer. Through CAT, we show that the locality of the convolution synergizes with the global view of the attention. Unlike comparable architectures, such as Mamba or transformer, CAT can provably solve the associative recall (AR) and copying tasks using a single layer while also enjoying guaranteed length generalization. We also establish computational tradeoffs between convolution and attention by characterizing how convolution can mitigate the need for full attention by summarizing the context window and creating salient summary tokens to attend. Evaluations on real datasets corroborate our findings and demonstrate that CAT and its variations indeed enhance the language modeling performance.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2407.05591">https://arxiv.org/abs/2407.05591</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper discusses the Convolution-Augmented Transformer (CAT), a new transformer-like model, which suggests improvements in language modeling performance. Although it doesn't specifically mention time series, the methodology can be easily applied to time series forecasting given its ability to solve the associative recall and copying tasks, which are often important for temporal data.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.09802" target="_blank">Analysis and Predictive Modeling of Solar Coronal Holes Using Computer Vision and LSTM Networks</a></h3>
+            <a href="https://arxiv.org/html/2405.09802v2/extracted/5716465/figures/fig_001.png" target="_blank"><img src="https://arxiv.org/html/2405.09802v2/extracted/5716465/figures/fig_001.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Juyoung Yun, Jungmin Shin</p>
+            <p><strong>Summary:</strong> arXiv:2405.09802v2 Announce Type: replace-cross 
+Abstract: In the era of space exploration, coronal holes on the sun play a significant role due to their impact on satellites and aircraft through their open magnetic fields and increased solar wind emissions. This study employs computer vision techniques to detect coronal hole regions and estimate their sizes using imagery from the Solar Dynamics Observatory (SDO). Additionally, we utilize deep learning methods, specifically Long Short-Term Memory (LSTM) networks, to analyze trends in the area of coronal holes and predict their areas across various solar regions over a span of seven days. By examining time series data, we aim to identify patterns in coronal hole behavior and understand their potential effects on space weather. This research enhances our ability to anticipate and prepare for space weather events that could affect Earth's technological systems.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.09802">https://arxiv.org/abs/2405.09802</a></p>
+            <p><strong>Category:</strong> astro-ph.SR</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper utilizes LSTM Networks, a deep learning method, to analyze and predict time series data related to solar coronal holes. Although it is application-oriented, it might provide a new perspective on using deep learning for time series forecasting.</p>
+        </div>
+        </div><div class='timestamp'>Report generated on July 09, 2024 at 21:40:43</div></body></html>

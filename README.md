@@ -71,3 +71,4 @@
 [./papers_2024_07_14.html](./papers_2024_07_14.html)
 [./papers_2024_07_15.html](./papers_2024_07_15.html)
 [./papers_2024_07_16.html](./papers_2024_07_16.html)
+[./papers_2024_07_17.html](./papers_2024_07_17.html)

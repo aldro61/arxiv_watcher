@@ -85,3 +85,4 @@
 [./papers_2024_08_01.html](./papers_2024_08_01.html)
 [./papers_2024_08_04.html](./papers_2024_08_04.html)
 [./papers_2024_08_05.html](./papers_2024_08_05.html)
+[./papers_2024_08_06.html](./papers_2024_08_06.html)

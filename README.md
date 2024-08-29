@@ -101,3 +101,4 @@
 [./papers_2024_08_25.html](./papers_2024_08_25.html)
 [./papers_2024_08_26.html](./papers_2024_08_26.html)
 [./papers_2024_08_27.html](./papers_2024_08_27.html)
+[./papers_2024_08_28.html](./papers_2024_08_28.html)

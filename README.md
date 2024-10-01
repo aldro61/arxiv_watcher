@@ -124,3 +124,4 @@
 [./papers_2024_09_25.html](./papers_2024_09_25.html)
 [./papers_2024_09_26.html](./papers_2024_09_26.html)
 [./papers_2024_09_29.html](./papers_2024_09_29.html)
+[./papers_2024_09_30.html](./papers_2024_09_30.html)

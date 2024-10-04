@@ -127,3 +127,4 @@
 [./papers_2024_09_30.html](./papers_2024_09_30.html)
 [./papers_2024_10_01.html](./papers_2024_10_01.html)
 [./papers_2024_10_02.html](./papers_2024_10_02.html)
+[./papers_2024_10_03.html](./papers_2024_10_03.html)

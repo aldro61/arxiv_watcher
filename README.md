@@ -128,3 +128,4 @@
 [./papers_2024_10_01.html](./papers_2024_10_01.html)
 [./papers_2024_10_02.html](./papers_2024_10_02.html)
 [./papers_2024_10_03.html](./papers_2024_10_03.html)
+[./papers_2024_10_06.html](./papers_2024_10_06.html)

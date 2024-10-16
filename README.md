@@ -135,3 +135,4 @@
 [./papers_2024_10_10.html](./papers_2024_10_10.html)
 [./papers_2024_10_13.html](./papers_2024_10_13.html)
 [./papers_2024_10_14.html](./papers_2024_10_14.html)
+[./papers_2024_10_15.html](./papers_2024_10_15.html)

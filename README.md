@@ -152,3 +152,4 @@
 [./papers_2024_11_04.html](./papers_2024_11_04.html)
 [./papers_2024_11_05.html](./papers_2024_11_05.html)
 [./papers_2024_11_06.html](./papers_2024_11_06.html)
+[./papers_2024_11_07.html](./papers_2024_11_07.html)

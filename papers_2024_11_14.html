@@ -1,0 +1,309 @@
+
+            <html>
+            <head>
+                <title>Report Generated on November 14, 2024</title>
+                <style>
+                    body { font-family: Arial, sans-serif; margin: 20px; }
+                    .paper-box {
+                        background-color: #f0f0f0;
+                        margin-bottom: 20px;
+                        padding: 15px;
+                        border-radius: 5px;
+                        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+                    }
+                    h1 { text-align: center; }
+                    h2 {
+                        cursor: pointer;
+                        color: #333;
+                        border-bottom: 2px solid #666;
+                    }
+                    a { color: #337ab7; text-decoration: none; }
+                    a:hover { text-decoration: underline; }
+                    h3 { color: #337ab7; }
+                    .timestamp { text-align: center; font-size: small; margin-top: 40px; }
+                    .paper-figure {
+                        max-width: 200px;
+                        border: 1px solid #ddd;
+                        border-radius: 4px;
+                        padding: 5px;
+                        margin-top: 10px;
+                    }
+                    .papers-container { display: block; padding: 0 18px; }
+                </style>
+            </head>
+            <body>
+            <h1>Report for November 14, 2024</h1>
+            <script>
+                function toggleSection(id) {
+                    var x = document.getElementById(id);
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+            <h2 onclick="toggleSection('section_llm-agents')">Llm-agents</h2><div id='section_llm-agents' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08244" target="_blank">NVCiM-PT: An NVCiM-assisted Prompt Tuning Framework for Edge LLMs</a></h3>
+            
+            <p><strong>Authors:</strong> Ruiyang Qin, Pengyu Ren, Zheyu Yan, Liu Liu, Dancheng Liu, Amir Nassereldine, Jinjun Xiong, Kai Ni, Sharon Hu, Yiyu Shi</p>
+            <p><strong>Summary:</strong> arXiv:2411.08244v1 Announce Type: new 
+Abstract: Large Language Models (LLMs) deployed on edge devices, known as edge LLMs, need to continuously fine-tune their model parameters from user-generated data under limited resource constraints. However, most existing learning methods are not applicable for edge LLMs because of their reliance on high resources and low learning capacity. Prompt tuning (PT) has recently emerged as an effective fine-tuning method for edge LLMs by only modifying a small portion of LLM parameters, but it suffers from user domain shifts, resulting in repetitive training and losing resource efficiency. Conventional techniques to address domain shift issues often involve complex neural networks and sophisticated training, which are incompatible for PT for edge LLMs. Therefore, an open research question is how to address domain shift issues for edge LLMs with limited resources. In this paper, we propose a prompt tuning framework for edge LLMs, exploiting the benefits offered by non-volatile computing-in-memory (NVCiM) architectures. We introduce a novel NVCiM-assisted PT framework, where we narrow down the core operations to matrix-matrix multiplication, which can then be accelerated by performing in-situ computation on NVCiM. To the best of our knowledge, this is the first work employing NVCiM to improve the edge LLM PT performance.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08244">https://arxiv.org/abs/2411.08244</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper talks about fine-tuning Large Language Models (LLMs) and improving their performance. While it doesn't directly mention the control of software or browsers, the topic is quite relevant because optimising the performance of LLMs is important to use them in different applications.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08257" target="_blank">GPTree: Towards Explainable Decision-Making via LLM-powered Decision Trees</a></h3>
+            <a href="https://arxiv.org/html/2411.08257v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.08257v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Sichao Xiong, Yigit Ihlamur, Fuat Alican, Aaron Ontoyin Yin</p>
+            <p><strong>Summary:</strong> arXiv:2411.08257v1 Announce Type: new 
+Abstract: Traditional decision tree algorithms are explainable but struggle with non-linear, high-dimensional data, limiting its applicability in complex decision-making. Neural networks excel at capturing complex patterns but sacrifice explainability in the process. In this work, we present GPTree, a novel framework combining explainability of decision trees with the advanced reasoning capabilities of LLMs. GPTree eliminates the need for feature engineering and prompt chaining, requiring only a task-specific prompt and leveraging a tree-based structure to dynamically split samples. We also introduce an expert-in-the-loop feedback mechanism to further enhance performance by enabling human intervention to refine and rebuild decision paths, emphasizing the harmony between human expertise and machine intelligence. Our decision tree achieved a 7.8% precision rate for identifying "unicorn" startups at the inception stage of a startup, surpassing gpt-4o with few-shot learning as well as the best human decision-makers (3.1% to 5.6%).</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08257">https://arxiv.org/abs/2411.08257</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The research paper is relevant to 'Agents based on large-language models' as it discusses a novel framework combining the advanced reasoning of large language models with the explainability of decision trees for decision-making, which corresponds to your interest in automation and control using large language models.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08719" target="_blank">Balancing Speed and Stability: The Trade-offs of FP8 vs. BF16 Training in LLMs</a></h3>
+            <a href="https://arxiv.org/html/2411.08719v1/extracted/5990338/figures/fp8-bf16-training-loss.png" target="_blank"><img src="https://arxiv.org/html/2411.08719v1/extracted/5990338/figures/fp8-bf16-training-loss.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Kazuki Fujii, Taishi Nakamura, Rio Yokota</p>
+            <p><strong>Summary:</strong> arXiv:2411.08719v1 Announce Type: new 
+Abstract: Large Language Models (LLMs) have attracted significant attention due to their human-like language understanding and generation capabilities, as well as their applicability across various domains.
+  These models, characterized by their massive scale and extensive training data, continue to push the boundaries of what is possible in natural language processing. The Llama 3 series, for instance, exemplifies this trend with its flagship model boasting 405 billion parameters trained on 15.6 trillion tokens. The immense computational demands associated with training such models have spurred ongoing research into optimizing the efficiency of the training process, particularly through the use of lower-precision formats.
+  NVIDIA's H100 GPU, which introduces support for FP8 in addition to the more conventional FP16 and BF16 formats, has emerged as a focal point in this optimization effort. Preliminary studies suggest that FP8 could offer substantial reductions in training time without sacrificing model performance when compared to BF16, making it a promising candidate for large-scale model training. However, the broader implications of adopting FP8, particularly in terms of training stability and downstream task performance, have yet to be fully understood.
+  In this study, we delve into the practical trade-offs involved in adopting FP8 over BF16 for training LLMs.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08719">https://arxiv.org/abs/2411.08719</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper seems relevant to your interests in large language models. It focuses on improving the efficiency of training LLMs which could indirectly impact applications such as software control and computer automation. However, it does not specifically address methods to use LLMs for these applications.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08790" target="_blank">Can sparse autoencoders be used to decompose and interpret steering vectors?</a></h3>
+            <a href="https://arxiv.org/html/2411.08790v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.08790v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Harry Mayne, Yushi Yang, Adam Mahdi</p>
+            <p><strong>Summary:</strong> arXiv:2411.08790v1 Announce Type: new 
+Abstract: Steering vectors are a promising approach to control the behaviour of large language models. However, their underlying mechanisms remain poorly understood. While sparse autoencoders (SAEs) may offer a potential method to interpret steering vectors, recent findings show that SAE-reconstructed vectors often lack the steering properties of the original vectors. This paper investigates why directly applying SAEs to steering vectors yields misleading decompositions, identifying two reasons: (1) steering vectors fall outside the input distribution for which SAEs are designed, and (2) steering vectors can have meaningful negative projections in feature directions, which SAEs are not designed to accommodate. These limitations hinder the direct use of SAEs for interpreting steering vectors.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08790">https://arxiv.org/abs/2411.08790</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> While this paper does not directly discuss using large language models to control software or web browsers, or computer automation, it explores steering vectors that control the behavior of large language models, which could be relevant in understanding how to manipulate large language models for specific tasks.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08324" target="_blank">Are LLMs Prescient? A Continuous Evaluation using Daily News as the Oracle</a></h3>
+            <a href="https://arxiv.org/html/2411.08324v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.08324v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Hui Dai, Ryan Teehan, Mengye Ren</p>
+            <p><strong>Summary:</strong> arXiv:2411.08324v1 Announce Type: cross 
+Abstract: Many existing evaluation benchmarks for Large Language Models (LLMs) quickly become outdated due to the emergence of new models and training data. These benchmarks also fall short in assessing how LLM performance changes over time, as they consist of static questions without a temporal dimension. To address these limitations, we propose using future event prediction as a continuous evaluation method to assess LLMs' temporal generalization and forecasting abilities. Our benchmark, Daily Oracle, automatically generates question-answer (QA) pairs from daily news, challenging LLMs to predict "future" event outcomes. Our findings reveal that as pre-training data becomes outdated, LLM performance degrades over time. While Retrieval Augmented Generation (RAG) has the potential to enhance prediction accuracy, the performance degradation pattern persists, highlighting the need for continuous model updates.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08324">https://arxiv.org/abs/2411.08324</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper is highly relevant to your interest in large language models, specifically their temporal generalization and forecasting abilities. While the paper does not directly mention controlling software or web browsers, the understanding of performance degradation over time can be crucial for implementing LLMs in these applications.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08432" target="_blank">One STEP at a time: Language Agents are Stepwise Planners</a></h3>
+            <a href="https://arxiv.org/html/2411.08432v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.08432v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Minh Nguyen, Ehsan Shareghi</p>
+            <p><strong>Summary:</strong> arXiv:2411.08432v1 Announce Type: cross 
+Abstract: Language agents have shown promising adaptability in dynamic environments to perform complex tasks. However, despite the versatile knowledge embedded in large language models, these agents still fall short when it comes to tasks that require planning. We introduce STEP, a novel framework designed to efficiently learn from previous experiences to enhance the planning capabilities of language agents in future steps. Concretely, STEP functions through four interconnected components. First, the Planner takes on the task, breaks it down into subtasks and provides relevant insights. Then the Executor generates action candidates, while the Evaluator ensures the actions align with learned rules from previous experiences. Lastly, Memory stores experiences to inform future decisions. In the ScienceWorld benchmark, our results show that STEP consistently outperforms state-of-the-art models, achieving an overall score of 67.4 and successfully completing 12 out of 18 tasks. These findings highlight STEP's potential as a framework for enhancing planning capabilities in language agents, paving the way for more sophisticated task-solving in dynamic environments.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08432">https://arxiv.org/abs/2411.08432</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> The paper discusses using language models to perform complex tasks in dynamic environments, which covers your interest in large language models controlling software and improving computer automation. However, it doesn’t specifically mention control of web browsers.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08610" target="_blank">Dynamic Subset Tuning: Expanding the Operational Range of Parameter-Efficient Training for Large Language Models</a></h3>
+            <a href="https://arxiv.org/html/2411.08610v1/extracted/5997235/main-key-rel-horiz.png" target="_blank"><img src="https://arxiv.org/html/2411.08610v1/extracted/5997235/main-key-rel-horiz.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Felix Stahlberg, Jared Lichtarge, Shankar Kumar</p>
+            <p><strong>Summary:</strong> arXiv:2411.08610v1 Announce Type: cross 
+Abstract: We propose a novel parameter-efficient training (PET) method for large language models that adapts models to downstream tasks by optimizing a small subset of the existing model parameters. Unlike prior methods, this subset is not fixed in location but rather which parameters are modified evolves over the course of training. This dynamic parameter selection can yield good performance with many fewer parameters than extant methods. Our method enables a seamless scaling of the subset size across an arbitrary proportion of the total model size, while popular PET approaches like prompt tuning and LoRA cover only a small part of this spectrum. We match or outperform prompt tuning and LoRA in most cases on a variety of NLP tasks (MT, QA, GSM8K, SuperGLUE) for a given parameter budget across different model families and sizes.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08610">https://arxiv.org/abs/2411.08610</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> Although the paper doesn't specifically mention automation or control of software/browsers, it discusses large language models and parameter-efficient training methods, which could be beneficial in improving large language model-based agents. Thus, it might provide relevant insights into task adaptation for such agents.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2410.24164" target="_blank">$\pi_0$: A Vision-Language-Action Flow Model for General Robot Control</a></h3>
+            <a href="https://arxiv.org/html/2410.24164v3/extracted/5997975/figures/fig2_final.jpeg" target="_blank"><img src="https://arxiv.org/html/2410.24164v3/extracted/5997975/figures/fig2_final.jpeg" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Kevin Black, Noah Brown, Danny Driess, Adnan Esmail, Michael Equi, Chelsea Finn, Niccolo Fusai, Lachy Groom, Karol Hausman, Brian Ichter, Szymon Jakubczak, Tim Jones, Liyiming Ke, Sergey Levine, Adrian Li-Bell, Mohith Mothukuri, Suraj Nair, Karl Pertsch, Lucy Xiaoyang Shi, James Tanner, Quan Vuong, Anna Walling, Haohuan Wang, Ury Zhilinsky</p>
+            <p><strong>Summary:</strong> arXiv:2410.24164v3 Announce Type: replace 
+Abstract: Robot learning holds tremendous promise to unlock the full potential of flexible, general, and dexterous robot systems, as well as to address some of the deepest questions in artificial intelligence. However, bringing robot learning to the level of generality required for effective real-world systems faces major obstacles in terms of data, generalization, and robustness. In this paper, we discuss how generalist robot policies (i.e., robot foundation models) can address these challenges, and how we can design effective generalist robot policies for complex and highly dexterous tasks. We propose a novel flow matching architecture built on top of a pre-trained vision-language model (VLM) to inherit Internet-scale semantic knowledge. We then discuss how this model can be trained on a large and diverse dataset from multiple dexterous robot platforms, including single-arm robots, dual-arm robots, and mobile manipulators. We evaluate our model in terms of its ability to perform tasks in zero shot after pre-training, follow language instructions from people and from a high-level VLM policy, and its ability to acquire new skills via fine-tuning. Our results cover a wide variety of tasks, such as laundry folding, table cleaning, and assembling boxes.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2410.24164">https://arxiv.org/abs/2410.24164</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper discusses the design of a novel architecture built on top of a pre-trained Vision-Language Model (VLM) for controlling a robot to perform complex tasks. The relevance to large language models controlling software or in general, automation, is the utilization of a VLM to decode instructions and perform actions accordingly, indicating its potential employment in software or browser control.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.07954" target="_blank">Learning Memory Mechanisms for Decision Making through Demonstrations</a></h3>
+            <a href="https://arxiv.org/html/2411.07954v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.07954v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> William Yue, Bo Liu, Peter Stone</p>
+            <p><strong>Summary:</strong> arXiv:2411.07954v2 Announce Type: replace 
+Abstract: In Partially Observable Markov Decision Processes, integrating an agent's history into memory poses a significant challenge for decision-making. Traditional imitation learning, relying on observation-action pairs for expert demonstrations, fails to capture the expert's memory mechanisms used in decision-making. To capture memory processes as demonstrations, we introduce the concept of memory dependency pairs $(p, q)$ indicating that events at time $p$ are recalled for decision-making at time $q$. We introduce AttentionTuner to leverage memory dependency pairs in Transformers and find significant improvements across several tasks compared to standard Transformers when evaluated on Memory Gym and the Long-term Memory Benchmark. Code is available at https://github.com/WilliamYue37/AttentionTuner.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.07954">https://arxiv.org/abs/2411.07954</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper presents a method for enhancing the decision-making abilities of agents, specifically in the case of Partially Observable Markov Decision Processes. It could therefore be beneficial for understanding how large language models can be developed or adapted to manage more complex tasks or scenarios, such as controlling software or automating computers.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2402.03271" target="_blank">Uncertainty of Thoughts: Uncertainty-Aware Planning Enhances Information Seeking in Large Language Models</a></h3>
+            <a href="https://arxiv.org/html/2402.03271v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2402.03271v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Zhiyuan Hu, Chumin Liu, Xidong Feng, Yilun Zhao, See-Kiong Ng, Anh Tuan Luu, Junxian He, Pang Wei Koh, Bryan Hooi</p>
+            <p><strong>Summary:</strong> arXiv:2402.03271v3 Announce Type: replace-cross 
+Abstract: In the face of uncertainty, the ability to *seek information* is of fundamental importance. In many practical applications, such as medical diagnosis and troubleshooting, the information needed to solve the task is not initially given and has to be actively sought by asking follow-up questions (for example, a doctor asking a patient for more details about their symptoms). In this work, we introduce Uncertainty of Thoughts (UoT), an algorithm to augment large language models with the ability to actively seek information by asking effective questions. UoT combines 1) an *uncertainty-aware simulation approach* which enables the model to simulate possible future scenarios and how likely they are to occur, 2) *uncertainty-based rewards* motivated by information gain which incentivizes the model to seek information, and 3) a *reward propagation scheme* to select the optimal question to ask in a way that maximizes the expected reward. In experiments on medical diagnosis, troubleshooting, and the `20 Questions` game, UoT achieves an average performance improvement of 38.1% in the rate of successful task completion across multiple LLMs compared with direct prompting and also improves efficiency (i.e., the number of questions needed to complete the task). Our code has been released [here](https://github.com/zhiyuanhubj/UoT)</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2402.03271">https://arxiv.org/abs/2402.03271</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper presents a new algorithm, UoT, to enhance the capability of large language models in information seeking by asking effective questions. It also demonstrates the application of such models in medical diagnosis, troubleshooting, and the '20 Questions' game which are examples of controlling software. Although it's not straightly about web browsing control, it provides insights on how to improve interaction and automation using large language models.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2405.10040" target="_blank">SynthesizRR: Generating Diverse Datasets with Retrieval Augmentation</a></h3>
+            <a href="https://arxiv.org/html/2405.10040v3/x1.png" target="_blank"><img src="https://arxiv.org/html/2405.10040v3/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Abhishek Divekar, Greg Durrett</p>
+            <p><strong>Summary:</strong> arXiv:2405.10040v3 Announce Type: replace-cross 
+Abstract: It is often desirable to distill the capabilities of large language models (LLMs) into smaller student models due to compute and memory constraints. One way to do this for classification tasks is via dataset synthesis, which can be accomplished by generating examples of each label from the LLM. Prior approaches to synthesis use few-shot prompting, which relies on the LLM's parametric knowledge to generate usable examples. However, this leads to issues of repetition, bias towards popular entities, and stylistic differences from human text. In this work, we propose Synthesize by Retrieval and Refinement (SynthesizRR), which uses retrieval augmentation to introduce variety into the dataset synthesis process: as retrieved passages vary, the LLM is seeded with different content to generate its examples. We empirically study the synthesis of six datasets, covering topic classification, sentiment analysis, tone detection, and humor, requiring complex synthesis strategies. We find that SynthesizRR greatly improves lexical and semantic diversity, similarity to human-written text, and distillation performance, when compared to 32-shot prompting and four prior approaches. We release our code to perform all steps at https://github.com/amazon-science/synthesizrr</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2405.10040">https://arxiv.org/abs/2405.10040</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> llm-agents</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to large language models (LLMs) and specifically talks about distilling the capabilities of large language models into smaller models. While not directly dealing with control/automation aspects, the proposed method can potentially be relevant in creating more efficient LLMs for control applications. However, since it does not directly tackle control of software or web browsers, it has a score of 4.</p>
+        </div>
+        </div><h2 onclick="toggleSection('section_time-series')">Time-series</h2><div id='section_time-series' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08249" target="_blank">Retrieval Augmented Time Series Forecasting</a></h3>
+            <a href="https://arxiv.org/html/2411.08249v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.08249v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Kutay Tire, Ege Onur Taga, Muhammed Emrullah Ildiz, Samet Oymak</p>
+            <p><strong>Summary:</strong> arXiv:2411.08249v1 Announce Type: new 
+Abstract: Retrieval-augmented generation (RAG) is a central component of modern LLM systems, particularly in scenarios where up-to-date information is crucial for accurately responding to user queries or when queries exceed the scope of the training data. The advent of time-series foundation models (TSFM), such as Chronos, and the need for effective zero-shot forecasting performance across various time-series domains motivates the question: Do benefits of RAG similarly carry over to time series forecasting? In this paper, we advocate that the dynamic and event-driven nature of time-series data makes RAG a crucial component of TSFMs and introduce a principled RAG framework for time-series forecasting, called Retrieval Augmented Forecasting (RAF). Within RAF, we develop efficient strategies for retrieving related time-series examples and incorporating them into forecast. Through experiments and mechanistic studies, we demonstrate that RAF indeed improves the forecasting accuracy across diverse time series domains and the improvement is more significant for larger TSFM sizes.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08249">https://arxiv.org/abs/2411.08249</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper is highly relevant as it outlines a new method for time series forecasting: the Retrieval Augmented Forecasting (RAF). Furthermore, it discusses how this new method can improve accuracy across different time series domains, aligning with your interest in deep learning methods for time series and foundation models.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2409.18696" target="_blank">Rethinking the Power of Timestamps for Robust Time Series Forecasting: A Global-Local Fusion Perspective</a></h3>
+            <a href="https://arxiv.org/html/2409.18696v2/x1.png" target="_blank"><img src="https://arxiv.org/html/2409.18696v2/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Chengsen Wang, Qi Qi, Jingyu Wang, Haifeng Sun, Zirui Zhuang, Jinming Wu, Jianxin Liao</p>
+            <p><strong>Summary:</strong> arXiv:2409.18696v2 Announce Type: replace 
+Abstract: Time series forecasting has played a pivotal role across various industries, including finance, transportation, energy, healthcare, and climate. Due to the abundant seasonal information they contain, timestamps possess the potential to offer robust global guidance for forecasting techniques. However, existing works primarily focus on local observations, with timestamps being treated merely as an optional supplement that remains underutilized. When data gathered from the real world is polluted, the absence of global information will damage the robust prediction capability of these algorithms. To address these problems, we propose a novel framework named GLAFF. Within this framework, the timestamps are modeled individually to capture the global dependencies. Working as a plugin, GLAFF adaptively adjusts the combined weights for global and local information, enabling seamless collaboration with any time series forecasting backbone. Extensive experiments conducted on nine real-world datasets demonstrate that GLAFF significantly enhances the average performance of widely used mainstream forecasting models by 12.5%, surpassing the previous state-of-the-art method by 5.5%.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2409.18696">https://arxiv.org/abs/2409.18696</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 5</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper is particularly relevant to your interests in 'New deep learning methods for time series' and 'New foundation models for time series'. It introduces a novel framework for time series forecasting (GLAFF) that combines global and local information for robust predictions.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08314" target="_blank">Conditional Variable Flow Matching: Transforming Conditional Densities with Amortized Conditional Optimal Transport</a></h3>
+            <a href="https://arxiv.org/html/2411.08314v1/extracted/5996182/figures/time_flow_sde_vs_ode.png" target="_blank"><img src="https://arxiv.org/html/2411.08314v1/extracted/5996182/figures/time_flow_sde_vs_ode.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Adam P. Generale, Andreas E. Robertson, Surya R. Kalidindi</p>
+            <p><strong>Summary:</strong> arXiv:2411.08314v1 Announce Type: new 
+Abstract: Forecasting stochastic nonlinear dynamical systems under the influence of conditioning variables is a fundamental challenge repeatedly encountered across the biological and physical sciences. While flow-based models can impressively predict the temporal evolution of probability distributions representing possible outcomes of a specific process, existing frameworks cannot satisfactorily account for the impact of conditioning variables on these dynamics. Amongst several limitations, existing methods require training data with paired conditions and are developed for discrete conditioning variables. We propose Conditional Variable Flow Matching (CVFM), a framework for learning flows transforming conditional distributions with amortization across continuous conditioning variables - permitting predictions across the conditional density manifold. This is accomplished through several novel advances, in particular, simultaneous sample conditioned flows over the main and conditioning variables, alongside a conditional Wasserstein distance and kernel facilitating conditional optimal transport. Collectively, these advances allow for learning system dynamics provided measurement data whose states and conditioning variables are not in correspondence. We demonstrate CVFM on a suite of increasingly challenging problems, including discrete and continuous conditional mapping benchmarks, image-to-image domain transfer, and modeling the temporal evolution of materials internal structure during manufacturing processes. We observe that CVFM results in improved performance and convergence characteristics over alternative conditional variants.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08314">https://arxiv.org/abs/2411.08314</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper looks at a new approach for dynamic system forecasting and presents a novel framework called Conditional Variable Flow Matching, which could be considered a new method for time series forecasting. However, it doesn't touch on all subtopics such as new transformer-like models for time series or datasets for time series.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08652" target="_blank">Accelerating Quasi-Static Time Series Simulations with Foundation Models</a></h3>
+            <a href="https://arxiv.org/html/2411.08652v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.08652v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Alban Puech, Fran\c{c}ois Mirall\`es, Jonas Weiss, Vincent Mai, Alexandre Blondin Mass\'e, Martin de Montigny, Thomas Brunschwiler, Hendrik F. Hamann</p>
+            <p><strong>Summary:</strong> arXiv:2411.08652v1 Announce Type: new 
+Abstract: Quasi-static time series (QSTS) simulations have great potential for evaluating the grid's ability to accommodate the large-scale integration of distributed energy resources. However, as grids expand and operate closer to their limits, iterative power flow solvers, central to QSTS simulations, become computationally prohibitive and face increasing convergence issues. Neural power flow solvers provide a promising alternative, speeding up power flow computations by 3 to 4 orders of magnitude, though they are costly to train. In this paper, we envision how recently introduced grid foundation models could improve the economic viability of neural power flow solvers. Conceptually, these models amortize training costs by serving as a foundation for a range of grid operation and planning tasks beyond power flow solving, with only minimal fine-tuning required. We call for collaboration between the AI and power grid communities to develop and open-source these models, enabling all operators, even those with limited resources, to benefit from AI without building solutions from scratch.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08652">https://arxiv.org/abs/2411.08652</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper might be of your interest as it introduces the concept of grid foundation models which could be potentially employed for time series applications. It however does not specifically address all your subtopics like multimodal deep learning models or transformer-like models for time series.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08221" target="_blank">SynapsNet: Enhancing Neuronal Population Dynamics Modeling via Learning Functional Connectivity</a></h3>
+            <a href="https://arxiv.org/html/2411.08221v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.08221v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Parsa Delavari, Ipek Oruc, Timothy H Murphy</p>
+            <p><strong>Summary:</strong> arXiv:2411.08221v1 Announce Type: cross 
+Abstract: The availability of large-scale neuronal population datasets necessitates new methods to model population dynamics and extract interpretable, scientifically translatable insights. Existing deep learning methods often overlook the biological mechanisms underlying population activity and thus exhibit suboptimal performance with neuronal data and provide little to no interpretable information about neurons and their interactions. In response, we introduce SynapsNet, a novel deep-learning framework that effectively models population dynamics and functional interactions between neurons. Within this biologically realistic framework, each neuron, characterized by a latent embedding, sends and receives currents through directed connections. A shared decoder uses the input current, previous neuronal activity, neuron embedding, and behavioral data to predict the population activity in the next time step. Unlike common sequential models that treat population activity as a multichannel time series, SynapsNet applies its decoder to each neuron (channel) individually, with the learnable functional connectivity serving as the sole pathway for information flow between neurons. Our experiments, conducted on mouse cortical activity from publicly available datasets and recorded using the two most common population recording modalities (Ca imaging and Neuropixels) across three distinct tasks, demonstrate that SynapsNet consistently outperforms existing models in forecasting population activity. Additionally, our experiments on both real and synthetic data showed that SynapsNet accurately learns functional connectivity that reveals predictive interactions between neurons.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08221">https://arxiv.org/abs/2411.08221</a></p>
+            <p><strong>Category:</strong> q-bio.NC</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper could be relevant to you as it presents 'SynapsNet', a novel deep learning framework for modeling population dynamics, and is demonstrated to consistently outperform existing models in forecasting population activity, which aligns with your interest in new deep learning methods for time series. However, it does not explicitly include multi-modal or transformer-like attributes, nor does it focus on foundation models.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08397" target="_blank">CLaSP: Learning Concepts for Time-Series Signals from Natural Language Supervision</a></h3>
+            <a href="https://arxiv.org/html/2411.08397v1/x1.png" target="_blank"><img src="https://arxiv.org/html/2411.08397v1/x1.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Aoi Ito, Kota Dohi, Yohei Kawaguchi</p>
+            <p><strong>Summary:</strong> arXiv:2411.08397v1 Announce Type: cross 
+Abstract: This paper proposes a foundation model called "CLaSP" that can search time series signals using natural language that describes the characteristics of the signals as queries. Previous efforts to represent time series signal data in natural language have had challenges in designing a conventional class of time series signal characteristics, formulating their quantification, and creating a dictionary of synonyms. To overcome these limitations, the proposed method introduces a neural network based on contrastive learning. This network is first trained using the datasets TRUCE and SUSHI, which consist of time series signals and their corresponding natural language descriptions. Previous studies have proposed vocabularies that data analysts use to describe signal characteristics, and SUSHI was designed to cover these terms. We believe that a neural network trained on these datasets will enable data analysts to search using natural language vocabulary. Furthermore, our method does not require a dictionary of predefined synonyms, and it leverages common sense knowledge embedded in a large-scale language model (LLM). Experimental results demonstrate that CLaSP enables natural language search of time series signal data and can accurately learn the points at which signal data changes.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08397">https://arxiv.org/abs/2411.08397</a></p>
+            <p><strong>Category:</strong> cs.CL</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper is quite relevant to your 'time-series' interest as it introduces a foundation model called 'CLaSP' for time series, trained using new datasets TRUCE and SUSHI. Although it's not entirely focused on forecasting, it involves deep learning methods for time-series analysis via a contrastive learning-based neural network.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.07207" target="_blank">General Geospatial Inference with a Population Dynamics Foundation Model</a></h3>
+            <a href="https://arxiv.org/html/2411.07207v2/extracted/5996136/assets/phase_diagram.png" target="_blank"><img src="https://arxiv.org/html/2411.07207v2/extracted/5996136/assets/phase_diagram.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Mohit Agarwal, Mimi Sun, Chaitanya Kamath, Arbaaz Muslim, Prithul Sarker, Joydeep Paul, Hector Yee, Marcin Sieniek, Kim Jablonski, Yael Mayer, David Fork, Sheila de Guia, Jamie McPike, Adam Boulanger, Tomer Shekel, David Schottlander, Yao Xiao, Manjit Chakravarthy Manukonda, Yun Liu, Neslihan Bulut, Sami Abu-el-haija, Arno Eigenwillig, Parth Kothari, Bryan Perozzi, Monica Bharel, Von Nguyen, Luke Barrington, Niv Efron, Yossi Matias, Greg Corrado, Krish Eswaran, Shruthi Prabhakara, Shravya Shetty, Gautam Prasad</p>
+            <p><strong>Summary:</strong> arXiv:2411.07207v2 Announce Type: replace 
+Abstract: Supporting the health and well-being of dynamic populations around the world requires governmental agencies, organizations and researchers to understand and reason over complex relationships between human behavior and local contexts in order to identify high-risk groups and strategically allocate limited resources. Traditional approaches to these classes of problems often entail developing manually curated, task-specific features and models to represent human behavior and the natural and built environment, which can be challenging to adapt to new, or even, related tasks. To address this, we introduce a Population Dynamics Foundation Model (PDFM) that aims to capture the relationships between diverse data modalities and is applicable to a broad range of geospatial tasks. We first construct a geo-indexed dataset for postal codes and counties across the United States, capturing rich aggregated information on human behavior from maps, busyness, and aggregated search trends, and environmental factors such as weather and air quality. We then model this data and the complex relationships between locations using a graph neural network, producing embeddings that can be adapted to a wide range of downstream tasks using relatively simple models. We evaluate the effectiveness of our approach by benchmarking it on 27 downstream tasks spanning three distinct domains: health indicators, socioeconomic factors, and environmental measurements. The approach achieves state-of-the-art performance on all 27 geospatial interpolation tasks, and on 25 out of the 27 extrapolation and super-resolution tasks. We combined the PDFM with a state-of-the-art forecasting foundation model, TimesFM, to predict unemployment and poverty, achieving performance that surpasses fully supervised forecasting. The full set of embeddings and sample code are publicly available for researchers.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.07207">https://arxiv.org/abs/2411.07207</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> time-series</p>
+            <p><strong>Interest justification:</strong> This paper aligns with your deep learning models for time series forecasting interest. It introduces a Population Dynamics Foundation Model and TimesFM, a new forecasting foundation model. However, it focuses more broadly on population dynamics and geospatial tasks rather than specifically on time series.</p>
+        </div>
+        </div><h2 onclick="toggleSection('section_causality')">Causality</h2><div id='section_causality' class='papers-container'>
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2411.08861" target="_blank">Interaction Testing in Variation Analysis</a></h3>
+            <a href="https://arxiv.org/html/2411.08861v1/extracted/5998077/figures/p-value-distr.png" target="_blank"><img src="https://arxiv.org/html/2411.08861v1/extracted/5998077/figures/p-value-distr.png" class="paper-figure" alt="Main Figure"></a>
+            <p><strong>Authors:</strong> Drago Plecko</p>
+            <p><strong>Summary:</strong> arXiv:2411.08861v1 Announce Type: cross 
+Abstract: Relationships of cause and effect are of prime importance for explaining scientific phenomena. Often, rather than just understanding the effects of causes, researchers also wish to understand how a cause $X$ affects an outcome $Y$ mechanistically -- i.e., what are the causal pathways that are activated between $X$ and $Y$. For analyzing such questions, a range of methods has been developed over decades under the rubric of causal mediation analysis. Traditional mediation analysis focuses on decomposing the average treatment effect (ATE) into direct and indirect effects, and therefore focuses on the ATE as the central quantity. This corresponds to providing explanations for associations in the interventional regime, such as when the treatment $X$ is randomized. Commonly, however, it is of interest to explain associations in the observational regime, and not just in the interventional regime. In this paper, we introduce \text{variation analysis}, an extension of mediation analysis that focuses on the total variation (TV) measure between $X$ and $Y$, written as $\mathrm{E}[Y \mid X=x_1] - \mathrm{E}[Y \mid X=x_0]$. The TV measure encompasses both causal and confounded effects, as opposed to the ATE which only encompasses causal (direct and mediated) variations. In this way, the TV measure is suitable for providing explanations in the natural regime and answering questions such as ``why is $X$ associated with $Y$?''. Our focus is on decomposing the TV measure, in a way that explicitly includes direct, indirect, and confounded variations. Furthermore, we also decompose the TV measure to include interaction terms between these different pathways. Subsequently, interaction testing is introduced, involving hypothesis tests to determine if interaction terms are significantly different from zero. If interactions are not significant, more parsimonious decompositions of the TV measure can be used.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2411.08861">https://arxiv.org/abs/2411.08861</a></p>
+            <p><strong>Category:</strong> stat.ME</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper discusses cause and effect, a crucial component of causality. It introduces the concept of variation analysis, which focuses on causal and confounded effects. Although it does not seem to present methods for causal discovery or representation learning, it adds to the overall understanding of causal pathways.</p>
+        </div>
+        
+        <div class="paper-box">
+            <h3><a href="https://arxiv.org/abs/2306.15557" target="_blank">Simple Steps to Success: A Method for Step-Based Counterfactual Explanations</a></h3>
+            
+            <p><strong>Authors:</strong> Jenny Hamer, Nicholas Perello, Jake Valladares, Vignesh Viswanathan, Yair Zick</p>
+            <p><strong>Summary:</strong> arXiv:2306.15557v3 Announce Type: replace 
+Abstract: Algorithmic recourse is a process that leverages counterfactual explanations, going beyond understanding why a system produced a given classification, to providing a user with actions they can take to change their predicted outcome. Existing approaches to compute such interventions -- known as recourse -- identify a set of points that satisfy some desiderata -- e.g. an intervention in the underlying causal graph, minimizing a cost function, etc. Satisfying these criteria, however, requires extensive knowledge of the underlying model structure, an often unrealistic amount of information in several domains. We propose a data-driven and model-agnostic framework to compute counterfactual explanations. We introduce StEP, a computationally efficient method that offers incremental steps along the data manifold that directs users towards their desired outcome. We show that StEP uniquely satisfies a desirable set of axioms. Furthermore, via a thorough empirical and theoretical investigation, we show that StEP offers provable robustness and privacy guarantees while outperforming popular methods along important metrics.</p>
+            <p><strong>Link:</strong> <a href="https://arxiv.org/abs/2306.15557">https://arxiv.org/abs/2306.15557</a></p>
+            <p><strong>Category:</strong> cs.LG</p>
+            <p><strong>Interest score:</strong> 4</p>
+            <p><strong>Interest tag:</strong> causality</p>
+            <p><strong>Interest justification:</strong> This paper is relevant to your interest in causal discovery, specifically in terms of providing actions to change the predicted outcome. It proposes a new model-agnostic framework for computing counterfactual explanations which could be useful in understanding and discovering causality.</p>
+        </div>
+        </div><div class='timestamp'>Report generated on November 14, 2024 at 21:33:52</div></body></html>

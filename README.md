@@ -160,3 +160,4 @@
 [./papers_2024_11_14.html](./papers_2024_11_14.html)
 [./papers_2024_11_17.html](./papers_2024_11_17.html)
 [./papers_2024_11_18.html](./papers_2024_11_18.html)
+[./papers_2024_11_19.html](./papers_2024_11_19.html)

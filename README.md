@@ -174,3 +174,4 @@
 [./papers_2024_12_04.html](./papers_2024_12_04.html)
 [./papers_2024_12_05.html](./papers_2024_12_05.html)
 [./papers_2024_12_08.html](./papers_2024_12_08.html)
+[./papers_2024_12_09.html](./papers_2024_12_09.html)

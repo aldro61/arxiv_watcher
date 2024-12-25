@@ -185,3 +185,4 @@
 [./papers_2024_12_19.html](./papers_2024_12_19.html)
 [./papers_2024_12_22.html](./papers_2024_12_22.html)
 [./papers_2024_12_23.html](./papers_2024_12_23.html)
+[./papers_2024_12_24.html](./papers_2024_12_24.html)

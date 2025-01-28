@@ -195,3 +195,4 @@
 [./papers_2025_01_22.html](./papers_2025_01_22.html)
 [./papers_2025_01_23.html](./papers_2025_01_23.html)
 [./papers_2025_01_26.html](./papers_2025_01_26.html)
+[./papers_2025_01_27.html](./papers_2025_01_27.html)

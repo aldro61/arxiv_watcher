@@ -203,3 +203,4 @@
 [./papers_2025_02_03.html](./papers_2025_02_03.html)
 [./papers_2025_02_04.html](./papers_2025_02_04.html)
 [./papers_2025_02_05.html](./papers_2025_02_05.html)
+[./papers_2025_02_06.html](./papers_2025_02_06.html)
